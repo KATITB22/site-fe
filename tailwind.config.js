@@ -22,6 +22,7 @@ module.exports = {
       },
       fontSize: {
         heading: '48px',
+        subHeading: '36px',
       },
     },
   },
