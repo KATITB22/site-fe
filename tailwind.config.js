@@ -3,7 +3,17 @@
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    extend: {},
+    fontFamily: {
+      magilio: ['Magilio'],
+    },
+    extend: {
+      colors: {
+        primaryYellow: '#FFEBB0',
+      },
+      fontSize: {
+        heading: '48px',
+      },
+    },
   },
   plugins: [],
 };
