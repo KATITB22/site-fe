@@ -1,4 +1,4 @@
 @font-face {
   font-family: 'Magilio';
-  src: local('Magilio'), url('./Magilio.otf') format('otf');
+  src: local('Magilio'), url(./Magilio.otf) format('opentype');
 }
