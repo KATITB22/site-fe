@@ -14,29 +14,29 @@ body::-webkit-scrollbar {
   display: none; /* for Chrome, Safari, and Opera */
 }
 
-.slick-prev {
+/* .slick-prev {
   left: 3% !important;
   z-index: 1;
 }
 .slick-next {
   right: 3% !important;
   z-index: 1;
-}
+} */
 
 .slick-prev:before {
-  color: red;
+  color: #ffc176;
   font-size: 40px;
 }
 
 .slick-next:before {
-  color: red;
+  color: #ffc176;
   font-size: 40px;
 }
 
 .slick-slide > div {
   display: grid;
   place-items: center;
-  width: 80%;
+  width: 72%;
   margin: auto;
   padding: 0px;
 }

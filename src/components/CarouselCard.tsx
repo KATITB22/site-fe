@@ -15,7 +15,7 @@ const slickSettings: Settings = {
   swipeToSlide: true,
   responsive: [
     {
-      breakpoint: 1200,
+      breakpoint: 1280,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -39,7 +39,7 @@ const slickSettings: Settings = {
 };
 const CarouselCard: React.FC = () => {
   return (
-    <div className="w-[1000px] content-center my-0 mx-auto pt-20">
+    <div className="m:w-[600px] lg:w-[800px] xl:w-[1000px] content-center my-0 mx-auto pt-20">
       <Slick {...slickSettings}>
         <Card text="1" />
         <Card text="2" />

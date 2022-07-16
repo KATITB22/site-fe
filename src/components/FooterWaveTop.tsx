@@ -11,7 +11,7 @@ const FooterWaveTop: React.FC<FooterWaveTopProps> = ({ width, isDarkMode }) => {
   return (
     <div className="bg-primaryCream">
       <svg
-        width={width}
+        width="100%"
         height={375}
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
