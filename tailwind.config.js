@@ -3,9 +3,6 @@
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    fontFamily: {
-      magilio: ['Magilio'],
-    },
     screens: {
       xs: '400px',
       sm: '640px',
@@ -14,6 +11,11 @@ module.exports = {
       xl: '1280px',
     },
     extend: {
+      fontFamily: {
+        alegreya: ['Alegreya', 'serif'],
+        alegreyasans: ['AlegreyaSans', 'sans-serif'],
+        magilio: ['Magilio'],
+      },
       colors: {
         primaryYellow: '#FFEBB0',
         secondaryYellow: '#FFC176',
@@ -28,8 +30,10 @@ module.exports = {
         secondaryGreen: '#4F6266',
       },
       fontSize: {
-        heading: '48px',
-        subHeading: '36px',
+        heading: '42px', // 32pt
+        subHeading: '24px', // 18pt
+        body: '16px', //12pt
+        caption: '11px', // 8pt
       },
     },
   },
