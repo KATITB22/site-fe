@@ -3,6 +3,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 import OrganogramWaveBottom from '../components/OrganogramWaveBottom';
 import OrganogramWaveTop from '../components/OrganogramWaveTop';
 import Title from '../components/Title';
+import TopTitle from '../components/TopTitle';
 import Texts from '../components/Texts';
 import CustomButton from '../components/CustomButton';
 
@@ -29,18 +30,15 @@ const Organogram: React.FC = () => {
   return (
     <div className="relative w-[100vw]">
       <OrganogramWaveTop width={screenSize.dynamicWidth} />
-      <section className='flex md:flex-row-reverse flex-wrap bg-primaryYellow w-[100vw] h-fit xs:px-20 sm:px-36 py-14'>
+      <section className='flex md:flex-row-reverse flex-wrap bg-primaryYellow w-[100vw] h-fit xs:px-20 sm:px-36 py-14 z-1'>
         <section className='w-full md:w-1/4 align-top'>
-            {/* <Title className="text-right">
-                Organo
-            </Title>
-            <Title className="text-right">
-                Gram
-            </Title> */}
-            <div className='position-absolute bg-grey w-[20vw] h-[20vw] start-100'/>
+            <TopTitle className="text-right">
+                Organo <br/> Gram
+            </TopTitle>
+            <div className='position-absolute bg-grey w-[20vw] w-[200px] h-[250px]'/>
         </section>
         <section className='w-full md:w-3/4 align-middle'>
-          <Title className="relative text-left">
+          <Title className="relative top-5">
                 Organogram
           </Title>
           <Texts className="relative top-5">

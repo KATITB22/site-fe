@@ -1,5 +1,6 @@
 import React from 'react';
 import Title from '../components/Title';
+import TopTitle from '../components/TopTitle';
 import Texts from '../components/Texts';
 
 const VisiMisi: React.FC = () => {
@@ -28,9 +29,8 @@ const VisiMisi: React.FC = () => {
         </ol>
       </section>
       <section className='w-full h-fit md:w-1/4'>
-        <div className='position-absolute bg-grey w-[20vw] h-[20vw] p'/>
-        {/* <Title className='absolute'>Visi &amp;</Title>
-        <Title className='absolute bottom-'>Misi;</Title> */}
+        <TopTitle className='top-80'>Visi &amp; <br/> &ensp; Misi</TopTitle>
+        <div className='bg-grey w-[200px] h-[250px] p'/>
       </section>
     </div>
   );
