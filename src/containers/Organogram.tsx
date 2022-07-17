@@ -32,14 +32,14 @@ const Organogram: React.FC = () => {
     <div className="relative w-[100vw]">
       <OrganogramWaveTop width={screenSize.dynamicWidth} />
       <section className='absolute flex items-center md:flex-row-reverse flex-wrap top-24 w-full h-auto z-1 xs:px-20 sm:px-36'>
-        <section className='w-full md:w-1/4 z-40'>
+        <section className='w-full lg:w-1/4 z-40'>
             <TopTitle className="static top-14 text-right">
                 Organo <br/> Gram
             </TopTitle>
             <VStock className='static bg-grey justify-end w-[200px] h-[250px]'/>
             {/* <div className='position-absolute bg-grey w-[20vw] w-[200px] h-[250px]'/> */}
         </section>
-        <section className='w-full md:w-3/4 z-40'>
+        <section className='w-full lg:w-3/4 z-40'>
           <Title className="relative top-5">
                 Organogram
           </Title>
@@ -50,10 +50,11 @@ const Organogram: React.FC = () => {
             <CustomButton className="relative md:top-10 sm:top-12 xs:top-14">Organogram KAT ITB 2022</CustomButton>
           </a>
           <a href="/divisi-it">
-            <CustomButton className="relative lg:left-5 md:top-10 sm:top-14 xs:top-16">Bidang IT</CustomButton>
+            <CustomButton className="relative lg:left-5 md:top-12 sm:top-14 xs:top-16">Bidang IT</CustomButton>
           </a>
         </section> 
       </section>
+      <section className='w-full bg-primaryYellow h-56 xs:h-56 md:h-32 lg:hidden' />
       <OrganogramWaveBottom width={screenSize.dynamicWidth} />
     </div>
   );

@@ -9,7 +9,7 @@ const VStockVisiMisi: React.FC<VStockVisiMisiProps> = ({ className }) => {
     <div
       style={{
         display: 'flex',
-        alignItems: 'center',
+        alignItems: 'start',
         justifyContent: 'left'
       }}>
       <div className={`${className}`} />
