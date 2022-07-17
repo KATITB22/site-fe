@@ -6,12 +6,12 @@ import VStockVisiMisi from '../components/VStockVisiMisi';
 
 const VisiMisi: React.FC = () => {
   return (
-    <div className="flex md:flex-row-reverse flex-wrap bg-primaryCream w-full h-auto xs:px-20 sm:px-36 py-14 h-[70vh]">
-      <section className='w-full h-fit lg:w-3/4 lg:pl-20'>
+    <div className="flex md:flex-row-reverse flex-wrap bg-primaryCream w-full h-auto xs:px-20 sm:px-36 py-14">
+      <section className='w-full h-auto lg:w-3/4 lg:pl-20'>
         <Title className='relative '>Visi</Title>
         <Texts className='relative top-5'>KAT ITB Sebagai Ruang Inspirasi Bernavigasi Budaya dalam mewujudkan kesadaran berkontribusi untuk Indonesia</Texts>
         <Title className='relative top-10'>Misi</Title>
-        <ol className='relative top-12 h-fit'>
+        <ol className='relative top-12 h-auto'>
           <li>
             <Texts>1. Menjalankan sistem pendidikan yang sesuai dengan kondisi peserta KAT ITB.</Texts>
           </li>

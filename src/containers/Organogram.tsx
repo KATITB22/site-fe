@@ -31,7 +31,7 @@ const Organogram: React.FC = () => {
   return (
     <div className="relative w-[100vw]">
       <OrganogramWaveTop width={screenSize.dynamicWidth} />
-      <section className='absolute flex items-center md:flex-row-reverse flex-wrap top-24 w-full h-fit z-1 xs:px-20 sm:px-36'>
+      <section className='absolute flex items-center md:flex-row-reverse flex-wrap top-24 w-full h-auto z-1 xs:px-20 sm:px-36'>
         <section className='w-full md:w-1/4 z-40'>
             <TopTitle className="static top-14 text-right">
                 Organo <br/> Gram
