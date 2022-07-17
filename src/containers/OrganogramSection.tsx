@@ -4,7 +4,7 @@ import RoleText from '../components/RoleText';
 
 const OrganogramSection: React.FC = () => {
   return (
-    <div className="bg-[#2F4250] w-[100vw] xs:px-20 sm:px-36 py-96">
+    <div className="bg-[#2F4250] w-[100vw] xs:px-20 sm:px-36 py-80">
       <div className="KetuaPelaksana">
         {' '}
         <CardRole
@@ -23,9 +23,9 @@ const OrganogramSection: React.FC = () => {
 
       <div className="Kesekjenan">
         <div className="flex items-center py-36 gap-x-10">
-          <div className="bg-[#F5ECCB] w-100 h-px flex-grow"></div>
+          <div className="bg-[#F5ECCB] w-100 h-0.5 flex-grow"></div>
           <RoleText className="text-8xl flex-shrink">Kesekjenan</RoleText>
-          <div className="bg-[#F5ECCB] w-100 h-px flex-grow "></div>
+          <div className="bg-[#F5ECCB] w-100 h-0.5 flex-grow "></div>
         </div>
       </div>
 
@@ -65,12 +65,12 @@ const OrganogramSection: React.FC = () => {
 
       <div>
         <div className="grid grid-cols-4 py-36">
-          <CardRole
+        <CardRole
             firstRole="Sekretaris 1"
             name="Lorep Ipsum"
             jurusan="IF 20"
             avatarSize={200}
-            textRoleSize="text-6xl"
+            textRoleSize="text-5xl"
             textNameSize="text-3xl"
             textJurusanSize="text-2xl"
             classNameSecond="indent-64"
@@ -80,7 +80,7 @@ const OrganogramSection: React.FC = () => {
             name="Lorep Ipsum"
             jurusan="IF 20"
             avatarSize={200}
-            textRoleSize="text-6xl"
+            textRoleSize="text-5xl"
             textNameSize="text-3xl"
             textJurusanSize="text-2xl"
             classNameSecond="indent-64"
@@ -90,7 +90,7 @@ const OrganogramSection: React.FC = () => {
             name="Lorep Ipsum"
             jurusan="IF 20"
             avatarSize={200}
-            textRoleSize="text-6xl"
+            textRoleSize="text-5xl"
             textNameSize="text-3xl"
             textJurusanSize="text-2xl"
             classNameSecond="indent-64"
@@ -100,7 +100,7 @@ const OrganogramSection: React.FC = () => {
             name="Lorep Ipsum"
             jurusan="IF 20"
             avatarSize={200}
-            textRoleSize="text-6xl"
+            textRoleSize="text-5xl"
             textNameSize="text-3xl"
             textJurusanSize="text-2xl"
             classNameSecond="indent-64"
