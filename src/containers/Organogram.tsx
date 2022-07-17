@@ -32,10 +32,10 @@ const Organogram: React.FC = () => {
       <OrganogramWaveTop width={screenSize.dynamicWidth} />
       <section className='absolute flex items-center md:flex-row-reverse flex-wrap top-24 w-full h-auto z-1 xs:px-20 sm:px-36'>
         <section className='w-full lg:w-1/4 z-40'>
-            <TopTitle className="static top-14 text-right">
+            <TopTitle className="static top-14 text-right md:mr-32 lg:mr-0">
                 Organo <br/> gram
             </TopTitle>
-            <VStock className='static ml-2 sm:ml-28 lg:ml-2'/>
+            <VStock className='static sm:ml-28 lg:ml-2'/>
         </section>
         <section className='w-full lg:w-3/4 z-40'>
           <Title className="relative top-5">
@@ -48,7 +48,7 @@ const Organogram: React.FC = () => {
             <CustomButton className="relative md:top-10 sm:top-12 xs:top-14">Organogram KAT ITB 2022</CustomButton>
           </a>
           <a href="/divisi-it">
-            <CustomButton className="relative lg:left-5 md:top-12 sm:top-14 xs:top-16">Bidang IT</CustomButton>
+            <CustomButton className="relative lg:left-5 md:top-10 sm:top-14 xs:top-16">Bidang IT</CustomButton>
           </a>
         </section> 
       </section>
