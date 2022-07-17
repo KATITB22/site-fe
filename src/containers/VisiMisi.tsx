@@ -2,11 +2,12 @@ import React from 'react';
 import Title from '../components/Title';
 import TopTitle from '../components/TopTitle';
 import Texts from '../components/Texts';
+import VStockVisiMisi from '../components/VStockVisiMisi';
 
 const VisiMisi: React.FC = () => {
   return (
-    <div className="flex md:flex-row-reverse flex-wrap bg-primaryCream w-full h-fit xs:px-20 sm:px-36 py-14 h-[70vh]">
-      <section className='w-full h-fit md:w-3/4 lg:pl-20'>
+    <div className="flex md:flex-row-reverse flex-wrap bg-primaryCream w-full h-auto xs:px-20 sm:px-36 py-14 h-[70vh]">
+      <section className='w-full h-fit lg:w-3/4 lg:pl-20'>
         <Title className='relative '>Visi</Title>
         <Texts className='relative top-5'>KAT ITB Sebagai Ruang Inspirasi Bernavigasi Budaya dalam mewujudkan kesadaran berkontribusi untuk Indonesia</Texts>
         <Title className='relative top-10'>Misi</Title>
@@ -28,9 +29,9 @@ const VisiMisi: React.FC = () => {
           </li>
         </ol>
       </section>
-      <section className='w-full h-fit md:w-1/4'>
-        <TopTitle className='top-80'>Visi &amp; <br/> &ensp; Misi</TopTitle>
-        <div className='bg-grey w-[200px] h-[250px] p'/>
+      <section className='relative w-full lg:w-1/4'>
+        <TopTitle className='static top-80 mb-3'>Visi &amp; <br/> &ensp; Misi</TopTitle>
+        <VStockVisiMisi className='static ml-8 bg-grey w-[200px] h-[250px]'></VStockVisiMisi>
       </section>
     </div>
   );

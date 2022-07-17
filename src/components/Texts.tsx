@@ -10,7 +10,7 @@ interface TextsProps {
 const Texts: React.FC<TextsProps> = ({ children, className }) => {
   return (
     <>
-        <p className={`font-alegreyasans text-body ${className}`}>{children}</p>
+        <p className={`font-alegreyasans color-primaryBlack text-body ${className}`}>{children}</p>
     </>
   );
 };
