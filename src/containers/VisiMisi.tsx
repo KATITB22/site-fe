@@ -2,12 +2,12 @@ import React from 'react';
 import Title from '../components/Title';
 import TopTitle from '../components/TopTitle';
 import Texts from '../components/Texts';
-import VStockVisiMisi from '../components/VStockVisiMisi';
+import VStock from '../components/VStock';
 
 const VisiMisi: React.FC = () => {
   return (
     <div className="flex md:flex-row-reverse flex-wrap bg-primaryCream w-full h-auto xs:px-20 sm:px-36 py-14">
-      <section className='w-full h-auto md:pl-0 lg:w-3/4 pl-20'>
+      <section className='w-full h-auto xs:pl-0 sm:pl-0 lg:w-3/4 lg:pl-20 xl:pl-10'>
         <Title className='relative '>Visi</Title>
         <Texts className='relative top-5'>KAT ITB Sebagai Ruang Inspirasi Bernavigasi Budaya dalam mewujudkan kesadaran berkontribusi untuk Indonesia</Texts>
         <Title className='relative top-10'>Misi</Title>
@@ -30,8 +30,8 @@ const VisiMisi: React.FC = () => {
         </ol>
       </section>
       <section className='relative w-full lg:w-1/4'>
-        <TopTitle className='static top-80 mb-3'>Visi &amp; <br/> &ensp; Misi</TopTitle>
-        <VStockVisiMisi className='static ml-8 bg-grey w-[200px] h-[250px]'></VStockVisiMisi>
+        <TopTitle className='static top-80 mb-1/3'>Visi &amp; <br/> &ensp; Misi</TopTitle>
+        <VStock className='static ml-8'></VStock>
       </section>
     </div>
   );
