@@ -10,24 +10,47 @@ interface CardRoleProps {
   secondRole?: string;
   name?: string;
   jurusan?: string;
+  avatarSize?: number;
+  textRoleSize?: string;
+  textNameSize?: string;
+  textJurusanSize?: string;
+  classNameSecond?: string;
 }
 
 const CardRole: React.FC<CardRoleProps> = ({
   className,
+  classNameSecond,
   firstRole,
   secondRole,
   name,
   jurusan,
+  avatarSize,
+  textRoleSize,
+  textJurusanSize,
+  textNameSize,
 }) => {
   return (
-    <div className={`bg-[#2F4250] ${className}`}>
-      <RoleText className="top-5 left-0 right-0 text-center text-heading">
-        {firstRole} &nbsp; <br /> &ensp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;{' '}
+    <div className={`relative bg-[#2F4250] ${className}`}>
+      <RoleText
+        className={`absolute top-10 left-0 right- text-center  ${className} ${textRoleSize}`}
+      >
+        {firstRole}
+      </RoleText>
+      <RoleText
+        className={`absolute top-10 left-0 right-0 text-center  ${classNameSecond} ${textRoleSize}`}
+      >
+        {' '}
         {secondRole}
       </RoleText>
-      <RoleAvatar />
-      <RoleText className="top-0 left-0 right-0 text-center">{name}</RoleText>
-      <RoleText className="top-0 left-0 right-0 text-center">{jurusan}</RoleText>
+      <RoleAvatar avatarSize={avatarSize} />
+      <RoleText className={`top-0 left-0 right-0 text-center ${textNameSize} `}>
+        {name}
+      </RoleText>
+      <RoleText
+        className={`top-0 left-0 right-0 text-center ${textJurusanSize}`}
+      >
+        {jurusan}
+      </RoleText>
     </div>
   );
 };

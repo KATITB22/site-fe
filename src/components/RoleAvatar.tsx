@@ -1,12 +1,17 @@
 import React from 'react';
-import logo from '../resources/logo.png';
+import logo from '../resources/foto.png';
 
 interface RoleAvatarProps {
   className?: string;
   link?: string;
+  avatarSize?: number;
 }
 
-const RoleAvatar: React.FC<RoleAvatarProps> = ({ className, link }) => {
+const RoleAvatar: React.FC<RoleAvatarProps> = ({
+  className,
+  link,
+  avatarSize,
+}) => {
   return (
     <div
       style={{
@@ -15,7 +20,7 @@ const RoleAvatar: React.FC<RoleAvatarProps> = ({ className, link }) => {
         justifyContent: 'center',
       }}
     >
-      <img width={200} className={`${className}`} src={logo} />
+      <img width={avatarSize} className={`${className}`} src={logo} />
     </div>
   );
 };

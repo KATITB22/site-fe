@@ -3,6 +3,8 @@ import React from 'react';
 interface RoleTextProps {
   children: React.ReactNode;
   className?: string;
+  fontSizeName?: string;
+  fontSizeRole?: string;
 }
 const RoleText: React.FC<RoleTextProps> = ({ children, className }) => {
   return (
