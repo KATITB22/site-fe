@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import OverlapTitle from '../components/OverlapTitle';
 import TimelineWaveBottom from '../components/TimelineWaveBottom';
 import TimelineWaveTop from '../components/TimelineWaveTop';
+import Agenda from '../components/Agenda';
+import HorizontalLine from '../components/HorizontalLine';
+import TimelineBar from '../components/TimelineBar';
 
 const Timeline: React.FC = () => {
   const [screenSize, setScreenSize] = useState({
@@ -24,11 +27,12 @@ const Timeline: React.FC = () => {
   }, [screenSize]);
 
   return (
-    <div >
+    <div>
       <OverlapTitle className='xs:px-20 sm:px-36 absolute top-48 h-0'>
           Timeline <br/> &emsp; KAT ITB 2022
       </OverlapTitle>
       <TimelineWaveTop width={screenSize.dynamicWidth}/>
+      <TimelineBar />
       <TimelineWaveBottom width={screenSize.dynamicWidth}/>
     </div>
   );
