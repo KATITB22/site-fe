@@ -13,7 +13,7 @@ module.exports = {
     extend: {
       fontFamily: {
         alegreya: ['Alegreya', 'serif'],
-        alegreyasans: ['AlegreyaSans', 'sans-serif'],
+        alegreyasans: ['Alegreya Sans', 'sans-serif'],
         magilio: ['Magilio'],
       },
       colors: {
