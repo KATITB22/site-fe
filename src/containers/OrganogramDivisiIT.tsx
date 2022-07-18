@@ -2,21 +2,26 @@ import React from 'react';
 import CardRole from '../components/CardRole';
 import RoleText from '../components/RoleText';
 
-interface OrganogramSectionProps {
+interface OrganogramDivisiITProps {
   isDarkMode?: boolean;
 }
 
-const OrganogramSection: React.FC<OrganogramSectionProps> = ({
+const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
   isDarkMode,
 }) => {
   return (
-    <div className="bg-[#2F4250] w-[100vw] xs:px-20 sm:px-36 py-80">
-      <div className="KetuaPelaksana">
+    <div
+      className={`${
+        isDarkMode ? 'bg-[#2F4250' : 'bg-[#FFFCF2]'
+      } w-[100vw] xs:px-20 sm:px-36 py-80`}
+    >
+      <div className="KetuaBidang">
         {' '}
         <CardRole
           className="text-heading"
+          isDarkMode={isDarkMode}
           firstRole="Ketua"
-          secondRole="Pelaksana"
+          secondRole="Bidang"
           name="John Doe"
           jurusan="IF 20"
           avatarSize={350}
@@ -24,17 +29,14 @@ const OrganogramSection: React.FC<OrganogramSectionProps> = ({
           textNameSize="text-5xl"
           textJurusanSize="text-2xl"
           classNameSecond="indent-96"
-          isDarkMode={isDarkMode}
         />
       </div>
 
-      <div className="Kesekjenan">
+      <div className="Social & Site">
         <div className="flex items-center py-36 gap-x-10">
-          <div className="bg-[#F5ECCB] w-100 h-0.5 flex-grow"></div>
-          <RoleText className="text-8xl flex-shrink " isDarkMode={isDarkMode}>
-            Kesekjenan
-          </RoleText>
-          <div className="bg-[#F5ECCB] w-100 h-0.5 flex-grow "></div>
+          <div className="bg-[#231A51] w-100 h-0.5 flex-grow"></div>
+          <RoleText className="text-8xl flex-shrink">Social & Site</RoleText>
+          <div className="bg-[#231A51] w-100 h-0.5 flex-grow "></div>
         </div>
       </div>
 
@@ -44,8 +46,8 @@ const OrganogramSection: React.FC<OrganogramSectionProps> = ({
           <div className="">
             {' '}
             <CardRole
-              firstRole="Sekretaris"
-              secondRole="Jenderal"
+              firstRole="Ketua"
+              secondRole="Divisi"
               name="Lorep Ipsum"
               jurusan="IF 20"
               avatarSize={250}
@@ -53,14 +55,13 @@ const OrganogramSection: React.FC<OrganogramSectionProps> = ({
               textNameSize="text-4xl"
               textJurusanSize="text-2xl"
               classNameSecond="indent-64"
-              isDarkMode={isDarkMode}
             />
           </div>
           <div className="">
             {' '}
             <CardRole
-              firstRole="Wakil Sekretaris"
-              secondRole="Jenderal"
+              firstRole="Wakil Ketua"
+              secondRole="Divisi"
               name="Lorep Ipsum"
               jurusan="IF 20"
               avatarSize={250}
@@ -68,7 +69,6 @@ const OrganogramSection: React.FC<OrganogramSectionProps> = ({
               textNameSize="text-4xl"
               textJurusanSize="text-2xl"
               classNameSecond="-indent-40"
-              isDarkMode={isDarkMode}
             />
           </div>
         </div>
@@ -77,7 +77,7 @@ const OrganogramSection: React.FC<OrganogramSectionProps> = ({
       <div>
         <div className="grid grid-cols-4 py-36">
           <CardRole
-            firstRole="Sekretaris 1"
+            firstRole="Anggota"
             name="Lorep Ipsum"
             jurusan="IF 20"
             avatarSize={200}
@@ -85,10 +85,9 @@ const OrganogramSection: React.FC<OrganogramSectionProps> = ({
             textNameSize="text-3xl"
             textJurusanSize="text-2xl"
             classNameSecond="indent-64"
-            isDarkMode={isDarkMode}
           />
           <CardRole
-            firstRole="Sekretaris 2"
+            firstRole="Anggota"
             name="Lorep Ipsum"
             jurusan="IF 20"
             avatarSize={200}
@@ -96,10 +95,9 @@ const OrganogramSection: React.FC<OrganogramSectionProps> = ({
             textNameSize="text-3xl"
             textJurusanSize="text-2xl"
             classNameSecond="indent-64"
-            isDarkMode={isDarkMode}
           />
           <CardRole
-            firstRole="Bendahara 1"
+            firstRole="Anggota"
             name="Lorep Ipsum"
             jurusan="IF 20"
             avatarSize={200}
@@ -107,10 +105,9 @@ const OrganogramSection: React.FC<OrganogramSectionProps> = ({
             textNameSize="text-3xl"
             textJurusanSize="text-2xl"
             classNameSecond="indent-64"
-            isDarkMode={isDarkMode}
           />
           <CardRole
-            firstRole="Bendahara 2"
+            firstRole="Anggota"
             name="Lorep Ipsum"
             jurusan="IF 20"
             avatarSize={200}
@@ -118,7 +115,6 @@ const OrganogramSection: React.FC<OrganogramSectionProps> = ({
             textNameSize="text-3xl"
             textJurusanSize="text-2xl"
             classNameSecond="indent-64"
-            isDarkMode={isDarkMode}
           />
         </div>
       </div>
@@ -126,4 +122,4 @@ const OrganogramSection: React.FC<OrganogramSectionProps> = ({
   );
 };
 
-export default OrganogramSection;
+export default OrganogramDivisiIT;

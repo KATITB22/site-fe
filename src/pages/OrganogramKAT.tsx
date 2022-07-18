@@ -5,7 +5,7 @@ import OrganogramSection from '../containers/OrganogramSection';
 const OrganogramKAT: React.FC = () => {
   return (
     <div>
-      <OrganogramSection />
+      <OrganogramSection isDarkMode={true} />
       <Footer isDarkMode={true} />
     </div>
   );
