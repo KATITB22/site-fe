@@ -6,7 +6,7 @@ export const Home: React.FC = () => {
   return (
     <div>
       <AplikasiLainnya />
-      <Footer/>
+      <Footer />
     </div>
   );
 };

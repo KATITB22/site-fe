@@ -28,7 +28,10 @@ const Footer: React.FC<FooterProps> = ({ isDarkMode }) => {
 
   return (
     <div className="relative w-[100vw]">
-      <Title className={`absolute top-40 left-0 right-0 text-center `} isDarkMode = {isDarkMode}>
+      <Title
+        className={`absolute top-40 left-0 right-0 text-center `}
+        isDarkMode={isDarkMode}
+      >
         Sponsor
       </Title>
       {/* dark mode in footerWaveTop using isDarkMode */}
