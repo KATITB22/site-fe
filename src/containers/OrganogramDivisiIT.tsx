@@ -21,21 +21,21 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
           className="text-heading"
           isDarkMode={isDarkMode}
           firstRole="Ketua"
-          secondRole="Bidang"
+          secondRole="Pelaksana"
           name="John Doe"
           jurusan="IF 20"
-          avatarSize={350}
-          textRoleSize="text-8xl"
-          textNameSize="text-5xl"
-          textJurusanSize="text-2xl"
-          classNameSecond="indent-96"
+          avatarSize={200}
+          textRoleSize="text-heading"
+          textNameSize="text-subHeading"
+          textJurusanSize="text-body"
+          classNameSecond="indent-36"
         />
       </div>
 
       <div className="Social & Site">
         <div className="flex items-center py-36 gap-x-10">
           <div className="bg-[#231A51] w-100 h-0.5 flex-grow"></div>
-          <RoleText className="text-8xl flex-shrink">Social & Site</RoleText>
+          <RoleText className="text-heading flex-shrink">Kesekjenan</RoleText>
           <div className="bg-[#231A51] w-100 h-0.5 flex-grow "></div>
         </div>
       </div>
@@ -50,11 +50,11 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
               secondRole="Divisi"
               name="Lorep Ipsum"
               jurusan="IF 20"
-              avatarSize={250}
-              textRoleSize="text-7xl"
-              textNameSize="text-4xl"
-              textJurusanSize="text-2xl"
-              classNameSecond="indent-64"
+              avatarSize={180}
+              textRoleSize="text-heading"
+              textNameSize="text-subHeading"
+              textJurusanSize="text-body"
+              classNameSecond="indent-24"
             />
           </div>
           <div className="">
@@ -64,11 +64,11 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
               secondRole="Divisi"
               name="Lorep Ipsum"
               jurusan="IF 20"
-              avatarSize={250}
-              textRoleSize="text-7xl"
-              textNameSize="text-4xl"
-              textJurusanSize="text-2xl"
-              classNameSecond="-indent-40"
+              avatarSize={180}
+              textRoleSize="text-heading"
+              textNameSize="text-subHeading"
+              textJurusanSize="text-body"
+              classNameSecond="indent-24"
             />
           </div>
         </div>
@@ -80,41 +80,41 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
             firstRole="Anggota"
             name="Lorep Ipsum"
             jurusan="IF 20"
-            avatarSize={200}
-            textRoleSize="text-5xl"
-            textNameSize="text-3xl"
-            textJurusanSize="text-2xl"
-            classNameSecond="indent-64"
+            avatarSize={150}
+            textRoleSize="text-heading"
+            textNameSize="text-subHeading"
+            textJurusanSize="text-body"
+            classNameSecond="indent-64 pt-8"
           />
           <CardRole
             firstRole="Anggota"
             name="Lorep Ipsum"
             jurusan="IF 20"
-            avatarSize={200}
-            textRoleSize="text-5xl"
-            textNameSize="text-3xl"
-            textJurusanSize="text-2xl"
-            classNameSecond="indent-64"
+            avatarSize={150}
+            textRoleSize="text-heading"
+            textNameSize="text-subHeading"
+            textJurusanSize="text-body"
+            classNameSecond="indent-64 pt-8"
           />
           <CardRole
             firstRole="Anggota"
             name="Lorep Ipsum"
             jurusan="IF 20"
-            avatarSize={200}
-            textRoleSize="text-5xl"
-            textNameSize="text-3xl"
-            textJurusanSize="text-2xl"
-            classNameSecond="indent-64"
+            avatarSize={150}
+            textRoleSize="text-heading"
+            textNameSize="text-subHeading"
+            textJurusanSize="text-body"
+            classNameSecond="indent-64 pt-8"
           />
           <CardRole
             firstRole="Anggota"
             name="Lorep Ipsum"
             jurusan="IF 20"
-            avatarSize={200}
-            textRoleSize="text-5xl"
-            textNameSize="text-3xl"
-            textJurusanSize="text-2xl"
-            classNameSecond="indent-64"
+            avatarSize={150}
+            textRoleSize="text-heading"
+            textNameSize="text-subHeading"
+            textJurusanSize="text-body"
+            classNameSecond="indent-64 pt-8"
           />
         </div>
       </div>

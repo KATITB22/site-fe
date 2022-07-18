@@ -14,16 +14,16 @@ const OrganogramSection: React.FC<OrganogramSectionProps> = ({
       <div className="KetuaPelaksana">
         {' '}
         <CardRole
-          className="text-heading"
+          className="text-heading "
           firstRole="Ketua"
           secondRole="Pelaksana"
           name="John Doe"
           jurusan="IF 20"
-          avatarSize={350}
-          textRoleSize="text-8xl"
-          textNameSize="text-5xl"
-          textJurusanSize="text-2xl"
-          classNameSecond="indent-96"
+          avatarSize={200}
+          textRoleSize="text-heading"
+          textNameSize="text-subHeading"
+          textJurusanSize="text-body"
+          classNameSecond="indent-24 pb-4"
           isDarkMode={isDarkMode}
         />
       </div>
@@ -31,7 +31,10 @@ const OrganogramSection: React.FC<OrganogramSectionProps> = ({
       <div className="Kesekjenan">
         <div className="flex items-center py-36 gap-x-10">
           <div className="bg-[#F5ECCB] w-100 h-0.5 flex-grow"></div>
-          <RoleText className="text-8xl flex-shrink " isDarkMode={isDarkMode}>
+          <RoleText
+            className="text-heading flex-shrink "
+            isDarkMode={isDarkMode}
+          >
             Kesekjenan
           </RoleText>
           <div className="bg-[#F5ECCB] w-100 h-0.5 flex-grow "></div>
@@ -48,11 +51,11 @@ const OrganogramSection: React.FC<OrganogramSectionProps> = ({
               secondRole="Jenderal"
               name="Lorep Ipsum"
               jurusan="IF 20"
-              avatarSize={250}
-              textRoleSize="text-7xl"
-              textNameSize="text-4xl"
-              textJurusanSize="text-2xl"
-              classNameSecond="indent-64"
+              avatarSize={180}
+              textRoleSize="text-heading"
+              textNameSize="text-subHeading"
+              textJurusanSize="text-body"
+              classNameSecond="indent-24"
               isDarkMode={isDarkMode}
             />
           </div>
@@ -63,11 +66,11 @@ const OrganogramSection: React.FC<OrganogramSectionProps> = ({
               secondRole="Jenderal"
               name="Lorep Ipsum"
               jurusan="IF 20"
-              avatarSize={250}
-              textRoleSize="text-7xl"
-              textNameSize="text-4xl"
-              textJurusanSize="text-2xl"
-              classNameSecond="-indent-40"
+              avatarSize={180}
+              textRoleSize="text-heading"
+              textNameSize="text-subHeading"
+              textJurusanSize="text-body"
+              classNameSecond="-indent-24"
               isDarkMode={isDarkMode}
             />
           </div>
@@ -80,44 +83,44 @@ const OrganogramSection: React.FC<OrganogramSectionProps> = ({
             firstRole="Sekretaris 1"
             name="Lorep Ipsum"
             jurusan="IF 20"
-            avatarSize={200}
-            textRoleSize="text-5xl"
-            textNameSize="text-3xl"
-            textJurusanSize="text-2xl"
-            classNameSecond="indent-64"
+            avatarSize={150}
+            textRoleSize="text-heading"
+            textNameSize="text-subHeading"
+            textJurusanSize="text-body"
+            classNameSecond="-indent-24 pt-8"
             isDarkMode={isDarkMode}
           />
           <CardRole
             firstRole="Sekretaris 2"
             name="Lorep Ipsum"
             jurusan="IF 20"
-            avatarSize={200}
-            textRoleSize="text-5xl"
-            textNameSize="text-3xl"
-            textJurusanSize="text-2xl"
-            classNameSecond="indent-64"
+            avatarSize={150}
+            textRoleSize="text-heading"
+            textNameSize="text-subHeading"
+            textJurusanSize="text-body"
+            classNameSecond="-indent-24 pt-8"
             isDarkMode={isDarkMode}
           />
           <CardRole
             firstRole="Bendahara 1"
             name="Lorep Ipsum"
             jurusan="IF 20"
-            avatarSize={200}
-            textRoleSize="text-5xl"
-            textNameSize="text-3xl"
-            textJurusanSize="text-2xl"
-            classNameSecond="indent-64"
+            avatarSize={150}
+            textRoleSize="text-heading"
+            textNameSize="text-subHeading"
+            textJurusanSize="text-body"
+            classNameSecond="-indent-24 pt-8"
             isDarkMode={isDarkMode}
           />
           <CardRole
             firstRole="Bendahara 2"
             name="Lorep Ipsum"
             jurusan="IF 20"
-            avatarSize={200}
-            textRoleSize="text-5xl"
-            textNameSize="text-3xl"
-            textJurusanSize="text-2xl"
-            classNameSecond="indent-64"
+            avatarSize={150}
+            textRoleSize="text-heading"
+            textNameSize="text-subHeading"
+            textJurusanSize="text-body"
+            classNameSecond="-indent-24 pt-8"
             isDarkMode={isDarkMode}
           />
         </div>
