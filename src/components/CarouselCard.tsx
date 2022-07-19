@@ -29,7 +29,7 @@ const slickSettings: Settings = {
       },
     },
     {
-      breakpoint: 720,
+      breakpoint: 760,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,

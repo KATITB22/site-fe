@@ -9,7 +9,7 @@ const Title: React.FC<TitleProps> = ({ children, className, isDarkMode }) => {
   return (
     <h1
       className={`font-magilio text-heading ${className} ${
-        isDarkMode ? 'text-primaryCream' : 'text-[#2F4250]'
+        isDarkMode ? 'text-primaryCream' : 'text-primaryBlack'
       }`}
     >
       {children}
