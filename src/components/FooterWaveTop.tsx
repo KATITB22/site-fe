@@ -9,7 +9,7 @@ interface FooterWaveTopProps {
 
 const FooterWaveTop: React.FC<FooterWaveTopProps> = ({ width, isDarkMode }) => {
   return (
-    <div className="bg-primaryCream">
+    <div className={isDarkMode ? 'bg-[#2F4250]' : 'bg-primaryCream'}>
       <svg
         width="100%"
         height={375}
@@ -22,7 +22,7 @@ const FooterWaveTop: React.FC<FooterWaveTopProps> = ({ width, isDarkMode }) => {
           fillRule="evenodd"
           clipRule="evenodd"
           d="M0 0l80 23.59c80 23.59 240 69.957 400 69.957S800 47.18 960 54.5c160 8.135 320 70.77 480 94.36 160 22.777 320 7.321 400 0l80-8.134V375H0V0z"
-          fill="#FFC176"
+          fill={isDarkMode ? '#4F6266' : '#FFC176'}
         />
       </svg>
     </div>

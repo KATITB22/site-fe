@@ -2,7 +2,11 @@ import React, { useEffect, useState } from 'react';
 import FooterWaveTop from '../components/FooterWaveTop';
 import Title from '../components/Title';
 
-const Footer: React.FC = () => {
+interface FooterProps {
+  isDarkMode?: boolean;
+}
+
+const Footer: React.FC<FooterProps> = ({ isDarkMode }) => {
   const [screenSize, setScreenSize] = useState({
     dynamicWidth: window.innerWidth,
     dynamicHeight: window.innerHeight,
@@ -24,10 +28,14 @@ const Footer: React.FC = () => {
 
   return (
     <div className="relative w-[100vw]">
-      <Title className="absolute top-40 left-0 right-0 text-center">
+      <Title
+        className="absolute top-40 left-0 right-0 text-center "
+        isDarkMode={isDarkMode}
+      >
         Sponsor
       </Title>
-      <FooterWaveTop width={screenSize.dynamicWidth} />
+      {/* dark mode in footerWaveTop using isDarkMode */}
+      <FooterWaveTop width={screenSize.dynamicWidth} isDarkMode={isDarkMode} />
     </div>
   );
 };
