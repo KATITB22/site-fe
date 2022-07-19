@@ -12,7 +12,7 @@ const OrganogramWaveTop: React.FC<OrganogramWaveTopProps> = ({ width, isDarkMode
     <div className="bg-primaryCream z-1">
       <svg
         width="100%"
-        height={375}
+        height={200}
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         textAnchor="middle"
