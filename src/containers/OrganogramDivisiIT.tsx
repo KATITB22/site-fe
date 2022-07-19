@@ -12,7 +12,7 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
   return (
     <div
       className={`${
-        isDarkMode ? 'bg-[#2F4250' : 'bg-[#FFFCF2]'
+        isDarkMode ? 'bg-[#2F4250]' : 'bg-[#FFFCF2]'
       } w-[100vw] xs:px-20 sm:px-36 py-80`}
     >
       <div className="KetuaBidang">

@@ -87,7 +87,7 @@ const OrganogramSection: React.FC<OrganogramSectionProps> = ({
             textRoleSize="text-heading"
             textNameSize="text-subHeading"
             textJurusanSize="text-body"
-            classNameSecond="-indent-24 pt-8"
+            classNameSecond=" pt-8"
             isDarkMode={isDarkMode}
           />
           <CardRole
@@ -98,7 +98,7 @@ const OrganogramSection: React.FC<OrganogramSectionProps> = ({
             textRoleSize="text-heading"
             textNameSize="text-subHeading"
             textJurusanSize="text-body"
-            classNameSecond="-indent-24 pt-8"
+            classNameSecond=" pt-8"
             isDarkMode={isDarkMode}
           />
           <CardRole
@@ -109,7 +109,7 @@ const OrganogramSection: React.FC<OrganogramSectionProps> = ({
             textRoleSize="text-heading"
             textNameSize="text-subHeading"
             textJurusanSize="text-body"
-            classNameSecond="-indent-24 pt-8"
+            classNameSecond=" pt-8"
             isDarkMode={isDarkMode}
           />
           <CardRole
@@ -120,7 +120,7 @@ const OrganogramSection: React.FC<OrganogramSectionProps> = ({
             textRoleSize="text-heading"
             textNameSize="text-subHeading"
             textJurusanSize="text-body"
-            classNameSecond="-indent-24 pt-8"
+            classNameSecond=" pt-8"
             isDarkMode={isDarkMode}
           />
         </div>
