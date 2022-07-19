@@ -30,12 +30,14 @@ const Organogram: React.FC = () => {
   return (
     <div className="relative w-[100vw]">
       <OrganogramWaveTop width={screenSize.dynamicWidth} />
-      <section className='absolute flex items-center md:flex-row-reverse flex-wrap top-24 w-full h-auto z-1 xs:px-20 sm:px-36'>
+      <section className='absolute flex items-center md:flex-row-reverse flex-wrap w-full h-auto z-1 xs:px-20 sm:px-36 xs:top-40 md:top-52 lg:top-56 xl:top-52'>
         <section className='w-full lg:w-1/4 z-40'>
-            <TopTitle className="static top-14 text-right md:mr-32 lg:mr-0">
+          <section className='relative xs:ml-10 w-[200px] xs:h-[40vh] md:h-[40vh] lg:h-[40vh]' >
+            <TopTitle className="absolute top-14 text-right md:mr-0 lg:mr-0 xs:top-0 lg:top-6 ">
                 Organo <br/> gram
             </TopTitle>
-            <VStock className='static sm:ml-28 lg:ml-2'/>
+            <VStock className='absolute xs:w-40 xs:mr-0 lg:ml-0 xs:top-5 lg:top-10'/>
+          </section>
         </section>
         <section className='w-full lg:w-3/4 z-40'>
           <Title className="relative top-5">
@@ -45,14 +47,14 @@ const Organogram: React.FC = () => {
             Cari tahu siapa orang-orang di balik kerennya KAT ITB 2022. 
           </Texts>
           <a href="/organogram-kat">
-            <CustomButton className="relative md:top-10 sm:top-12 xs:top-14">Organogram KAT ITB 2022</CustomButton>
+            <CustomButton className="relative xs:top-14 sm:top-10 md:top-10 xs:py-1">Organogram KAT ITB 2022</CustomButton>
           </a>
           <a href="/divisi-it">
-            <CustomButton className="relative lg:left-5 md:top-10 sm:top-14 xs:top-16">Bidang IT</CustomButton>
+            <CustomButton className="relative lg:left-5 xs:top-16 sm:top-14 md:top-12 lg:top-10 xs:py-1">Bidang IT</CustomButton>
           </a>
         </section> 
       </section>
-      <section className='w-full bg-primaryYellow h-56 xs:h-56 md:h-32 lg:hidden' />
+      <section className='w-full bg-primaryYellow h-56 xs:h-56 sm:h-40 lg:hidden' />
       <OrganogramWaveBottom width={screenSize.dynamicWidth} />
     </div>
   );
