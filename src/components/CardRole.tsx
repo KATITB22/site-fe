@@ -17,6 +17,7 @@ interface CardRoleProps {
   classNameSecond?: string;
   isDarkMode?: boolean;
   classRole?: string;
+  cardClassName?: string;
 }
 
 const CardRole: React.FC<CardRoleProps> = ({
@@ -32,12 +33,13 @@ const CardRole: React.FC<CardRoleProps> = ({
   textNameSize,
   isDarkMode,
   classRole,
+  cardClassName,
 }) => {
   return (
     <div
       className={`relative ${
         isDarkMode ? 'bg-[#2F4250' : 'bg-[#FFFCF2]'
-      } ${className}`}
+      } ${cardClassName}`}
     >
       <div className={`${classRole}`}>
         <RoleText

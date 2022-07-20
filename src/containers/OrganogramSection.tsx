@@ -23,7 +23,7 @@ const OrganogramSection: React.FC<OrganogramSectionProps> = ({
           textRoleSize="text-heading"
           textNameSize="text-subHeading"
           textJurusanSize="text-body"
-          classNameSecond="xs:indent-16 md:indent-24 pb-4"
+          classNameSecond="xs:indent-24 md:indent-24 pb-4"
           isDarkMode={isDarkMode}
         />
       </div>
