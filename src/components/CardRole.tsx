@@ -16,6 +16,8 @@ interface CardRoleProps {
   textJurusanSize?: string;
   classNameSecond?: string;
   isDarkMode?: boolean;
+  classRole?: string;
+  cardClassName?: string;
 }
 
 const CardRole: React.FC<CardRoleProps> = ({
@@ -30,26 +32,30 @@ const CardRole: React.FC<CardRoleProps> = ({
   textJurusanSize,
   textNameSize,
   isDarkMode,
+  classRole,
+  cardClassName,
 }) => {
   return (
     <div
       className={`relative ${
         isDarkMode ? 'bg-[#2F4250' : 'bg-[#FFFCF2]'
-      } ${className}`}
+      } ${cardClassName}`}
     >
-      <RoleText
-        className={`absolute top-10 left-0 right- text-center ${className} ${textRoleSize}`}
-        isDarkMode={isDarkMode}
-      >
-        {firstRole}
-      </RoleText>
-      <RoleText
-        className={`absolute top-10 left-0 right-0 text-center  ${classNameSecond} ${textRoleSize}`}
-        isDarkMode={isDarkMode}
-      >
-        {' '}
-        {secondRole}
-      </RoleText>
+      <div className={`${classRole}`}>
+        <RoleText
+          className={`absolute top-10 left-0 right- text-center ${className} ${textRoleSize}`}
+          isDarkMode={isDarkMode}
+        >
+          {firstRole}
+        </RoleText>
+        <RoleText
+          className={`absolute top-10 left-0 right-0 text-center  ${classNameSecond} ${textRoleSize}`}
+          isDarkMode={isDarkMode}
+        >
+          {' '}
+          {secondRole}
+        </RoleText>
+      </div>
       <RoleAvatar avatarSize={avatarSize} />
       <RoleText
         className={`top-0 left-0 right-0 text-center ${textNameSize} `}
