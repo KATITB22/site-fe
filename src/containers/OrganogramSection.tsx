@@ -15,15 +15,15 @@ const OrganogramSection: React.FC<OrganogramSectionProps> = ({
         {' '}
         <CardRole
           className="text-heading xs:px-10"
-          firstRole="Ketua"
-          secondRole="Pelaksana"
+          firstRole="etua"
+          secondRole="elaksan"
           name="John Doe"
           jurusan="IF 20"
           avatarSize={200}
           textRoleSize="text-heading"
           textNameSize="text-subHeading"
           textJurusanSize="text-body"
-          classNameSecond="xs:indent-24 md:indent-24 pb-4"
+          classNameSecond="xs:indent-36 md:indent-36 pb-4"
           isDarkMode={isDarkMode}
         />
       </div>
@@ -35,7 +35,7 @@ const OrganogramSection: React.FC<OrganogramSectionProps> = ({
             className="xs:text-subHeading md:text-heading flex-shrink "
             isDarkMode={isDarkMode}
           >
-            Kesekjenan
+            esekjena
           </RoleText>
           <div className="bg-[#F5ECCB] w-100 h-0.5 flex-grow "></div>
         </div>

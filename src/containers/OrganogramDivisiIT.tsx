@@ -19,8 +19,8 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
         {' '}
         <CardRole
           className="text-heading xs:px-10"
-          firstRole="Ketua"
-          secondRole="Bidang"
+          firstRole="etua"
+          secondRole="Biag"
           name="John Doe"
           jurusan="IF 20"
           avatarSize={200}
@@ -37,7 +37,7 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
           {' '}
           <div className="bg-[#231A51] w-100 h-0.5 flex-grow"></div>
           <RoleText className="xs:text-subHeading md:text-heading flex-shrink">
-            Social & Site
+            Socia & Sie
           </RoleText>
           <div className="bg-[#231A51] w-100 h-0.5 flex-grow "></div>
         </div>
@@ -74,9 +74,9 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
               textRoleSize="xs:text-subHeading md:text-heading "
               textNameSize="xs:text-body md:text-subHeading"
               textJurusanSize="xs:text-caption md:text-body"
-              classNameSecond="xs:indent-10 md:indent-24"
+              classNameSecond="xs:indent-5 md:indent-0"
               isDarkMode={isDarkMode}
-              classRole="xs:mb-10 md:mb-0"
+              classRole="xs:mb-10 xs:pr-14 xs: md:mb-0"
             />
           </div>
         </div>
