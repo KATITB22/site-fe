@@ -9,9 +9,9 @@ const VisiMisi: React.FC = () => {
     <div className="flex md:flex-row-reverse flex-wrap bg-primaryCream w-full h-auto space-x-0 xs:px-20 sm:px-36 py-14">
       <section className='flex justify-center w-full h-auto lg:w-2/3'>
         <section>
-          <Title className='relative '>Visi</Title>
+          <Title className='relative '>isi</Title>
           <Texts className='relative top-5'>KAT ITB Sebagai Ruang Inspirasi Bernavigasi Budaya dalam mewujudkan kesadaran berkontribusi untuk Indonesia</Texts>
-          <Title className='relative top-10'>Misi</Title>
+          <Title className='relative top-10'>isi</Title>
           <ol className='relative top-12 h-auto'>
             <li>
               <Texts>1. Menjalankan sistem pendidikan yang sesuai dengan kondisi peserta KAT ITB.</Texts>
@@ -33,7 +33,7 @@ const VisiMisi: React.FC = () => {
       </section>
       <section className='relative flex justify-center content-center xs:invisible lg:visible xs:w-0 lg:w-1/3'>
         <section className='relative w-[232px] h-[269px]'>
-          <TopTitle className='absolute top-72'>Visi &amp; <br/> &ensp; Misi</TopTitle>
+          <TopTitle className='absolute top-72'>isi &amp; <br/> &ensp; isi</TopTitle>
           <VStock className='absolute top-10 ml-8'></VStock>
         </section>
       </section>
