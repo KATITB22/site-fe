@@ -44,7 +44,7 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
       </div>
 
       <div className="KetuaDanWakilDIvisi">
-        <div className="grid grid-cols-2 xs:gap-x-14 xs:">
+        <div className="grid grid-cols-2 xs:gap-x-14 ">
           {' '}
           <div className="">
             {' '}
@@ -60,7 +60,7 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
               classNameSecond="xs:indent-10 md:indent-24"
               isDarkMode={isDarkMode}
               classRole="xs:mb-10 md:mb-0 mt:0"
-              cardClassName="xs:pt-5 md:pt-0"
+              cardClassName="xs: md:pt-0"
             />
           </div>
           <div className="">
@@ -71,7 +71,7 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
               name="Lorem Ipsum"
               jurusan="IF 20"
               avatarSize={180}
-              textRoleSize="xs:text-subHeading md:text-heading "
+              textRoleSize="xs:text-subHeading md:text-heading xs:w-36 xs:text-left"
               textNameSize="xs:text-body md:text-subHeading"
               textJurusanSize="xs:text-caption md:text-body"
               classNameSecond="xs:indent-5 md:indent-0"
