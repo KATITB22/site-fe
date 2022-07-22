@@ -19,8 +19,8 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
         {' '}
         <CardRole
           className="text-heading xs:px-10"
-          firstRole="Ketua"
-          secondRole="Bidang"
+          firstRole="etua"
+          secondRole="Biag"
           name="John Doe"
           jurusan="IF 20"
           avatarSize={200}
@@ -37,14 +37,14 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
           {' '}
           <div className="bg-[#231A51] w-100 h-0.5 flex-grow"></div>
           <RoleText className="xs:text-subHeading md:text-heading flex-shrink">
-            Social & Site
+            Socia & Sie
           </RoleText>
           <div className="bg-[#231A51] w-100 h-0.5 flex-grow "></div>
         </div>
       </div>
 
       <div className="KetuaDanWakilDIvisi">
-        <div className="grid grid-cols-2 xs:gap-x-14 xs:">
+        <div className="grid grid-cols-2 xs:gap-x-14 ">
           {' '}
           <div className="">
             {' '}
@@ -59,8 +59,8 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
               textJurusanSize="xs:text-caption md:text-body"
               classNameSecond="xs:indent-10 md:indent-24"
               isDarkMode={isDarkMode}
-              classRole="xs:mb-10 md:mb-0 mt:0"
-              cardClassName="xs:pt-5 md:pt-0"
+              classRole="xs:mb-6 md:mb-0 mt:0"
+              cardClassName="xs: md:pt-0"
             />
           </div>
           <div className="">
@@ -71,12 +71,12 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
               name="Lorem Ipsum"
               jurusan="IF 20"
               avatarSize={180}
-              textRoleSize="xs:text-subHeading md:text-heading "
+              textRoleSize="xs:text-subHeading md:text-heading xs:w-36 xs:text-left"
               textNameSize="xs:text-body md:text-subHeading"
               textJurusanSize="xs:text-caption md:text-body"
-              classNameSecond="xs:indent-10 md:indent-24"
+              classNameSecond="xs:indent-5 md:indent-0"
               isDarkMode={isDarkMode}
-              classRole="xs:mb-10 md:mb-0"
+              classRole="xs:mb-6 xs:pr-14 xs: md:mb-0"
             />
           </div>
         </div>
