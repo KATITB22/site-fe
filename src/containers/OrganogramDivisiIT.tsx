@@ -59,7 +59,7 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
               textJurusanSize="xs:text-caption md:text-body"
               classNameSecond="xs:indent-10 md:indent-24"
               isDarkMode={isDarkMode}
-              classRole="xs:mb-10 md:mb-0 mt:0"
+              classRole="xs:mb-6 md:mb-0 mt:0"
               cardClassName="xs: md:pt-0"
             />
           </div>
@@ -76,7 +76,7 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
               textJurusanSize="xs:text-caption md:text-body"
               classNameSecond="xs:indent-5 md:indent-0"
               isDarkMode={isDarkMode}
-              classRole="xs:mb-10 xs:pr-14 xs: md:mb-0"
+              classRole="xs:mb-6 xs:pr-14 xs: md:mb-0"
             />
           </div>
         </div>
