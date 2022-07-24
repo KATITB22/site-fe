@@ -71,12 +71,18 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
               name="Lorem Ipsum"
               jurusan="IF 20"
               avatarSize={180}
-              textRoleSize="xs:text-subHeading md:text-heading xs:w-36 xs:text-left"
+              textRoleSize="xs:text-subHeading xs:w-36 xs:text-left md:w-auto md:text-center md:text-heading "
               textNameSize="xs:text-body md:text-subHeading"
               textJurusanSize="xs:text-caption md:text-body"
               classNameSecond="xs:indent-5 md:indent-0"
               isDarkMode={isDarkMode}
               classRole="xs:mb-6 xs:pr-14 xs: md:mb-0"
+              // textRoleSize="xs:text-subHeading md:text-heading "
+              // textNameSize="xs:text-body md:text-subHeading"
+              // textJurusanSize="xs:text-caption md:text-body"
+              // classNameSecond="xs:indent-5 md:indent-0"
+              // isDarkMode={isDarkMode}
+              // classRole="xs:mb-10 xs:pr-14 xs: md:mb-0"
             />
           </div>
         </div>
