@@ -28,12 +28,12 @@ const Timeline: React.FC = () => {
 
   return (
     <div>
-      <OverlapTitle className='xs:px-20 sm:px-36 absolute top-48 h-0'>
-          Timeline <br/> &emsp; KAT ITB 2022
+      <OverlapTitle className="xs:px-20 sm:px-36 absolute top-48 h-0">
+        Timeline <br /> &emsp; KAT ITB 2022
       </OverlapTitle>
-      <TimelineWaveTop width={screenSize.dynamicWidth}/>
+      <TimelineWaveTop width={screenSize.dynamicWidth} />
       <TimelineBar />
-      <TimelineWaveBottom width={screenSize.dynamicWidth}/>
+      <TimelineWaveBottom width={screenSize.dynamicWidth} />
     </div>
   );
 };
