@@ -1,20 +1,40 @@
-import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import { Home } from './pages/Home';
 import DivisiIT from './pages/DivisiIT';
 import OrganogramKAT from './pages/OrganogramKAT';
 import PageNotFound from './pages/PageNotFound';
+import Navbar from './containers/Navbar';
+import NavItem from './components/navbar/NavItem';
 
 const App: React.FC = () => {
+  const location = useLocation();
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    location.pathname === '/organogram-kat'
+      ? setDarkMode(true)
+      : setDarkMode(false);
+  }, [location.pathname]);
+
   return (
-    <BrowserRouter>
+    <React.Fragment>
+      <Navbar darkMode={darkMode}>
+        <NavItem
+          darkMode={darkMode}
+          name="Organogram KAT ITB"
+          to="organogram-kat"
+        />
+        <NavItem darkMode={darkMode} name="Organogram IT" to="divisi-it" />
+        <NavItem darkMode={darkMode} name="Aplikasi Lainnya" to="/" />
+      </Navbar>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<PageNotFound />} />
         <Route path="/organogram-kat" element={<OrganogramKAT />} />
         <Route path="/divisi-it" element={<DivisiIT />} />
       </Routes>
-    </BrowserRouter>
+    </React.Fragment>
   );
 };
 
