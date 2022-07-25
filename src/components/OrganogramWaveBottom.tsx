@@ -7,22 +7,24 @@ interface OrganogramWaveBottomProps {
   isDarkMode?: boolean;
 }
 
-const OrganogramWaveBottom: React.FC<OrganogramWaveBottomProps> = ({ width, isDarkMode }) => {
+const OrganogramWaveBottom: React.FC<OrganogramWaveBottomProps> = ({
+  width,
+  isDarkMode,
+}) => {
   return (
     <div className="bg-primaryCream z-1">
       <svg
         width="100%"
-        height={375}
+        height={219}
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         textAnchor="middle"
         preserveAspectRatio="xMidYMid slice"
-        z={"1"}
       >
         <path
           fillRule="evenodd"
           clipRule="evenodd"
-          d="M1920 98.018l-107-7.67c-106-8.524-320-24.718-533 23.865-213 49.435-427 163.648-640 180.694-213 16.195-427-65.629-533-106.541L0 147.454V0h1920v98.018z"
+          d="M1920 20.018h-107c-110.5 0-320.5-6.518-533 16.195-212.5 22.712-427 163.648-640 180.694-213 16.194-427-65.629-533-106.541L0 69.454V0h1920v20.018z"
           fill="#FFEBB0"
         />
       </svg>

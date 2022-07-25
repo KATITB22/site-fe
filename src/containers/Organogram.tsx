@@ -29,20 +29,21 @@ const Organogram: React.FC = () => {
   }, [screenSize]);
 
   return (
-    <div className="relative w-[100vw]">
+    <div className="w-[100vw] bg-primaryYellow">
       <OrganogramWaveTop width={screenSize.dynamicWidth} />
-      <section className="absolute flex items-center justify-center lg:flex-row-reverse flex-wrap w-full h-auto xs:px-20 md:px-32 lg:px-40 xl:px-40 xxl:px-80 3xl:px-96 xs:top-28 sm:top-32 md:top-40 lg:top-36 xl:top-32 xxl:top-30">
-        <section className="flex justify-center lg:w-1/4 xl:w-1/3">
-          <section className="relative md:w-[220px] h-0 xs:invisible lg:h-[220px] lg:visible lg:top-0">
-            <TopTitle className="absolute text-right top-0 xl:mr-7">
-              Organo <br /> gram
-            </TopTitle>
-            <VStock className="absolute h-[220px] w-auto top-5 xl:ml-0" />
-          </section>
+      <section
+        className="flex items-center justify-center lg:flex-row-reverse w-full h-[300px] xs:px-20 md:px-32 
+      lg:px-40 xl:px-40 xxl:px-80 3xl:px-96"
+      >
+        <section className="relative md:w-[220px] xs:hidden lg:block self-start">
+          <TopTitle className="absolute text-right top-0">
+            Organo <br /> gram
+          </TopTitle>
+          <VStock className="absolute top-5" />
         </section>
-        <section className="flex flex-col space-y-2 lg:w-3/4 xl:w-2/3">
-          <Title className="relative">Organogram</Title>
-          <Texts className="relative">
+        <section className="space-y-2 lg:w-3/4 xl:w-2/3 mt-20">
+          <Title>Organogram</Title>
+          <Texts>
             Cari tahu siapa orang-orang di balik kerennya KAT ITB 2022.
           </Texts>
           <section className="flex flex-col space-y-2 md:space-y-0 md:flex-row md:space-x-0">
@@ -59,7 +60,6 @@ const Organogram: React.FC = () => {
           </section>
         </section>
       </section>
-      <section className="w-full bg-primaryYellow h-0 xl:h-5 xxl:h-28 xs:invisible xl:visible" />
       <OrganogramWaveBottom width={screenSize.dynamicWidth} />
     </div>
   );
