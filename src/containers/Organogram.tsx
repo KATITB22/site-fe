@@ -32,8 +32,8 @@ const Organogram: React.FC = () => {
     <div className="w-[100vw] bg-primaryYellow">
       <OrganogramWaveTop width={screenSize.dynamicWidth} />
       <section
-        className="flex items-center justify-center lg:flex-row-reverse w-full h-[300px] xs:px-20 md:px-32 
-      lg:px-40 xl:px-40 xxl:px-80 3xl:px-96"
+        className="flex items-center justify-center lg:flex-row-reverse w-full h-[300px] xs:px-20
+      lg:px-32 xl:px-40 xl:px-40 xxl:px-80 3xl:px-96"
       >
         <section className="relative md:w-[220px] xs:hidden lg:block self-start">
           <TopTitle className="absolute text-right top-0">

@@ -8,7 +8,7 @@ const VisiMisi: React.FC = () => {
   return (
     <div
       className="flex md:flex-row-reverse flex-wrap bg-primaryCream w-full h-auto space-x-0 xs:px-20 md:px-32 
-    lg:px-40 xxl:px-80"
+    lg:px-20 xl:px-40 xxl:px-80"
     >
       <section className="flex justify-center w-full lg:w-2/3">
         <section>
