@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import OverlapTitle from '../components/OverlapTitle';
 import TimelineWaveBottom from '../components/TimelineWaveBottom';
 import TimelineWaveTop from '../components/TimelineWaveTop';
-import Agenda from '../components/Agenda';
-import HorizontalLine from '../components/HorizontalLine';
 import TimelineBar from '../components/TimelineBar';
 
 const Timeline: React.FC = () => {
