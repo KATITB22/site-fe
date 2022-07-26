@@ -7,7 +7,7 @@ interface VerticalLineProps {
 
 const VerticalLine: React.FC<VerticalLineProps> = ({ text, date }) => {
   return (
-    <div className="flex items-center md:hidden">
+    <div className="flex items-center">
       <svg height="90" width="80">
         <line
           x1="50"
