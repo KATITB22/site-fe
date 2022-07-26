@@ -1,5 +1,5 @@
 import React from 'react';
-import rectangle from '../resources/rectangle.png'
+import rectangle from '../resources/rectangle.png';
 
 interface VStockProps {
   className?: string;
@@ -7,15 +7,8 @@ interface VStockProps {
 
 const VStock: React.FC<VStockProps> = ({ className }) => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        alignItems: 'center'
-      }}>
-      <img
-       width={200}
-       className={`${className}`}
-       src={rectangle} />
+    <div>
+      <img width={200} className={`${className}`} src={rectangle} />
     </div>
   );
 };
