@@ -1,8 +1,10 @@
+import { motion } from 'framer-motion';
 import React from 'react';
+import Texts from '../components/Texts';
 import Title from '../components/Title';
 import TopTitle from '../components/TopTitle';
-import Texts from '../components/Texts';
 import VStock from '../components/VStock';
+import { getTransition } from '../utils/transition';
 
 const VisiMisi: React.FC = () => {
   return (
@@ -10,7 +12,10 @@ const VisiMisi: React.FC = () => {
       className="flex md:flex-row-reverse flex-wrap bg-primaryCream w-full h-auto space-x-0 xs:px-20 md:px-32 
     lg:px-20 xl:px-40 xxl:px-80"
     >
-      <section className="flex justify-center w-full lg:w-2/3">
+      <motion.section
+        className="flex justify-center w-full lg:w-2/3"
+        {...getTransition('right')}
+      >
         <section>
           <Title>isi</Title>
           <Texts>
@@ -52,15 +57,18 @@ const VisiMisi: React.FC = () => {
             </li>
           </ol>
         </section>
-      </section>
-      <section className="relative flex justify-center content-center xs:invisible lg:visible xs:w-0 lg:w-1/3">
+      </motion.section>
+      <motion.section
+        className="relative flex justify-center content-center xs:invisible lg:visible xs:w-0 lg:w-1/3"
+        {...getTransition('left')}
+      >
         <section className="relative w-[232px] h-[269px]">
           <TopTitle className="absolute top-72">
             isi &amp; <br /> &ensp; isi
           </TopTitle>
           <VStock className="absolute top-10 ml-8"></VStock>
         </section>
-      </section>
+      </motion.section>
     </div>
   );
 };

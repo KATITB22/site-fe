@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import OverlapTitle from '../components/OverlapTitle';
+import TimelineBar from '../components/TimelineBar';
 import TimelineWaveBottom from '../components/TimelineWaveBottom';
 import TimelineWaveTop from '../components/TimelineWaveTop';
-import TimelineBar from '../components/TimelineBar';
-import Title from '../components/Title';
+import { MotionTitle } from '../components/Title';
+import { getTransition } from '../utils/transition';
 
 const Timeline: React.FC = () => {
   const [screenSize, setScreenSize] = useState({
@@ -31,9 +31,12 @@ const Timeline: React.FC = () => {
       {/* <OverlapTitle className="xs:px-20 md:px-32 lg:px-32 xl:px-40 xxl:px-80 3xl:px-96 absolute top-48 h-0">
         imeine <br /> &emsp; KAT ITB 2022
       </OverlapTitle> */}
-      <Title className="absolute top-24 xs:px-20 md:px-32 lg:px-32 xl:px-40 xxl:px-80 3xl:px-96">
+      <MotionTitle
+        className="absolute top-24 xs:px-20 md:px-32 lg:px-32 xl:px-40 xxl:px-80 3xl:px-96"
+        {...getTransition('left')}
+      >
         imeine <br /> &emsp; KAT ITB 2022
-      </Title>
+      </MotionTitle>
       <TimelineBar />
       <TimelineWaveBottom width={screenSize.dynamicWidth} />
     </div>

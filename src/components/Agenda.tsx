@@ -1,5 +1,7 @@
+import { motion } from 'framer-motion';
 import moment, { Moment } from 'moment';
 import React, { useEffect, useState } from 'react';
+import { getTransition } from '../utils/transition';
 import Body from './Body';
 import Title from './Title';
 
@@ -33,12 +35,15 @@ const Agenda: React.FC<AgendaProps> = ({ text, startDate, endDate }) => {
           fill={isCurrentDate ? '#FF7D4B' : 'transparent'}
         />
       </svg>
-      <div className="float-left">
+      <motion.div
+        className="float-left"
+        {...getTransition('right', { delay: 0 })}
+      >
         <Title className="text-[35px] p-0 m-0 leading-none">{text}</Title>
         <Body className="text-[17px] p-0 m-0 leading-tight">
           {moment(startDate).format('LL')}
         </Body>
-      </div>
+      </motion.div>
     </div>
   );
 };
