@@ -1,3 +1,4 @@
+import { MotionConfig } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { Home } from './pages/Home';
@@ -18,7 +19,7 @@ const App: React.FC = () => {
   }, [location.pathname]);
 
   return (
-    <React.Fragment>
+    <MotionConfig reducedMotion='user'>
       <Navbar darkMode={darkMode}>
         <NavItem
           darkMode={darkMode}
@@ -34,7 +35,7 @@ const App: React.FC = () => {
         <Route path="/organogram-kat" element={<OrganogramKAT />} />
         <Route path="/divisi-it" element={<DivisiIT />} />
       </Routes>
-    </React.Fragment>
+    </MotionConfig>
   );
 };
 
