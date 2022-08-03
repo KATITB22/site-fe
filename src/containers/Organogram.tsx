@@ -1,12 +1,14 @@
+import { motion } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import CustomButton from '../components/CustomButton';
 import OrganogramWaveBottom from '../components/OrganogramWaveBottom';
 import OrganogramWaveTop from '../components/OrganogramWaveTop';
-import { Link } from 'react-router-dom';
+import Texts from '../components/Texts';
 import Title from '../components/Title';
 import TopTitle from '../components/TopTitle';
-import Texts from '../components/Texts';
 import VStock from '../components/VStock';
-import CustomButton from '../components/CustomButton';
+import { getTransition } from '../utils/transition';
 
 const Organogram: React.FC = () => {
   const [screenSize, setScreenSize] = useState({
@@ -33,15 +35,21 @@ const Organogram: React.FC = () => {
       <OrganogramWaveTop width={screenSize.dynamicWidth} />
       <section
         className="flex items-center justify-center lg:flex-row-reverse w-full h-[300px] xs:px-20
-      lg:px-32 xl:px-40 xl:px-40 xxl:px-80 3xl:px-96"
+      lg:px-32 xl:px-40 xxl:px-80 3xl:px-96"
       >
-        <section className="relative md:w-[220px] xs:hidden lg:block self-start">
+        <motion.section
+          className="relative md:w-[220px] xs:hidden lg:block self-start"
+          {...getTransition('right')}
+        >
           <TopTitle className="absolute text-right top-0">
             Organo <br /> gram
           </TopTitle>
           <VStock className="absolute top-5" />
-        </section>
-        <section className="space-y-2 lg:w-3/4 xl:w-2/3 mt-20">
+        </motion.section>
+        <motion.section
+          className="space-y-2 lg:w-3/4 xl:w-2/3 mt-20"
+          {...getTransition('left')}
+        >
           <Title>Organogram</Title>
           <Texts>
             Cari tahu siapa orang-orang di balik kerennya KAT ITB 2022.
@@ -58,7 +66,7 @@ const Organogram: React.FC = () => {
               </CustomButton>
             </Link>
           </section>
-        </section>
+        </motion.section>
       </section>
       <OrganogramWaveBottom width={screenSize.dynamicWidth} />
     </div>
