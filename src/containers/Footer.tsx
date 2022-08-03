@@ -5,9 +5,10 @@ import { getTransition } from '../utils/transition';
 
 interface FooterProps {
   isDarkMode?: boolean;
+  embedded?: string;
 }
 
-const Footer: React.FC<FooterProps> = ({ isDarkMode }) => {
+const Footer: React.FC<FooterProps> = ({ isDarkMode, embedded }) => {
   const [screenSize, setScreenSize] = useState({
     dynamicWidth: window.innerWidth,
     dynamicHeight: window.innerHeight,
@@ -37,7 +38,11 @@ const Footer: React.FC<FooterProps> = ({ isDarkMode }) => {
         Sponsor
       </MotionTitle>
       {/* dark mode in footerWaveTop using isDarkMode */}
-      <FooterWaveTop width={screenSize.dynamicWidth} isDarkMode={isDarkMode} />
+      <FooterWaveTop
+        width={screenSize.dynamicWidth}
+        isDarkMode={isDarkMode}
+        embedded={embedded}
+      />
     </div>
   );
 };
