@@ -1,6 +1,8 @@
 import React from 'react';
 import CardRole from '../components/CardRole';
 import RoleText from '../components/RoleText';
+import PohonAtas from '../resources/pohon-ranting1v2.png';
+import PohonBawahKanan from '../resources/Pohon 1.png';
 
 interface OrganogramDivisiITProps {
   isDarkMode?: boolean;
@@ -32,6 +34,10 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
         />
       </div>
 
+      <div className="absolute top-10 xs:invisible lg:visible lg:-right-52">
+        <img width={780} src={PohonAtas} alt="Pohon Atas" />
+      </div>
+
       <div className="Social & Site">
         <div className="flex items-center xs:pt-10 md:py-36 xs:gap-x-5 md:gap-x-10">
           {' '}
@@ -44,7 +50,7 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
       </div>
 
       <div className="KetuaDanWakilDIvisi">
-        <div className="grid grid-cols-2 xs:gap-x-14 ">
+        <div className="grid grid-cols-2 xs:gap-x-14 md:gap-x-0 xxl:px-72">
           {' '}
           <div className="">
             {' '}
@@ -89,7 +95,7 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
       </div>
 
       <div>
-        <div className="grid xs:grid-cols-2 xs:gap-x-14 md:grid-cols-4 xs:py-18 md:py-36">
+        <div className="grid xs:grid-cols-2 xs:gap-x-14 md:grid-cols-4 xs:py-18 md:py-28 xxl:px-60">
           <CardRole
             firstRole="Anggota"
             name="Lorep Ipsum"
@@ -136,6 +142,9 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
           />
         </div>
       </div>
+      {/* <div className="absolute top-96 -right-96 pt-96 ">
+        <img src={PohonBawahKanan} width={800} alt="Pohon Bawah Kanan" />
+      </div> */}
     </div>
   );
 };
