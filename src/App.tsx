@@ -8,7 +8,11 @@ import PageNotFound from './pages/PageNotFound';
 import Navbar from './containers/Navbar';
 import NavItem from './components/navbar/NavItem';
 
-const App: React.FC = () => {
+interface AppProps {
+  video?: string;
+}
+
+const App: React.FC<AppProps> = () => {
   const location = useLocation();
   const [darkMode, setDarkMode] = useState(false);
 
@@ -19,7 +23,7 @@ const App: React.FC = () => {
   }, [location.pathname]);
 
   return (
-    <MotionConfig reducedMotion='user'>
+    <MotionConfig reducedMotion="user">
       <Navbar darkMode={darkMode}>
         <NavItem
           darkMode={darkMode}
@@ -30,7 +34,7 @@ const App: React.FC = () => {
         <NavItem darkMode={darkMode} name="Aplikasi Lainnya" to="/" />
       </Navbar>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home embedded="not-available" />} />
         <Route path="*" element={<PageNotFound />} />
         <Route path="/organogram-kat" element={<OrganogramKAT />} />
         <Route path="/divisi-it" element={<DivisiIT />} />
