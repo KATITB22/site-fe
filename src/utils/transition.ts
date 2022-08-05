@@ -1,4 +1,5 @@
-import { Variant } from 'framer-motion';
+import { HTMLMotionProps, Variant } from 'framer-motion';
+import { ReactHTML } from 'react';
 
 interface TransitionOptions {
   delay?: number;
@@ -8,7 +9,7 @@ interface TransitionOptions {
 export function getTransition(
   from: 'left' | 'right' | 'bottom',
   options?: TransitionOptions
-) {
+): HTMLMotionProps<keyof ReactHTML> {
   const initial: Variant = { opacity: 0 };
   if (from === 'bottom') {
     initial.y = '100%';
@@ -22,11 +23,15 @@ export function getTransition(
         opacity: 1,
         x: 0,
         y: 0,
-        transition: { delay: options?.delay ?? 0.2 },
+        transition: {
+          delay: options?.delay ?? 0.2,
+          type: 'spring',
+          duration: 1.5,
+        },
       },
     },
     initial: 'initial',
     whileInView: 'view',
-    viewport: { once: options?.once ?? false },
+    viewport: { once: options?.once ?? true },
   };
 }
