@@ -5,16 +5,22 @@ import Organogram from '../containers/Organogram';
 import Footer from '../containers/Footer';
 import Hero from '../containers/Hero';
 import Timeline from '../containers/Timeline';
+import Animasi from '../containers/Animasi';
 
-export const Home: React.FC = () => {
+interface HomeProps {
+  embedded?: string;
+}
+
+export const Home: React.FC<HomeProps> = ({ embedded }) => {
   return (
     <div>
       <Hero />
       <Timeline />
-      <VisiMisi />
-      <Organogram />
-      <AplikasiLainnya />
-      <Footer />
+      {embedded === 'available' ? <Animasi /> : null}
+      <VisiMisi embedded={embedded} />
+      <Organogram embedded={embedded} />
+      <AplikasiLainnya embedded={embedded} />
+      <Footer embedded={embedded} />
     </div>
   );
 };

@@ -8,7 +8,11 @@ import { Home } from './pages/Home';
 import OrganogramKAT from './pages/OrganogramKAT';
 import PageNotFound from './pages/PageNotFound';
 
-const App: React.FC = () => {
+interface AppProps {
+  video?: string;
+}
+
+const App: React.FC<AppProps> = () => {
   const location = useLocation();
   const [darkMode, setDarkMode] = useState(false);
   const [showNavbar, setShowNavbar] = useState(true);
@@ -33,7 +37,7 @@ const App: React.FC = () => {
         </Navbar>
       )}
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home embedded="not-available" />} />
         <Route
           path="*"
           element={<PageNotFound setShowNavbar={setShowNavbar} />}
