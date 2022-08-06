@@ -1,134 +1,165 @@
 import React from 'react';
 import CardRole from '../components/CardRole';
 import RoleText from '../components/RoleText';
-
-interface OrganogramSectionProps {
+import PohonAtas from '../resources/pohon-ranting1v2.png';
+import PohonBawahKanan from '../resources/Pohon 1.png';
+import KetuaBidang from '../resources/DivisiIT/Kepala Bidang_Viel.png';
+import WakilKetuaBidang from '../resources/DivisiIT/KAT_1 - Fabian Savero Diaz Pranoto.png';
+import KetuaDivisiSocial from '../resources/DivisiIT/Kepala Divisi_Rafi Raihansyah.png';
+import WakilKepalaDivisi from '../resources/DivisiIT/Wakil Kepala Divisi_Haikal Lazuardi Fadil.png';
+import Social1 from '../resources/DivisiIT/FeliciaSutandijo - 13520050 Felicia Sutandijo.png';
+interface OrganogramDivisiITProps {
   isDarkMode?: boolean;
 }
 
-const OrganogramSection: React.FC<OrganogramSectionProps> = ({
+const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
   isDarkMode,
 }) => {
   return (
-    <div className="bg-[#2F4250] w-[100vw] xs:py-24 xs:px-20 sm:px-36 py-80">
-      <div className="KetuaPelaksana">
-        {' '}
-        <CardRole
-          className="text-heading xs:px-10"
-          firstRole="etua"
-          secondRole="elaksan"
-          name="John Doe"
-          jurusan="IF 20"
-          avatarSize={200}
-          textRoleSize="text-heading"
-          textNameSize="text-subHeading"
-          textJurusanSize="text-body"
-          classNameSecond="xs:indent-36 md:indent-36 pb-4"
-          isDarkMode={isDarkMode}
-        />
-      </div>
-
-      <div className="Kesekjenan">
-        <div className="flex items-center xs:py-10 md:py-36 xs:gap-x-5 md:gap-x-10">
-          <div className="bg-[#F5ECCB] w-100 h-0.5 flex-grow"></div>
-          <RoleText
-            className="xs:text-subHeading md:text-heading flex-shrink "
-            isDarkMode={isDarkMode}
-          >
-            esekjena
-          </RoleText>
-          <div className="bg-[#F5ECCB] w-100 h-0.5 flex-grow "></div>
-        </div>
-      </div>
-
-      <div className="SekretarisDanWakil">
-        <div className="grid grid-cols-2 xs:gap-x-14 xs:">
+    <div
+      className={`${
+        isDarkMode ? 'bg-[#2F4250]' : 'bg-[#FFFCF2]'
+      } w-[100vw] xs:py-24 xs:px-20 sm:px-36 py-80`}
+    >
+      <div className="flex flex-col gap-y-20">
+        <div className="flex xs:flex-col md:flex-row justify-center gap-x-10 gap-y-10">
           {' '}
-          <div className="">
-            {' '}
-            <CardRole
-              firstRole="Sekretaris"
-              secondRole="Jenderal"
-              name="Lorem Ipsum"
-              jurusan="IF 20"
-              avatarSize={180}
-              textRoleSize="xs:text-subHeading md:text-heading "
-              textNameSize="xs:text-body md:text-subHeading"
-              textJurusanSize="xs:text-caption md:text-body"
-              classNameSecond="xs:indent-10 md:indent-24"
-              isDarkMode={isDarkMode}
-              classRole="xs:mb-10 md:mb-0"
-            />
-          </div>
-          <div className="">
-            {' '}
-            <CardRole
-              firstRole="Wakil Sekretaris"
-              secondRole="Jenderal"
-              name="Lorem Ipsum"
-              jurusan="IF 20"
-              avatarSize={180}
-              textRoleSize="xs:text-subHeading md:text-heading"
-              textNameSize="xs:text-body md:text-subHeading"
-              textJurusanSize="xs:text-caption md:text-body"
-              classNameSecond="xs:indent-1 md:-indent-24"
-              isDarkMode={isDarkMode}
-              classRole="xs:pb-4 md:mb-0"
-            />
-          </div>
+          <CardRole
+            className="text-heading xs:px-10"
+            firstRole="etua"
+            secondRole="Biag"
+            name="Steven Nataniel Kodyat"
+            jurusan="Teknik Informatika '19"
+            avatarSize={200}
+            textRoleSize="text-heading"
+            textNameSize="text-subHeading"
+            textJurusanSize="text-body mt-1"
+            classNameSecond="xs:indent-24 md:indent-24"
+            isDarkMode={isDarkMode}
+            foto={KetuaBidang}
+            // center the container
+            classNameAvatarContainer="h-56 w-56 overflow-hidden rounded-full mx-auto"
+            // classNameAvatar="w-auto h-56 rounded-full object-top"
+            classNameAvatar="translate-y-6"
+            classNameNama="mt-3"
+            classRole=""
+          />
+          <CardRole
+            className="text-heading xs:px-10"
+            firstRole="Wakil etua"
+            secondRole="Biag"
+            name="Fabian Savero Diaz P."
+            jurusan="Teknik Informatika '19"
+            avatarSize={200}
+            textRoleSize="text-heading"
+            textNameSize="text-subHeading"
+            textJurusanSize="text-body mt-1"
+            classNameSecond="xs:indent-24 md:indent-24"
+            isDarkMode={isDarkMode}
+            foto={WakilKetuaBidang}
+            // center the container
+            classNameAvatarContainer="h-56 w-56 overflow-hidden rounded-full mx-auto"
+            // classNameAvatar="w-auto h-56 rounded-full object-top"
+            classNameAvatar="translate-y-1"
+            classNameNama="mt-3"
+            classRole=""
+          />
         </div>
-      </div>
 
-      <div>
-        <div className="grid xs:grid-cols-2 xs:gap-x-14 md:grid-cols-4 xs:py-18 md:py-36">
-          <CardRole
-            firstRole="Sekretaris 1"
-            name="Lorem Ipsum"
-            jurusan="IF 20"
-            avatarSize={150}
-            textRoleSize="xs:text-subHeading md:text-heading"
-            textNameSize="xs:text-body md:text-subHeading"
-            textJurusanSize="xs:text-caption md:text-body"
-            classNameSecond=" pt-8"
-            isDarkMode={isDarkMode}
-          />
-          <CardRole
-            firstRole="Sekretaris 2"
-            name="Lorem Ipsum"
-            jurusan="IF 20"
-            avatarSize={150}
-            textRoleSize="xs:text-subHeading md:text-heading"
-            textNameSize="xs:text-body md:text-subHeading"
-            textJurusanSize="xs:text-caption md:text-body"
-            classNameSecond=" pt-8"
-            isDarkMode={isDarkMode}
-          />
-          <CardRole
-            firstRole="Bendahara 1"
-            name="Lorep Ipsum"
-            jurusan="IF 20"
-            avatarSize={150}
-            textRoleSize="xs:text-subHeading md:text-heading"
-            textNameSize="xs:text-body md:text-subHeading"
-            textJurusanSize="xs:text-caption md:text-body"
-            classNameSecond=" pt-8"
-            isDarkMode={isDarkMode}
-          />
-          <CardRole
-            firstRole="Bendahara 2"
-            name="Lorep Ipsum"
-            jurusan="IF 20"
-            avatarSize={150}
-            textRoleSize="xs:text-subHeading md:text-heading"
-            textNameSize="xs:text-body md:text-subHeading"
-            textJurusanSize="xs:text-caption md:text-body"
-            classNameSecond=" pt-8"
-            isDarkMode={isDarkMode}
-          />
+        <div className="absolute top-10 xs:invisible lg:visible lg:-right-52">
+          <img width={780} src={PohonAtas} alt="Pohon Atas" />
+        </div>
+
+        <div className="flex flex-col gap-y-20">
+          <div className="Social & Site">
+            <div className="flex items-center xs:gap-x-5 md:gap-x-10">
+              {' '}
+              <div className="bg-[#231A51] w-100 h-0.5 flex-grow"></div>
+              <RoleText className="xs:text-subHeading md:text-heading flex-shrink">
+                Socia & Sie
+              </RoleText>
+              <div className="bg-[#231A51] w-100 h-0.5 flex-grow "></div>
+            </div>
+          </div>
+
+          <div>
+            <div className="KetuaDanWakilDIvisi">
+              <div className="flex justify-center md:gap-x-0">
+                {' '}
+                <div className="">
+                  {' '}
+                  <CardRole
+                    firstRole="Ketua"
+                    secondRole="Divisi"
+                    name="Rafi Raihansyah"
+                    jurusan="Teknik Informatika '19"
+                    avatarSize={180}
+                    textRoleSize="xs:text-subHeading md:text-heading "
+                    textNameSize="xs:text-body md:text-subHeading"
+                    textJurusanSize="mt-1 xs:text-caption md:text-body"
+                    classNameSecond="xs:indent-10 md:indent-24"
+                    isDarkMode={isDarkMode}
+                    classRole="xs:mb-0 md:mb-0 mt:0"
+                    cardClassName="xs: md:pt-0"
+                    foto={KetuaDivisiSocial}
+                    classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
+                    classNameAvatar="translate-y-6"
+                    classNameNama="mt-3"
+                  />
+                </div>
+                <div className="">
+                  {' '}
+                  <CardRole
+                    firstRole="Wakil"
+                    secondRole="Ketua Divisi"
+                    name="Haikal Lazuardi Fadil"
+                    jurusan="Teknik Informatika '19"
+                    avatarSize={180}
+                    textRoleSize="xs:text-subHeading md:text-heading "
+                    textNameSize="xs:text-body md:text-subHeading"
+                    textJurusanSize="mt-1 xs:text-caption md:text-body"
+                    classNameSecond="xs:indent-10 md:indent-24"
+                    isDarkMode={isDarkMode}
+                    classRole="xs:mb-0 md:mb-0 mt:0"
+                    cardClassName="xs: md:pt-0"
+                    foto={WakilKepalaDivisi}
+                    classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
+                    classNameAvatar="-translate-y-3"
+                    classNameNama="mt-3"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div className="flex flex-wrap gap-x-14 gap-y-10 justify-center">
+              <CardRole
+                firstRole="UI/UX Designer"
+                name="Felicia Sutandijo"
+                jurusan="Teknik Informatika '20"
+                avatarSize={180}
+                textRoleSize="xs:text-subHeading md:text-heading"
+                textNameSize="xs:text-body md:text-subHeading"
+                textJurusanSize="mt-1 xs:text-caption md:text-body"
+                classNameSecond=" pt-0"
+                isDarkMode={isDarkMode}
+                classRole="xs:mb-0 md:mb-0 mt:0"
+                cardClassName="xs: md:pt-0"
+                foto={Social1}
+                classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
+                classNameAvatar="-translate-y-3 scale-[1.0]"
+                classNameNama="mt-1"
+              />
+            </div>
+          </div>
         </div>
       </div>
+      {/* <div className="absolute top-96 -right-96 pt-96 ">
+        <img src={PohonBawahKanan} width={800} alt="Pohon Bawah Kanan" />
+      </div> */}
     </div>
   );
 };
 
-export default OrganogramSection;
+export default OrganogramDivisiIT;
