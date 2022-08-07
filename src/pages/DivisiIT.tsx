@@ -6,7 +6,7 @@ const DivisiIT: React.FC = () => {
   return (
     <div>
       <OrganogramDivisiIT isDarkMode={false} />
-      <Footer isDarkMode={false} />
+      <Footer organogram isDarkMode={false} />
     </div>
   );
 };
