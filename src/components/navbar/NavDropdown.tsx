@@ -5,8 +5,8 @@ import hamburgerClose from '../../assets/img/icons/hamburger-close.svg';
 
 interface NavDropdownProps {
   children:
-    | React.ReactElement<NavItemProps>
-    | React.ReactElement<NavItemProps>[];
+  | React.ReactElement<NavItemProps>
+  | React.ReactElement<NavItemProps>[];
 }
 
 const NavDropdown: React.FC<NavDropdownProps> = ({ children }) => {
@@ -21,7 +21,7 @@ const NavDropdown: React.FC<NavDropdownProps> = ({ children }) => {
       <div className="relative h-full w-8 flex items-center z-50">
         <button
           onClick={() => toggleButton()}
-          className={`${isOpen ? 'fixed mr-8' : ''}`}
+          className={`${isOpen ? 'fixed top-[25px] mr-8' : ''}`}
         >
           {!isOpen ? (
             <img src={hamburgerDefault} alt="Hamburger Menu" />

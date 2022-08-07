@@ -14,15 +14,15 @@ const LandingCloudsLeft: React.FC<LandingCloudsLeftProps> = ({ embedded }) => {
     if (embedded) {
         return (
             <div className='relative xs:hidden lg:flex'>
-                <VStock className={`absolute w-[420px] -top-[130px] -left-[200px]`} src={awan3} />
-                <VStock className={`absolute w-[450px] -top-[70px] -left-[290px] rotate-45`} src={awan4} />
+                <VStock className={`absolute w-[420px] -top-[130px] -left-[200px]`} src={awan3} animation="bottom" />
+                <VStock className={`absolute w-[450px] -top-[70px] -left-[290px] rotate-45`} src={awan4} animation="bottom" />
             </div>
         );
     }
     return (
         <div className='relative xs:hidden lg:flex'>
-            <VStock className={`absolute w-[450px] -top-[300px] -left-[200px]`} src={awan3} />
-            <VStock className={`absolute w-[450px] -top-[240px] -left-[290px] rotate-45`} src={awan4} />
+            <VStock className={`absolute w-[450px] -top-[300px] -left-[200px]`} src={awan3} animation="bottom" />
+            <VStock className={`absolute w-[450px] -top-[240px] -left-[290px] rotate-45`} src={awan4} animation="bottom" />
         </div>
     );
 };
