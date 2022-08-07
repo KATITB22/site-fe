@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import React from 'react';
 import MainLogo from '../components/MainLogo';
 import OverlapTitle from '../components/OverlapTitle';
+import HeroBackground from '../components/HeroBackground';
 import { getTransition } from '../utils/transition';
 
 const Hero: React.FC = () => {
@@ -14,6 +15,7 @@ const Hero: React.FC = () => {
         Lorem &nbsp; <br /> &ensp; Ipsum
       </OverlapTitle>
       <MainLogo />
+      <HeroBackground />
     </motion.div>
   );
 };

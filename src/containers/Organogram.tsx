@@ -9,6 +9,17 @@ import Title from '../components/Title';
 import TopTitle from '../components/TopTitle';
 import VStock from '../components/VStock';
 import { getTransition } from '../utils/transition';
+import LandingCloudsLeft from '../components/LandingCloudsLeft';
+import LandingCloudsRight from '../components/LandingCloudsRight';
+
+// import vistock
+import bgMaskot from '../assets/img/vistock/landing/organogram/bg-maskot.svg';
+import maskot1 from '../assets/img/vistock/landing/organogram/maskot1.png';
+import maskot2 from '../assets/img/vistock/landing/organogram/maskot2.png';
+import maskot3 from '../assets/img/vistock/landing/organogram/maskot3.png';
+import maskot4 from '../assets/img/vistock/landing/organogram/maskot4.png';
+import maskot5 from '../assets/img/vistock/landing/organogram/maskot5.png';
+import maskot6 from '../assets/img/vistock/landing/organogram/maskot6.png';
 
 const Organogram: React.FC = () => {
   const [screenSize, setScreenSize] = useState({
@@ -44,7 +55,13 @@ const Organogram: React.FC = () => {
           <TopTitle className="absolute text-right top-0">
             Organo <br /> gram
           </TopTitle>
-          <VStock className="absolute top-5" />
+          <VStock className="absolute top-5" src={bgMaskot} />
+          <VStock className="absolute w-[130px] top-[80px] -left-6" src={maskot1} />
+          <VStock className="absolute w-[80px] top-[135px] left-6" src={maskot2} />
+          <VStock className="absolute w-[180px] top-[90px] left-16" src={maskot3} />
+          <VStock className="absolute w-[150px] top-[70px] left-40" src={maskot4} />
+          <VStock className="absolute w-[90px] top-[125px] left-20" src={maskot5} />
+          <VStock className="absolute w-[100px] top-[145px] left-32" src={maskot6} />
         </motion.section>
         <motion.section
           className="space-y-2 lg:w-3/4 xl:w-2/3 mt-20"
@@ -69,6 +86,8 @@ const Organogram: React.FC = () => {
         </motion.section>
       </section>
       <OrganogramWaveBottom width={screenSize.dynamicWidth} />
+      <LandingCloudsLeft />
+      <LandingCloudsRight />
     </div>
   );
 };

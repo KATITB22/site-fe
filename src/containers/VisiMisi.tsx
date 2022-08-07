@@ -5,6 +5,7 @@ import Title from '../components/Title';
 import TopTitle from '../components/TopTitle';
 import VStock from '../components/VStock';
 import { getTransition } from '../utils/transition';
+import buku from '../assets/img/vistock/landing/visimisi/buku.png';
 
 const VisiMisi: React.FC = () => {
   return (
@@ -66,7 +67,7 @@ const VisiMisi: React.FC = () => {
           <TopTitle className="absolute top-72">
             isi &amp; <br /> &ensp; isi
           </TopTitle>
-          <VStock className="absolute top-10 ml-8"></VStock>
+          <VStock className="absolute top-20 right-9" src={buku}></VStock>
         </section>
       </motion.section>
     </div>

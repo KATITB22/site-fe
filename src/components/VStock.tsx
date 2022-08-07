@@ -3,12 +3,13 @@ import rectangle from '../resources/rectangle.png';
 
 interface VStockProps {
   className?: string;
+  src?: string;
 }
 
-const VStock: React.FC<VStockProps> = ({ className }) => {
+const VStock: React.FC<VStockProps> = ({ className, src }) => {
   return (
     <div>
-      <img width={200} className={`${className}`} src={rectangle} />
+      <img className={`${className}`} src={src ? src : rectangle} />
     </div>
   );
 };
