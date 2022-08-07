@@ -9,7 +9,7 @@ interface VStockProps {
 const VStock: React.FC<VStockProps> = ({ className, src }) => {
   return (
     <div>
-      <img className={`${className} pointer-events-auto`} src={src ? src : rectangle} />
+      <img className={`${className} pointer-events-none`} src={src ? src : rectangle} />
     </div>
   );
 };
