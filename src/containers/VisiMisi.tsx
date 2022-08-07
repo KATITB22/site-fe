@@ -92,10 +92,10 @@ const VisiMisi: React.FC<VisiMisiProps> = ({ embedded }) => {
             {...getTransition('left')}
           >
             <section className="relative w-[232px] h-[269px]">
-              <TopTitle className="absolute top-72">
+              <TopTitle className="absolute top-52 right-20">
                 isi &amp; <br /> &ensp; isi
               </TopTitle>
-              <VStock className="absolute top-10 ml-8"></VStock>
+              <VStock className="absolute w-[300px] -top-[0px] right-28" src={buku}></VStock>
             </section>
           </motion.section>
         </section>
@@ -160,10 +160,10 @@ const VisiMisi: React.FC<VisiMisiProps> = ({ embedded }) => {
         {...getTransition('left')}
       >
         <section className="relative w-[232px] h-[269px]">
-          <TopTitle className="absolute top-72">
+          <TopTitle className="absolute top-72 right-[78px]">
             isi &amp; <br /> &ensp; isi
           </TopTitle>
-          <VStock className="absolute top-20 right-9" src={buku}></VStock>
+          <VStock className="absolute top-20 right-24" src={buku}></VStock>
         </section>
       </motion.section>
     </div>
