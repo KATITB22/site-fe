@@ -11,8 +11,8 @@ const OrganogramFooterGraphics: React.FC = () => {
     return (
         <div className={`relative xs:hidden lg:flex`}>
             <VStock className="absolute -top-[300px] -left-36 right-0 w-[360px]" src={pohon} />
-            <VStock className="absolute -top-[1500px] -right-8 w-[500px]" src={pohon2} />
-            <VStock className="absolute -top-[280px] -right-[300px] w-[450px]" src={pohon3} />
+            <VStock className="absolute -top-[1500px] -right-8 w-[420px]" src={pohon2} />
+            <VStock className="absolute -top-[280px] -right-[300px] w-[490px]" src={pohon3} />
         </div>
     );
 };
