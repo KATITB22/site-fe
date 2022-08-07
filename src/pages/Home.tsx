@@ -20,7 +20,7 @@ export const Home: React.FC<HomeProps> = ({ embedded }) => {
       <VisiMisi embedded={embedded} />
       <Organogram embedded={embedded} />
       <AplikasiLainnya embedded={embedded} />
-      <Footer embedded={embedded} withGraphics />
+      <Footer landing embedded={embedded} />
     </div>
   );
 };
