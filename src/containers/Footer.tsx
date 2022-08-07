@@ -12,9 +12,10 @@ import bunga from '../assets/img/vistock/landing/bunga.png';
 
 interface FooterProps {
   isDarkMode?: boolean;
+  embedded?: string;
 }
 
-const Footer: React.FC<FooterProps> = ({ isDarkMode }) => {
+const Footer: React.FC<FooterProps> = ({ isDarkMode, embedded }) => {
   const [screenSize, setScreenSize] = useState({
     dynamicWidth: window.innerWidth,
     dynamicHeight: window.innerHeight,
@@ -53,7 +54,11 @@ const Footer: React.FC<FooterProps> = ({ isDarkMode }) => {
         <VStock className="absolute top-8 left-[1150px] right-0 w-[220px] rotate-12" src={semak} />
         <VStock className="absolute -top-[5px] left-[1250px] right-0 w-[220px] rotate-12" src={batangKayu2} />
       </div>
-      <FooterWaveTop width={screenSize.dynamicWidth} isDarkMode={isDarkMode} />
+      <FooterWaveTop
+        width={screenSize.dynamicWidth}
+        isDarkMode={isDarkMode}
+        embedded={embedded}
+      />
     </div>
   );
 };

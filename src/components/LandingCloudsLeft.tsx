@@ -2,11 +2,8 @@
 /* eslint-disable quotes */
 /* eslint-disable indent */
 import React from 'react';
-import awan1 from '../assets/img/vistock/landing/awan1.png';
-import awan2 from '../assets/img/vistock/landing/awan2.png';
 import awan3 from '../assets/img/vistock/landing/awan3.png';
 import awan4 from '../assets/img/vistock/landing/awan4.png';
-import awan5 from '../assets/img/vistock/landing/awan5.png';
 import VStock from './VStock';
 
 const LandingCloudsLeft: React.FC = () => {
