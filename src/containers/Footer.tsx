@@ -12,10 +12,11 @@ import bunga from '../assets/img/vistock/landing/bunga.png';
 
 interface FooterProps {
   isDarkMode?: boolean;
+  withGraphics?: boolean;
   embedded?: string;
 }
 
-const Footer: React.FC<FooterProps> = ({ isDarkMode, embedded }) => {
+const Footer: React.FC<FooterProps> = ({ isDarkMode, embedded, withGraphics }) => {
   const [screenSize, setScreenSize] = useState({
     dynamicWidth: window.innerWidth,
     dynamicHeight: window.innerHeight,
@@ -45,7 +46,7 @@ const Footer: React.FC<FooterProps> = ({ isDarkMode, embedded }) => {
         Sponsor
       </MotionTitle>
       {/* dark mode in footerWaveTop using isDarkMode */}
-      <div className='relative xs:hidden lg:flex'>
+      <div className={`relative ${withGraphics ? 'xs:hidden lg:flex' : 'hidden'}`}>
         <VStock className="absolute left-[400px] w-[200px] -top-4" src={lari} />
         <VStock className="absolute left-[70px] w-[200px] top-0" src={semak} />
         <VStock className="absolute -top-[380px] -left-40 right-0 w-[380px]" src={pohon} />

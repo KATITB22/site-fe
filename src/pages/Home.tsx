@@ -14,7 +14,7 @@ export const Home: React.FC = () => {
       <VisiMisi />
       <Organogram />
       <AplikasiLainnya />
-      <Footer />
+      <Footer withGraphics />
     </div>
   );
 };
