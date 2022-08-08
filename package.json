@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "lint": "eslint src --ext .jsx",
+    "lint": "eslint \"**/*.{ts,tsx}\"",
     "lint:fix": "eslint src --ext .jsx --fix"
   },
   "dependencies": {
