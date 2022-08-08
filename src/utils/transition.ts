@@ -4,6 +4,7 @@ import { ReactHTML } from 'react';
 interface TransitionOptions {
   delay?: number;
   once?: boolean;
+  type?: string;
 }
 
 export function getTransition(
@@ -25,7 +26,7 @@ export function getTransition(
         y: 0,
         transition: {
           delay: options?.delay ?? 0.2,
-          type: 'spring',
+          type: options?.type ?? 'spring',
           duration: 1.5,
         },
       },
