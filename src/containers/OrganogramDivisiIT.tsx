@@ -16,6 +16,8 @@ import Social6 from '../resources/DivisiIT/P1010153-removebg - 257_Muhammad Afie
 import Social7 from '../resources/DivisiIT/profil - 13520117 Hafidz Nur Rahman Ghozali.png';
 import Social8 from '../resources/DivisiIT/Claudia_Jahim - 13520076 Claudia.png';
 import Social9 from '../resources/DivisiIT/malik.png';
+import Social10 from '../resources/DivisiIT/IMG_4310-removebg-preview.png';
+import Social11 from '../resources/DivisiIT/Christopher Justine William.png';
 import Content1 from '../resources/DivisiIT/gare - 13520029 Muhammad Garebaldhie Er Rahman.png';
 import Content2 from '../resources/DivisiIT/Muhammad_Firdaus-removebg-preview - Cawis_033_Firdaus.png';
 import Content3 from '../resources/DivisiIT/photo_2022-07-06_20-00-40-removebg - Fatih Nararya R. I..png';
@@ -28,6 +30,7 @@ import Content9 from '../resources/DivisiIT/AuliaAdila - 13519100 Aulia Adila.pn
 import Content10 from '../resources/DivisiIT/2-removebg-preview - 13520132 Januar Budi Ghifari.png';
 import Content11 from '../resources/DivisiIT/914CAADC-8F1A-48DE-9B7F-492B6B2F6E47 - Nadirah Rianty Suseno.png';
 import Content12 from '../resources/DivisiIT/kat_profile-bg - 13520002 Muhammad Fikri Ranjabi.png';
+import Content13 from '../resources/DivisiIT/bebas_-_13520111_Rizky_Akbar_Asmaran-removebg-preview.png';
 import Event1 from '../resources/DivisiIT/jason-bebas - 13520080 Jason Kanggara.png';
 import Event2 from '../resources/DivisiIT/IMG_20220804_223654 - 049_Muhammad Irfan Fathoni (1).png';
 import Event3 from '../resources/DivisiIT/8AF68B91-C31C-47B9-861C-72D6F639FBAC - 16521104 Fajar Maulana Herawan.png';
@@ -75,7 +78,7 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
             foto={KetuaBidang}
             // center the container
             classNameAvatarContainer="h-56 w-56 overflow-hidden rounded-full mx-auto"
-            // classNameAvatar="w-auto h-56 rounded-full object-top"
+            // classNameAvatar="w-44 h-56 rounded-full object-top"
             classNameAvatar="translate-y-6"
             classNameNama="mt-3"
             classRole=""
@@ -95,7 +98,7 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
             foto={WakilKetuaBidang}
             // center the container
             classNameAvatarContainer="h-56 w-56 overflow-hidden rounded-full mx-auto"
-            // classNameAvatar="w-auto h-56 rounded-full object-top"
+            // classNameAvatar="w-44 h-56 rounded-full object-top"
             classNameAvatar="translate-y-1"
             classNameNama="mt-3"
             classRole=""
@@ -188,6 +191,24 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 classNameNama="mt-1"
               />
               <CardRole
+                firstRole="Frontend Developer"
+                name="Fikri Khoiron Fadhila"
+                jurusan="Teknik Informatika '20"
+                avatarSize={180}
+                textRoleSize="xs:text-subHeading md:text-heading"
+                textNameSize="xs:text-body md:text-subHeading"
+                textJurusanSize="mt-1 xs:text-caption md:text-body"
+                classNameSecond=" pt-0"
+                isDarkMode={isDarkMode}
+                classRole="xs:mb-0 md:mb-0 mt:0"
+                cardClassName="xs: md:pt-0"
+                foto={Social10}
+                classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
+                classNameAvatar="-translate-y-2 scale-[0.8]"
+                classNameNama="mt-1"
+              />
+
+              <CardRole
                 firstRole="Backend Developer"
                 name="Adiyansa Prasetya"
                 jurusan="Teknik Informatika '20"
@@ -200,7 +221,7 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 classRole="xs:mb-0 md:mb-0 mt:0"
                 cardClassName="xs: md:pt-0"
                 foto={Social2}
-                classNameAvatarContainer="h-44 w-auto overflow-hidden rounded-full mx-auto"
+                classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
                 classNameAvatar="-translate-y-10 scale-[1.7]"
                 classNameNama="mt-1"
               />
@@ -217,7 +238,7 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 classRole="xs:mb-0 md:mb-0 mt:0"
                 cardClassName="xs: md:pt-0"
                 foto={Social3}
-                classNameAvatarContainer="h-44 w-auto overflow-hidden rounded-full mx-auto"
+                classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
                 classNameAvatar="translate-y-4 scale-[0.8]"
                 classNameNama="mt-1"
               />
@@ -234,7 +255,7 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 classRole="xs:mb-0 md:mb-0 mt:0"
                 cardClassName="xs: md:pt-0"
                 foto={Social4}
-                classNameAvatarContainer="h-44 w-auto overflow-hidden rounded-full mx-auto"
+                classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
                 classNameAvatar="translate-y-4 scale-[0.8]"
                 classNameNama="mt-1"
               />
@@ -250,9 +271,9 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 isDarkMode={isDarkMode}
                 classRole="xs:mb-0 md:mb-0 mt:0"
                 cardClassName="xs: md:pt-0"
-                foto={Social5}
-                classNameAvatarContainer="h-44 w-auto overflow-hidden rounded-full mx-auto"
-                classNameAvatar="-translate-y-2 scale-[1]"
+                foto={Social11}
+                classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
+                classNameAvatar="translate-y-2 scale-[1]"
                 classNameNama="mt-1"
               />
               <CardRole
@@ -268,7 +289,7 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 classRole="xs:mb-0 md:mb-0 mt:0"
                 cardClassName="xs: md:pt-0"
                 foto={Social6}
-                classNameAvatarContainer="h-44 w-auto overflow-hidden rounded-full mx-auto"
+                classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
                 classNameAvatar="-translate-y-6 scale-[0.7]"
                 classNameNama="mt-1"
               />
@@ -285,7 +306,7 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 classRole="xs:mb-0 md:mb-0 mt:0"
                 cardClassName="xs: md:pt-0"
                 foto={Social7}
-                classNameAvatarContainer="h-44 w-auto overflow-hidden rounded-full mx-auto"
+                classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
                 classNameAvatar="translate-y-9 scale-[1]"
                 classNameNama="mt-1"
               />
@@ -302,7 +323,7 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 classRole="xs:mb-0 md:mb-0 mt:0"
                 cardClassName="xs: md:pt-0"
                 foto={Social8}
-                classNameAvatarContainer="h-44 w-auto overflow-hidden rounded-full mx-auto"
+                classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
                 classNameAvatar="translate-y-1 scale-[1]"
                 classNameNama="mt-1"
               />
@@ -319,7 +340,7 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 classRole="xs:mb-0 md:mb-0 mt:0"
                 cardClassName="xs: md:pt-0"
                 foto={Social9}
-                classNameAvatarContainer="h-44 w-auto overflow-hidden rounded-full mx-auto"
+                classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
                 classNameAvatar="-translate-y-0 scale-[1.5]"
                 classNameNama="mt-1"
               />
@@ -558,6 +579,23 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 foto={Content12}
                 classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
                 classNameAvatar="translate-y-11 scale-[1.0]"
+                classNameNama="mt-1"
+              />
+              <CardRole
+                firstRole="Role"
+                name="Namanya"
+                jurusan="Jurusannya"
+                avatarSize={180}
+                textRoleSize="xs:text-subHeading md:text-heading"
+                textNameSize="xs:text-body md:text-subHeading"
+                textJurusanSize="mt-1 xs:text-caption md:text-body"
+                classNameSecond=" pt-0"
+                isDarkMode={isDarkMode}
+                classRole="xs:mb-0 md:mb-0 mt:0"
+                cardClassName="xs: md:pt-0"
+                foto={Content13}
+                classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
+                classNameAvatar="-translate-y-8 scale-[1.7]"
                 classNameNama="mt-1"
               />
             </div>
