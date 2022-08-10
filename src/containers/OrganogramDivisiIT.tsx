@@ -368,8 +368,8 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                   <CardRole
                     firstRole="Ketua"
                     secondRole="Divisi"
-                    name="Namanya"
-                    jurusan="Jurusannya"
+                    name="Widya Anugrah Putra"
+                    jurusan="Teknik Informatika '19"
                     avatarSize={180}
                     textRoleSize="xs:text-subHeading md:text-heading "
                     textNameSize="xs:text-body md:text-subHeading"
@@ -389,8 +389,8 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                   <CardRole
                     firstRole="Wakil"
                     secondRole="Ketua Divisi"
-                    name="Namanya"
-                    jurusan="Jurusannya"
+                    name="Muhammad Garebaldhie Er Rahman"
+                    jurusan="Teknik Informatika '20"
                     avatarSize={180}
                     textRoleSize="xs:text-subHeading md:text-heading "
                     textNameSize="xs:text-body md:text-subHeading"
@@ -412,9 +412,9 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
           <div>
             <div className="flex flex-wrap gap-x-14 gap-y-10 justify-center">
               <CardRole
-                firstRole="Role"
-                name="Namanya"
-                jurusan="Jurusannya"
+                firstRole="Backend Developer"
+                name="Muhammad Firdaus"
+                jurusan="Mikrobiologi '21"
                 avatarSize={180}
                 textRoleSize="xs:text-subHeading md:text-heading"
                 textNameSize="xs:text-body md:text-subHeading"
@@ -429,9 +429,9 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 classNameNama="mt-1"
               />
               <CardRole
-                firstRole="Role"
-                name="Namanya"
-                jurusan="Jurusannya"
+                firstRole="Frontend Developer"
+                name="Fatih Nararya Rashadyfa Ilhamsyah"
+                jurusan="Teknik Informatika '21"
                 avatarSize={180}
                 textRoleSize="xs:text-subHeading md:text-heading"
                 textNameSize="xs:text-body md:text-subHeading"
@@ -446,9 +446,9 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 classNameNama="mt-1"
               />
               <CardRole
-                firstRole="Role"
-                name="Namanya"
-                jurusan="Jurusannya"
+                firstRole="Fullstack Developer"
+                name="Muhammad Tito Prakasa"
+                jurusan="Teknik Informatika '19"
                 avatarSize={180}
                 textRoleSize="xs:text-subHeading md:text-heading"
                 textNameSize="xs:text-body md:text-subHeading"
@@ -463,9 +463,9 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 classNameNama="mt-1"
               />
               <CardRole
-                firstRole="Role"
-                name="Namanya"
-                jurusan="Jurusannya"
+                firstRole="Backend Developer"
+                name="Habiburrohman"
+                jurusan="Matematika '21"
                 avatarSize={180}
                 textRoleSize="xs:text-subHeading md:text-heading"
                 textNameSize="xs:text-body md:text-subHeading"
@@ -480,9 +480,9 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 classNameNama="mt-1"
               />
               <CardRole
-                firstRole="Role"
-                name="Namanya"
-                jurusan="Jurusannya"
+                firstRole="Frontend Developer"
+                name="Carlios Eryan"
+                jurusan="Teknik Fisika '21"
                 avatarSize={180}
                 textRoleSize="xs:text-subHeading md:text-heading"
                 textNameSize="xs:text-body md:text-subHeading"
@@ -497,9 +497,9 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 classNameNama="mt-1"
               />
               <CardRole
-                firstRole="Role"
-                name="Namanya"
-                jurusan="Jurusannya"
+                firstRole="Frontend Developer"
+                name="Shafira Naya Aprisadianti"
+                jurusan="Teknik Informatika '19"
                 avatarSize={180}
                 textRoleSize="xs:text-subHeading md:text-heading"
                 textNameSize="xs:text-body md:text-subHeading"
@@ -514,9 +514,9 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 classNameNama="mt-1"
               />
               <CardRole
-                firstRole="Role"
-                name="Namanya"
-                jurusan="Jurusannya"
+                firstRole="Frontend Developer"
+                name="Aulia Adila"
+                jurusan="Teknik Informatika '19"
                 avatarSize={180}
                 textRoleSize="xs:text-subHeading md:text-heading"
                 textNameSize="xs:text-body md:text-subHeading"
@@ -531,9 +531,9 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 classNameNama="mt-1"
               />
               <CardRole
-                firstRole="Role"
-                name="Namanya"
-                jurusan="Jurusannya"
+                firstRole="Frontend Developer"
+                name="Januar Budi Ghifari"
+                jurusan="Teknik Informatika '20"
                 avatarSize={180}
                 textRoleSize="xs:text-subHeading md:text-heading"
                 textNameSize="xs:text-body md:text-subHeading"
@@ -548,9 +548,9 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 classNameNama="mt-1"
               />
               <CardRole
-                firstRole="Role"
-                name="Namanya"
-                jurusan="Jurusannya"
+                firstRole="UI/UX Designer"
+                name="Nadirah Rianty Suseno"
+                jurusan="Arsitektur '21"
                 avatarSize={180}
                 textRoleSize="xs:text-subHeading md:text-heading"
                 textNameSize="xs:text-body md:text-subHeading"
@@ -565,9 +565,9 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 classNameNama="mt-1"
               />
               <CardRole
-                firstRole="Role"
-                name="Namanya"
-                jurusan="Jurusannya"
+                firstRole="Frontend Developer"
+                name="Muhammad Fikri Ranjabi"
+                jurusan="Teknik Informatika '20"
                 avatarSize={180}
                 textRoleSize="xs:text-subHeading md:text-heading"
                 textNameSize="xs:text-body md:text-subHeading"
@@ -582,9 +582,9 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 classNameNama="mt-1"
               />
               <CardRole
-                firstRole="Role"
-                name="Namanya"
-                jurusan="Jurusannya"
+                firstRole="Frontend Developer"
+                name="Rizky Akbar Asmaran"
+                jurusan="Teknik Informatika '20"
                 avatarSize={180}
                 textRoleSize="xs:text-subHeading md:text-heading"
                 textNameSize="xs:text-body md:text-subHeading"
@@ -622,8 +622,8 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                   <CardRole
                     firstRole="Ketua"
                     secondRole="Divisi"
-                    name="Namanya"
-                    jurusan="Jurusannya"
+                    name="Jason Kanggara"
+                    jurusan="Teknik Informatika '20"
                     avatarSize={180}
                     textRoleSize="xs:text-subHeading md:text-heading "
                     textNameSize="xs:text-body md:text-subHeading"
@@ -643,8 +643,8 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                   <CardRole
                     firstRole="Wakil"
                     secondRole="Ketua Divisi"
-                    name="Namanya"
-                    jurusan="Jurusannya"
+                    name="M. Syahrul Surya Putra"
+                    jurusan="Teknik Informatika '20"
                     avatarSize={180}
                     textRoleSize="xs:text-subHeading md:text-heading "
                     textNameSize="xs:text-body md:text-subHeading"
@@ -666,9 +666,9 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
           <div>
             <div className="flex flex-wrap gap-x-14 gap-y-10 justify-center">
               <CardRole
-                firstRole="Role"
-                name="Namanya"
-                jurusan="Jurusannya"
+                firstRole="Frontend Developer"
+                name="Muhammad Irfan Fathoni"
+                jurusan="Teknik Perminyakan '21"
                 avatarSize={180}
                 textRoleSize="xs:text-subHeading md:text-heading"
                 textNameSize="xs:text-body md:text-subHeading"
@@ -683,9 +683,9 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 classNameNama="mt-1"
               />
               <CardRole
-                firstRole="Role"
-                name="Namanya"
-                jurusan="Jurusannya"
+                firstRole="Frontend Developer"
+                name="Fajar Maulana Herawan"
+                jurusan="Teknik Informatika ‘21"
                 avatarSize={180}
                 textRoleSize="xs:text-subHeading md:text-heading"
                 textNameSize="xs:text-body md:text-subHeading"
@@ -700,9 +700,9 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 classNameNama="mt-1"
               />
               <CardRole
-                firstRole="Role"
-                name="Namanya"
-                jurusan="Jurusannya"
+                firstRole="Frontend Developer"
+                name="Hanny Margaretha Aritonang"
+                jurusan="Matematika '21"
                 avatarSize={180}
                 textRoleSize="xs:text-subHeading md:text-heading"
                 textNameSize="xs:text-body md:text-subHeading"
@@ -717,9 +717,9 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 classNameNama="mt-1"
               />
               <CardRole
-                firstRole="Role"
-                name="Namanya"
-                jurusan="Jurusannya"
+                firstRole="Frontend Developer"
+                name="Mirekel Ilham Akbar"
+                jurusan="Kimia '21"
                 avatarSize={180}
                 textRoleSize="xs:text-subHeading md:text-heading"
                 textNameSize="xs:text-body md:text-subHeading"
@@ -734,9 +734,9 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 classNameNama="mt-1"
               />
               <CardRole
-                firstRole="Role"
-                name="Namanya"
-                jurusan="Jurusannya"
+                firstRole="Frontend Developer"
+                name="Rania Sasi Kirana"
+                jurusan="Sistem Teknologi Informasi '21"
                 avatarSize={180}
                 textRoleSize="xs:text-subHeading md:text-heading"
                 textNameSize="xs:text-body md:text-subHeading"
@@ -751,9 +751,9 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 classNameNama="mt-1"
               />
               <CardRole
-                firstRole="Role"
-                name="Namanya"
-                jurusan="Jurusannya"
+                firstRole="Fullstack Developer"
+                name="Rayhan Kinan Muhannad"
+                jurusan="Teknik Informatika '20"
                 avatarSize={180}
                 textRoleSize="xs:text-subHeading md:text-heading"
                 textNameSize="xs:text-body md:text-subHeading"
@@ -768,9 +768,9 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 classNameNama="mt-1"
               />
               <CardRole
-                firstRole="Role"
-                name="Namanya"
-                jurusan="Jurusannya"
+                firstRole="Frontend Developer"
+                name="Zhafir Wisam Septiana"
+                jurusan="Matematika'21"
                 avatarSize={180}
                 textRoleSize="xs:text-subHeading md:text-heading"
                 textNameSize="xs:text-body md:text-subHeading"
@@ -785,9 +785,9 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 classNameNama="mt-1"
               />
               <CardRole
-                firstRole="Role"
-                name="Namanya"
-                jurusan="Jurusannya"
+                firstRole="Frontend Developer"
+                name="Alif Amirudin"
+                jurusan="Manajemen Rekayasa '21"
                 avatarSize={180}
                 textRoleSize="xs:text-subHeading md:text-heading"
                 textNameSize="xs:text-body md:text-subHeading"
@@ -802,9 +802,9 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 classNameNama="mt-1"
               />
               <CardRole
-                firstRole="Role"
-                name="Namanya"
-                jurusan="Jurusannya"
+                firstRole="Frontend Developer"
+                name="Razzan Daksana Yoni"
+                jurusan="Teknik Informatika '21"
                 avatarSize={180}
                 textRoleSize="xs:text-subHeading md:text-heading"
                 textNameSize="xs:text-body md:text-subHeading"
@@ -819,9 +819,9 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 classNameNama="mt-1"
               />
               <CardRole
-                firstRole="Role"
-                name="Namanya"
-                jurusan="Jurusannya"
+                firstRole="Frontend Developer"
+                name="Abraham Megantoro Samudra"
+                jurusan="Sistem Teknologi Informasi '21"
                 avatarSize={180}
                 textRoleSize="xs:text-subHeading md:text-heading"
                 textNameSize="xs:text-body md:text-subHeading"
@@ -836,9 +836,9 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 classNameNama="mt-1"
               />
               <CardRole
-                firstRole="Role"
-                name="Namanya"
-                jurusan="Jurusannya"
+                firstRole="Frontend Developer"
+                name="Nafi Mulyo Kusumo"
+                jurusan="Teknik Fisika '21"
                 avatarSize={180}
                 textRoleSize="xs:text-subHeading md:text-heading"
                 textNameSize="xs:text-body md:text-subHeading"
@@ -853,9 +853,9 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 classNameNama="mt-1"
               />
               <CardRole
-                firstRole="Role"
-                name="Namanya"
-                jurusan="Jurusannya"
+                firstRole="Frontend Developer"
+                name="Chiquita Ahsanunnisa"
+                jurusan="Teknik Informatika '21"
                 avatarSize={180}
                 textRoleSize="xs:text-subHeading md:text-heading"
                 textNameSize="xs:text-body md:text-subHeading"
@@ -870,9 +870,9 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 classNameNama="mt-1"
               />
               <CardRole
-                firstRole="Role"
-                name="Namanya"
-                jurusan="Jurusannya"
+                firstRole="Frontend Developer"
+                name="Aulia Mey Diva Annandya"
+                jurusan="Teknik Informatika '21"
                 avatarSize={180}
                 textRoleSize="xs:text-subHeading md:text-heading"
                 textNameSize="xs:text-body md:text-subHeading"
