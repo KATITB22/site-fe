@@ -1,9 +1,10 @@
+import { AnimatePresence, motion } from 'framer-motion';
+import moment from 'moment';
 import React, { useState } from 'react';
+import { MdKeyboardArrowDown } from 'react-icons/md';
+import { getTransition } from '../utils/transition';
 import Agenda from './Agenda';
 import VerticalLine from './VerticalLine';
-import { motion, AnimatePresence } from 'framer-motion';
-import { MdKeyboardArrowDown } from 'react-icons/md';
-import moment from 'moment';
 interface TimelineBarProps {
   text?: string;
   date?: Date;
@@ -47,54 +48,80 @@ const TimelineBar: React.FC<TimelineBarProps> = () => {
   return (
     <div className="flex flex-col bg-primaryYellow items-center justify-start xs:px-20 sm:px-36 pt-14">
       <motion.div>
-        {timelineData.slice(0, dataCount).map((data, idx) =>
-          idx === dataCount - 1 ? (
-            <Agenda
-              key={idx}
-              text={data.text}
-              startDate={data.date}
-              endDate={timelineData[idx + 1]?.date}
-            />
-          ) : (
-            <React.Fragment key={idx}>
+        {timelineData.slice(0, dataCount).map((data, idx) => (
+          <motion.div key={idx} {...getTransition('right')}>
+            {idx === dataCount - 1 ? (
               <Agenda
                 text={data.text}
                 startDate={data.date}
-                endDate={timelineData[idx + 1].date}
+                endDate={timelineData[idx + 1]?.date}
               />
-              <VerticalLine />
-            </React.Fragment>
-          )
-        )}
+            ) : (
+              <>
+                <Agenda
+                  text={data.text}
+                  startDate={data.date}
+                  endDate={timelineData[idx + 1].date}
+                />
+                <VerticalLine />
+              </>
+            )}
+          </motion.div>
+        ))}
       </motion.div>
       <AnimatePresence exitBeforeEnter>
         {isOpen && (
           <motion.div
-            initial={{ display: 'none', height: 0 }}
-            animate={{ display: 'block', height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
+            variants={{
+              hidden: {
+                height: 0,
+                transition: {
+                  staggerChildren: 0.2,
+                  staggerDirection: -1,
+                  delay: 0.6,
+                },
+              },
+              visible: {
+                height: 'auto',
+                transition: {
+                  staggerChildren: 0.2,
+                  when: 'beforeChildren',
+                },
+              },
+            }}
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
           >
             {timelineData
               .slice(dataCount, timelineData.length)
-              .map((data, idx) =>
-                idx === timelineData.length - 1 ? (
-                  <Agenda
-                    key={idx}
-                    text={data.text}
-                    startDate={data.date}
-                    endDate={timelineData[idx + dataCount + 1]?.date}
-                  />
-                ) : (
-                  <React.Fragment key={idx}>
-                    <VerticalLine />
+              .map((data, idx) => (
+                <motion.div
+                  key={idx}
+                  variants={{
+                    hidden: { opacity: 0, x: '100%' },
+                    visible: { opacity: 1, x: 0 },
+                  }}
+                  transition={{ duration: 1, type: 'spring' }}
+                >
+                  {idx === timelineData.length - 1 ? (
                     <Agenda
                       text={data.text}
                       startDate={data.date}
                       endDate={timelineData[idx + dataCount + 1]?.date}
                     />
-                  </React.Fragment>
-                )
-              )}
+                  ) : (
+                    <>
+                      <VerticalLine />
+                      <Agenda
+                        text={data.text}
+                        startDate={data.date}
+                        endDate={timelineData[idx + dataCount + 1]?.date}
+                      />
+                    </>
+                  )}
+                </motion.div>
+              ))}
           </motion.div>
         )}
       </AnimatePresence>
