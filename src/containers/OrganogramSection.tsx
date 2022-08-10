@@ -65,6 +65,19 @@ import WakasubdivKonsep from '../resources/kat/1-removebg-preview.png';
 import WakasubdivVistok from '../resources/kat/1 (1) copy 4.png';
 import KadivKostum from '../resources/kat/kostumkepaladivisi.png';
 import WakadivKostum from '../resources/kat/Wakadiv Kostum_3.png';
+import KadivMusik from '../resources/kat/KadivMusik_theresna.png';
+import WakadivMusik from '../resources/kat/wakadivmusik.png';
+import KadivPerform from '../resources/kat/Kepala Divisi perform Orvala Zeva Syakira.png';
+import WakadivPerform from '../resources/kat/Wakil Divisi perform_Vania Ardelia Putri.png';
+import KadivProperty from '../resources/kat/Formal copy.png';
+import WakadivProperty from '../resources/kat/Formal (1).png';
+import SekreProperty from '../resources/kat/1 (1) copy 5.png';
+import KadivPublikasi from '../resources/kat/IMG_5063.png';
+import WakadivPublikasi from '../resources/kat/1 (1) copy 6.png';
+import KasubdivTiktok from '../resources/kat/1 (1) copy 7.png';
+import KasubdivTwitter from '../resources/kat/1.jpg.png';
+import KasubdivIG from '../resources/kat/1 (1) copy 8.png';
+import WakasubdivIG from '../resources/kat/1 (2).png';
 
 import Social1 from '../resources/DivisiIT/FeliciaSutandijo - 13520050 Felicia Sutandijo.png';
 interface OrganogramDivisiITProps {
@@ -1138,24 +1151,6 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 isDarkMode={isDarkMode}
                 classRole="xs:mb-0 md:mb-0 mt:0"
                 cardClassName="xs: md:pt-0"
-                foto={KasubdivAnimasi}
-                classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
-                classNameAvatar="translate-y-2 scale-[1.2]"
-                classNameNama="mt-1"
-              />
-              <CardRole
-                firstRole="Rolenya"
-                secondRole=""
-                name="Namanya"
-                jurusan="Jurusannya"
-                avatarSize={180}
-                textRoleSize="xs:text-subHeading md:text-heading"
-                textNameSize="xs:text-body md:text-subHeading"
-                textJurusanSize="mt-1 xs:text-caption md:text-body"
-                classNameSecond=" pt-0"
-                isDarkMode={isDarkMode}
-                classRole="xs:mb-0 md:mb-0 mt:0"
-                cardClassName="xs: md:pt-0"
                 foto={KasubdivKonsep}
                 classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
                 classNameAvatar="translate-y-2 scale-[1.2]"
@@ -1284,7 +1279,241 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 cardClassName="xs: md:pt-0"
                 foto={WakadivKostum}
                 classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
+                classNameAvatar="translate-y-1 scale-[1.2]"
+                classNameNama="mt-1"
+              />
+              <CardRole
+                firstRole="Rolenya"
+                secondRole=""
+                name="Namanya"
+                jurusan="Jurusannya"
+                avatarSize={180}
+                textRoleSize="xs:text-subHeading md:text-heading"
+                textNameSize="xs:text-body md:text-subHeading"
+                textJurusanSize="mt-1 xs:text-caption md:text-body"
+                classNameSecond=" pt-0"
+                isDarkMode={isDarkMode}
+                classRole="xs:mb-0 md:mb-0 mt:0"
+                cardClassName="xs: md:pt-0"
+                foto={KadivMusik}
+                classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
+                classNameAvatar="-translate-y-5 scale-[1.2]"
+                classNameNama="mt-1"
+              />
+              <CardRole
+                firstRole="Rolenya"
+                secondRole=""
+                name="Namanya"
+                jurusan="Jurusannya"
+                avatarSize={180}
+                textRoleSize="xs:text-subHeading md:text-heading"
+                textNameSize="xs:text-body md:text-subHeading"
+                textJurusanSize="mt-1 xs:text-caption md:text-body"
+                classNameSecond=" pt-0"
+                isDarkMode={isDarkMode}
+                classRole="xs:mb-0 md:mb-0 mt:0"
+                cardClassName="xs: md:pt-0"
+                foto={WakadivMusik}
+                classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
+                classNameAvatar="-translate-y-0 scale-[1.0]"
+                classNameNama="mt-1"
+              />
+              <CardRole
+                firstRole="Rolenya"
+                secondRole=""
+                name="Namanya"
+                jurusan="Jurusannya"
+                avatarSize={180}
+                textRoleSize="xs:text-subHeading md:text-heading"
+                textNameSize="xs:text-body md:text-subHeading"
+                textJurusanSize="mt-1 xs:text-caption md:text-body"
+                classNameSecond=" pt-0"
+                isDarkMode={isDarkMode}
+                classRole="xs:mb-0 md:mb-0 mt:0"
+                cardClassName="xs: md:pt-0"
+                foto={KadivPerform}
+                classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
+                classNameAvatar="-translate-y-4 scale-[1.0]"
+                classNameNama="mt-1"
+              />
+              <CardRole
+                firstRole="Rolenya"
+                secondRole=""
+                name="Namanya"
+                jurusan="Jurusannya"
+                avatarSize={180}
+                textRoleSize="xs:text-subHeading md:text-heading"
+                textNameSize="xs:text-body md:text-subHeading"
+                textJurusanSize="mt-1 xs:text-caption md:text-body"
+                classNameSecond=" pt-0"
+                isDarkMode={isDarkMode}
+                classRole="xs:mb-0 md:mb-0 mt:0"
+                cardClassName="xs: md:pt-0"
+                foto={WakadivPerform}
+                classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
                 classNameAvatar="-translate-y-2 scale-[1.0]"
+                classNameNama="mt-1"
+              />
+              <CardRole
+                firstRole="Rolenya"
+                secondRole=""
+                name="Namanya"
+                jurusan="Jurusannya"
+                avatarSize={180}
+                textRoleSize="xs:text-subHeading md:text-heading"
+                textNameSize="xs:text-body md:text-subHeading"
+                textJurusanSize="mt-1 xs:text-caption md:text-body"
+                classNameSecond=" pt-0"
+                isDarkMode={isDarkMode}
+                classRole="xs:mb-0 md:mb-0 mt:0"
+                cardClassName="xs: md:pt-0"
+                foto={KadivProperty}
+                classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
+                classNameAvatar="-translate-y-5 scale-[1.0]"
+                classNameNama="mt-1"
+              />
+              <CardRole
+                firstRole="Rolenya"
+                secondRole=""
+                name="Namanya"
+                jurusan="Jurusannya"
+                avatarSize={180}
+                textRoleSize="xs:text-subHeading md:text-heading"
+                textNameSize="xs:text-body md:text-subHeading"
+                textJurusanSize="mt-1 xs:text-caption md:text-body"
+                classNameSecond=" pt-0"
+                isDarkMode={isDarkMode}
+                classRole="xs:mb-0 md:mb-0 mt:0"
+                cardClassName="xs: md:pt-0"
+                foto={WakadivProperty}
+                classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
+                classNameAvatar="-translate-y-7 scale-[1.0]"
+                classNameNama="mt-1"
+              />
+              <CardRole
+                firstRole="Rolenya"
+                secondRole=""
+                name="Namanya"
+                jurusan="Jurusannya"
+                avatarSize={180}
+                textRoleSize="xs:text-subHeading md:text-heading"
+                textNameSize="xs:text-body md:text-subHeading"
+                textJurusanSize="mt-1 xs:text-caption md:text-body"
+                classNameSecond=" pt-0"
+                isDarkMode={isDarkMode}
+                classRole="xs:mb-0 md:mb-0 mt:0"
+                cardClassName="xs: md:pt-0"
+                foto={SekreProperty}
+                classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
+                classNameAvatar="translate-y-8 scale-[1.7]"
+                classNameNama="mt-1"
+              />
+              <CardRole
+                firstRole="Rolenya"
+                secondRole=""
+                name="Namanya"
+                jurusan="Jurusannya"
+                avatarSize={180}
+                textRoleSize="xs:text-subHeading md:text-heading"
+                textNameSize="xs:text-body md:text-subHeading"
+                textJurusanSize="mt-1 xs:text-caption md:text-body"
+                classNameSecond=" pt-0"
+                isDarkMode={isDarkMode}
+                classRole="xs:mb-0 md:mb-0 mt:0"
+                cardClassName="xs: md:pt-0"
+                foto={KadivPublikasi}
+                classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
+                classNameAvatar="-translate-y-1 scale-[1.2]"
+                classNameNama="mt-1"
+              />
+              <CardRole
+                firstRole="Rolenya"
+                secondRole=""
+                name="Namanya"
+                jurusan="Jurusannya"
+                avatarSize={180}
+                textRoleSize="xs:text-subHeading md:text-heading"
+                textNameSize="xs:text-body md:text-subHeading"
+                textJurusanSize="mt-1 xs:text-caption md:text-body"
+                classNameSecond=" pt-0"
+                isDarkMode={isDarkMode}
+                classRole="xs:mb-0 md:mb-0 mt:0"
+                cardClassName="xs: md:pt-0"
+                foto={WakadivPublikasi}
+                classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
+                classNameAvatar="translate-y-16 scale-[1.2]"
+                classNameNama="mt-1"
+              />
+              <CardRole
+                firstRole="Rolenya"
+                secondRole=""
+                name="Namanya"
+                jurusan="Jurusannya"
+                avatarSize={180}
+                textRoleSize="xs:text-subHeading md:text-heading"
+                textNameSize="xs:text-body md:text-subHeading"
+                textJurusanSize="mt-1 xs:text-caption md:text-body"
+                classNameSecond=" pt-0"
+                isDarkMode={isDarkMode}
+                classRole="xs:mb-0 md:mb-0 mt:0"
+                cardClassName="xs: md:pt-0"
+                foto={KasubdivTiktok}
+                classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
+                classNameAvatar="translate-y-2 scale-[1.2]"
+                classNameNama="mt-1"
+              />
+              <CardRole
+                firstRole="Rolenya"
+                secondRole=""
+                name="Namanya"
+                jurusan="Jurusannya"
+                avatarSize={180}
+                textRoleSize="xs:text-subHeading md:text-heading"
+                textNameSize="xs:text-body md:text-subHeading"
+                textJurusanSize="mt-1 xs:text-caption md:text-body"
+                classNameSecond=" pt-0"
+                isDarkMode={isDarkMode}
+                classRole="xs:mb-0 md:mb-0 mt:0"
+                cardClassName="xs: md:pt-0"
+                foto={KasubdivTwitter}
+                classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
+                classNameAvatar="translate-y-2 scale-[1.4]"
+                classNameNama="mt-1"
+              />
+              <CardRole
+                firstRole="Rolenya"
+                secondRole=""
+                name="Namanya"
+                jurusan="Jurusannya"
+                avatarSize={180}
+                textRoleSize="xs:text-subHeading md:text-heading"
+                textNameSize="xs:text-body md:text-subHeading"
+                textJurusanSize="mt-1 xs:text-caption md:text-body"
+                classNameSecond=" pt-0"
+                isDarkMode={isDarkMode}
+                classRole="xs:mb-0 md:mb-0 mt:0"
+                cardClassName="xs: md:pt-0"
+                foto={KasubdivIG}
+                classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
+                classNameAvatar="translate-y-2 scale-[1.2]"
+                classNameNama="mt-1"
+              />
+              <CardRole
+                firstRole="Rolenya"
+                secondRole=""
+                name="Namanya"
+                jurusan="Jurusannya"
+                avatarSize={180}
+                textRoleSize="xs:text-subHeading md:text-heading"
+                textNameSize="xs:text-body md:text-subHeading"
+                textJurusanSize="mt-1 xs:text-caption md:text-body"
+                classNameSecond=" pt-0"
+                isDarkMode={isDarkMode}
+                classRole="xs:mb-0 md:mb-0 mt:0"
+                cardClassName="xs: md:pt-0"
+                foto={WakasubdivIG}
+                classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
+                classNameAvatar="-translate-y-9 scale-[1.4]"
                 classNameNama="mt-1"
               />
             </div>
