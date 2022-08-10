@@ -882,8 +882,8 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 <div className="">
                   {' '}
                   <CardRole
-                    firstRole="Wakil Kepala Bidang"
-                    secondRole=""
+                    firstRole="Wakil"
+                    secondRole="Kepala Bidang"
                     name="Zefania Angeliqa Setiawan"
                     jurusan="Manajemen Bisnis'23"
                     avatarSize={180}
