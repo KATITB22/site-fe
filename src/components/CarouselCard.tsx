@@ -8,8 +8,8 @@ import Card from './Card';
 const slickSettings: Settings = {
   lazyLoad: 'ondemand',
   accessibility: false,
-  draggable: false,
-  slidesToShow: 4,
+  draggable: true,
+  slidesToShow: 3,
   slidesToScroll: 1,
   infinite: true,
   swipeToSlide: true,
@@ -39,7 +39,7 @@ const slickSettings: Settings = {
 };
 const CarouselCard: React.FC = () => {
   return (
-    <div className="m:w-[600px] lg:w-[800px] xl:w-[1000px] content-center my-0 mx-auto pt-20">
+    <div className="m:w-[600px] lg:w-[800px] xl:w-[1000px] content-center my-0 mx-auto pt-10 flex">
       <Slick {...slickSettings}>
         <Card text="1" />
         <Card text="2" />

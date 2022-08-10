@@ -10,6 +10,7 @@ module.exports = {
       lg: '1024px',
       xl: '1280px',
       xxl: '1440px',
+      '3xl': '1530px',
     },
     extend: {
       fontFamily: {
@@ -38,5 +39,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/aspect-ratio')],
 };

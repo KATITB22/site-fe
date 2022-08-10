@@ -5,11 +5,23 @@ interface FooterWaveTopProps {
   height?: number;
   width?: number;
   isDarkMode?: boolean;
+  embedded?: string;
 }
 
-const FooterWaveTop: React.FC<FooterWaveTopProps> = ({ width, isDarkMode }) => {
+const FooterWaveTop: React.FC<FooterWaveTopProps> = ({
+  width,
+  isDarkMode,
+  embedded,
+}) => {
+  const colorPicker = () => {
+    if (embedded === 'available') {
+      return 'bg-primaryYellow';
+    }
+    return 'bg-primaryCream';
+  };
+
   return (
-    <div className={isDarkMode ? 'bg-[#2F4250]' : 'bg-primaryCream'}>
+    <div className={isDarkMode ? 'bg-[#2F4250]' : colorPicker()}>
       <svg
         width="100%"
         height={375}

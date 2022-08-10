@@ -13,7 +13,7 @@ const DivisiIT: React.FC = () => {
         <NavItem name="Aplikasi Lainnya" to="/" />
       </Navbar>
       <OrganogramDivisiIT isDarkMode={false} />
-      <Footer isDarkMode={false} />
+      <Footer organogram isDarkMode={false} />
     </div>
   );
 };
