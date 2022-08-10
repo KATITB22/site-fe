@@ -18,6 +18,11 @@ interface CardRoleProps {
   isDarkMode?: boolean;
   classRole?: string;
   cardClassName?: string;
+  foto?: string;
+  classNameAvatar?: string;
+  classNameText?: string;
+  classNameNama?: string;
+  classNameAvatarContainer?: string;
 }
 
 const CardRole: React.FC<CardRoleProps> = ({
@@ -34,6 +39,11 @@ const CardRole: React.FC<CardRoleProps> = ({
   isDarkMode,
   classRole,
   cardClassName,
+  classNameAvatar,
+  classNameText,
+  classNameNama,
+  classNameAvatarContainer,
+  foto,
 }) => {
   return (
     <div
@@ -43,32 +53,41 @@ const CardRole: React.FC<CardRoleProps> = ({
     >
       <div className={`${classRole}`}>
         <RoleText
-          className={`absolute top-10 left-0 right- text-center ${className} ${textRoleSize}`}
+          className={`absolute top-0 left-0 right- text-center ${classNameText} ${textRoleSize}`}
           isDarkMode={isDarkMode}
         >
           {firstRole}
         </RoleText>
         <RoleText
-          className={`absolute top-10 left-0 right-0 text-center  ${classNameSecond} ${textRoleSize}`}
+          className={`absolute top-0 left-0 right-0 text-center  ${classNameSecond} ${textRoleSize}`}
           isDarkMode={isDarkMode}
         >
           {' '}
           {secondRole}
         </RoleText>
       </div>
-      <RoleAvatar avatarSize={avatarSize} />
-      <RoleText
-        className={`top-0 left-0 right-0 text-center ${textNameSize} `}
-        isDarkMode={isDarkMode}
-      >
-        {name}
-      </RoleText>
-      <RoleText
-        className={`top-0 left-0 right-0 text-center ${textJurusanSize}`}
-        isDarkMode={isDarkMode}
-      >
-        {jurusan}
-      </RoleText>
+      <div className="">
+        <RoleAvatar
+          classNameAvatarContainer={`${classNameAvatarContainer}`}
+          avatarSize={avatarSize}
+          foto={foto}
+          classNameAvatar={`${classNameAvatar}`}
+        />
+      </div>
+      <div className={`${classNameNama}`}>
+        <RoleText
+          className={`top-0 left-0 right-0 text-center ${textNameSize} `}
+          isDarkMode={isDarkMode}
+        >
+          {name}
+        </RoleText>
+        <RoleText
+          className={`top-0 left-0 right-0 text-center ${textJurusanSize}`}
+          isDarkMode={isDarkMode}
+        >
+          {jurusan}
+        </RoleText>
+      </div>
     </div>
   );
 };
