@@ -26,14 +26,10 @@ const App: React.FC<AppProps> = () => {
   return (
     <MotionConfig reducedMotion="user">
       {showNavbar && (
-        <Navbar darkMode={darkMode}>
-          <NavItem
-            darkMode={darkMode}
-            name="Organogram KAT ITB"
-            to="organogram-kat"
-          />
-          <NavItem darkMode={darkMode} name="Organogram IT" to="divisi-it" />
-          <NavItem darkMode={darkMode} name="Aplikasi Lainnya" to="/" />
+        <Navbar>
+          <NavItem name="Home" to="/" />
+          <NavItem name="Organogram KAT ITB" to="/organogram-kat" />
+          <NavItem name="Organogram IT" to="/divisi-it" />
         </Navbar>
       )}
       <Routes>

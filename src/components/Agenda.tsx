@@ -10,7 +10,7 @@ interface AgendaProps {
 }
 
 const Agenda: React.FC<AgendaProps> = ({ text, startDate, endDate }) => {
-  const target = moment('20220802', 'YYYYMMDD');
+  const target = moment('20220813', 'YYYYMMDD');
   const [isCurrentDate, setIsCurrentDate] = useState<boolean>();
 
   useEffect(() => {

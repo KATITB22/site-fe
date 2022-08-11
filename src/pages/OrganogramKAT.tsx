@@ -7,11 +7,6 @@ import NavItem from '../components/navbar/NavItem';
 const OrganogramKAT: React.FC = () => {
   return (
     <div>
-      <Navbar>
-        <NavItem name="Organogram KAT ITB" to="organogram-kat" />
-        <NavItem name="Organogram IT" to="divisi-it" />
-        <NavItem name="Aplikasi Lainnya" to="/" />
-      </Navbar>
       <OrganogramSection isDarkMode={false} />
       <Footer isDarkMode={false} />
     </div>
