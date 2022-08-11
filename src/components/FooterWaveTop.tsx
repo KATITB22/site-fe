@@ -24,7 +24,7 @@ const FooterWaveTop: React.FC<FooterWaveTopProps> = ({
     <div className={isDarkMode ? 'bg-[#2F4250]' : colorPicker()}>
       <svg
         width="100%"
-        height={375}
+        height={160}
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         textAnchor="middle"
@@ -33,7 +33,7 @@ const FooterWaveTop: React.FC<FooterWaveTopProps> = ({
         <path
           fillRule="evenodd"
           clipRule="evenodd"
-          d="M0 0l80 23.59c80 23.59 240 69.957 400 69.957S800 47.18 960 54.5c160 8.135 320 70.77 480 94.36 160 22.777 320 7.321 400 0l80-8.134V375H0V0z"
+          d="M0 0l80 23.59c80 23.59 240 69.957 400 69.957S800 47.18 960 54.5c160 8.135 320 70.77 480 94.36 160 22.777 320 7.321 400 0l80-8.134V160.5H0V0z"
           fill={isDarkMode ? '#4F6266' : '#FFC176'}
         />
       </svg>
