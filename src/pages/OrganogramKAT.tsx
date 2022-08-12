@@ -4,7 +4,7 @@ import OrganogramSection from '../containers/OrganogramSection';
 
 const OrganogramKAT: React.FC = () => {
   return (
-    <div>
+    <div className='overflow-hidden'>
       <OrganogramSection isDarkMode={true} />
       <Footer isDarkMode={true} />
     </div>

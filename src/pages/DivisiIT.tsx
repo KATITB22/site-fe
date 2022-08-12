@@ -4,7 +4,7 @@ import OrganogramDivisiIT from '../containers/OrganogramDivisiIT';
 
 const DivisiIT: React.FC = () => {
   return (
-    <div>
+    <div className='overflow-hidden'>
       <OrganogramDivisiIT isDarkMode={false} />
       <Footer organogram isDarkMode={false} />
     </div>

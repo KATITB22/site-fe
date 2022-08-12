@@ -19,7 +19,7 @@ const LandingFooterGraphics: React.FC = () => {
             <VStock className="absolute -top-[90px] left-[800px] right-0 w-[220px]" src={batangKayu} animation="left" />
             <VStock className="absolute -top-[5px] left-[1250px] right-0 w-[220px] rotate-12" src={bunga} animation="right" />
             <VStock className="absolute top-8 left-[1150px] right-0 w-[220px] rotate-12" src={semak} animation="right" />
-            <VStock className="absolute -top-[5px] left-[1250px] right-0 w-[220px] rotate-12" src={batangKayu2} animation="right" />
+            <VStock className="absolute top-[10px] left-[1250px] right-0 w-[220px]" src={batangKayu2} animation="right" />
         </div>
     );
 };

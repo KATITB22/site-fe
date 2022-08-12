@@ -13,7 +13,7 @@ interface HomeProps {
 
 export const Home: React.FC<HomeProps> = ({ embedded }) => {
   return (
-    <div>
+    <div className='overflow-hidden'>
       <Hero />
       <Timeline />
       {embedded === 'available' ? <Animasi /> : null}
