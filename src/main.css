@@ -58,4 +58,5 @@ body::-webkit-scrollbar {
   place-items: center;
   margin: auto;
   padding: 0px;
+  height: 350px;
 }

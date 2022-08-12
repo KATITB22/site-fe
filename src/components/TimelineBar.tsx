@@ -5,6 +5,7 @@ import { MdKeyboardArrowDown } from 'react-icons/md';
 import { getTransition } from '../utils/transition';
 import Agenda from './Agenda';
 import VerticalLine from './VerticalLine';
+import 'moment/dist/locale/id';
 interface TimelineBarProps {
   text?: string;
   date?: Date;
@@ -38,6 +39,7 @@ const timelineData = [
 ];
 
 const TimelineBar: React.FC<TimelineBarProps> = () => {
+  moment.locale('id');
   const dataCount = 3;
   const [isOpen, setIsOpen] = useState(false);
 
