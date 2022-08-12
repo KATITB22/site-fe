@@ -1,5 +1,8 @@
-import { Moment } from 'moment';
+import moment, { Moment } from 'moment';
 import React from 'react';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import 'moment/dist/locale/id';
 
 interface CardProps {
   name: string;
@@ -9,9 +12,19 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ name, src, date, url }) => {
-  // return <div className="bg-grey h-[300px] w-[200px] text-white">{text}</div>;
+  moment.locale('id');
+  const today = moment();
   const handleClick = () => {
-    window.location.href = url;
+    if (today.isBefore(date)) {
+      toast.warning(
+        `Maaf, web ${name} dibuka tanggal ${moment(date).format('LL')}`,
+        {
+          autoClose: 2000,
+        }
+      );
+    } else {
+      window.location.href = url;
+    }
   };
 
   return (

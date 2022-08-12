@@ -6,6 +6,7 @@ import Footer from '../containers/Footer';
 import Hero from '../containers/Hero';
 import Timeline from '../containers/Timeline';
 import Animasi from '../containers/Animasi';
+import { ToastContainer } from 'react-toastify';
 
 interface HomeProps {
   embedded?: string;
@@ -14,6 +15,7 @@ interface HomeProps {
 export const Home: React.FC<HomeProps> = ({ embedded }) => {
   return (
     <div>
+      <ToastContainer position="top-center" />
       <Hero />
       <Timeline />
       {embedded === 'available' ? <Animasi /> : null}

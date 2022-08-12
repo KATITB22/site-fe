@@ -5,7 +5,9 @@ import Blog from '../assets/img/aplikasi_lainnya/Blog.png';
 import OHU from '../assets/img/aplikasi_lainnya/OHU.png';
 import Insight from '../assets/img/aplikasi_lainnya/Insight.png';
 import { AplikasiLainnyaData } from '../interfaces';
+import 'moment/dist/locale/id';
 
+moment.locale('id');
 export const aplikasiLainnya: AplikasiLainnyaData[] = [
   {
     name: 'Samitra',
