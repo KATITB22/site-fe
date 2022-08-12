@@ -2,18 +2,19 @@ import React from 'react';
 import CardRole from '../components/CardRole';
 import RoleText from '../components/RoleText';
 import PohonAtas from '../resources/pohon-ranting1v2.png';
-import KetuaKAT from '../resources/kat/IMG_5974-removebg-preview.png';
 
-import SekretarisJenderal from '../resources/kat/sekjen.png';
-import Wasekjen from '../resources/kat/Wasekjen_Priscilla_Anastasya_Adhi_Surya_1-removebg-preview.png';
-import Sekretaris1 from '../resources/kat/IMG_0665__1_-removebg-preview.png';
-import Sekretaris2 from '../resources/kat/1.png';
-import Bendahara1 from '../resources/kat/Bendahara Umum 1_ Zahra Farzadila .png';
-import Bendahara2 from '../resources/kat/Bendahar Umum 2_Yessi Afrianty.png';
+import KetuaKAT from '../resources/kat/Ketua_Manav Hardinata.png';
+
+import SekretarisJenderal from '../resources/kat/Sekjen_Theodore.png';
+import Wasekjen from '../resources/kat/Wasekjen_Priscilla Anastasya.png';
+import Sekretaris1 from '../resources/kat/Sekre 1_Muhammad Arif.png';
+import Sekretaris2 from '../resources/kat/Sekre 2_Dara Kusumawati.png';
+import Bendahara1 from '../resources/kat/Bendahara Umum 1_Zahra Farzadila.png';
+import Bendahara2 from '../resources/kat/Bendahara Umum 2_Yessi Afrianty.png';
 import Perizinan from '../resources/kat/Perizinan_Fidela Marwa Huwaida.png';
 
-import KepalaHR from '../resources/kat/Kepala Bidang_Riri Raissa Syifa Nabilah.png';
-import WakilHR from '../resources/kat/M. Farhanulhakim_Formal.png';
+import KepalaHR from '../resources/kat/HR_Kabid_Riri Raissa Syifa Nabilah.png';
+import WakilHR from '../resources/kat/HR_Wakabid_M. Farhanulhakim.png';
 
 import KetuaBidang from '../resources/DivisiIT/IT_Kabid_Viel.png';
 import WakilKetuaBidang from '../resources/DivisiIT/IT_Wakabid_Fabian Savero Diaz Pranoto.png';
@@ -24,21 +25,21 @@ import Content7 from '../resources/DivisiIT/CP_Kadiv_Widya Anugrah Putra.png';
 import Event1 from '../resources/DivisiIT/EA_Kadiv_Jason Kanggara.png';
 import Event15 from '../resources/DivisiIT/EA_Wakadiv_M Syahrul Surya Putra.png';
 
-import KabidMamet from '../resources/kat/IMG20220705151741-removebg-preview.png';
-import WakabidMamet from '../resources/kat/IMG_3391-removebg-preview.png';
-import KordivKeamanan from '../resources/kat/0.png';
-import KordivMedik from '../resources/kat/_formal.png';
-import KordivMentor from '../resources/kat/0 copy.png';
+import KabidMamet from '../resources/kat/Mamet_Kabid_Achmad Daffa.png';
+import WakabidMamet from '../resources/kat/Mamet_Wakabid_M. Nabiel.png';
+import KordivKeamanan from '../resources/kat/Mamet_Keamanan_Athallah Rasendriya.png';
+import KordivMedik from '../resources/kat/Mamet_Medik_Zafran Divac.png';
+import KordivMentor from '../resources/kat/Mamet_Mentor_Muhammad Al-Ghazali.png';
 
-import KabidAcara from '../resources/kat/Kabid_Acara_Muhammad_Fathur_Rozaq_Qomar__1_-removebg-preview.png';
-import WakabidAcara from '../resources/kat/Wakabid_Acara_Kevin_Sean_Hans_Lopulalan_1__1_-removebg-preview.png';
-import KadivEO from '../resources/kat/RIzky Maulana Kadiv EO.png';
-import WakadivEO from '../resources/kat/Wakadiv EO_Nerfita Aurora Veda Talitha_1.png';
-import Koormancar from '../resources/kat/Koormancar_Argya Rangga Wicaksono (Formal).png';
-import Wakoormancar from '../resources/kat/Wakoormancar_Liora Parulian Bitya Joanna (Formal).png';
-import Sekremancar from '../resources/kat/Sekremancar_Nooriliefa_Fajran_Fahira__Formal_-removebg-preview.png';
-import Kadivseremonial from '../resources/kat/Kadiv seremonial.png';
-import Wakadivseremonial from '../resources/kat/Wakadiv Seremonial_Febby Athia Rahim_1.png';
+import KabidAcara from '../resources/kat/Acara_Kabid_Muhammad Fathur Rozaq Qomar.png';
+import WakabidAcara from '../resources/kat/Acara_Wakabid_Kevin Sean.png';
+import KadivEO from '../resources/kat/EO_Kadiv_Rizky Maulana.png';
+import WakadivEO from '../resources/kat/EO_Wakadiv_Nerfita Aurora.png';
+import Koormancar from '../resources/kat/Mancar_Koor_Argya Rangga.png';
+import Wakoormancar from '../resources/kat/Mancar_Wakoor_Liora Parulian.png';
+import Sekremancar from '../resources/kat/Mancar_Sekre_Nooriliefa.png';
+import Kadivseremonial from '../resources/kat/Seremonial_Kadiv_M. Fadlan.png';
+import Wakadivseremonial from '../resources/kat/Seremonial_Wakadiv_Febby Athia.png';
 
 import Kabidfundraising from '../resources/kat/Ketua Bidang_Vincentia Viona.png';
 import Wakabidfundraising from '../resources/kat/Wakil Ketua Bidang_Zefania Angeliqa.png';
