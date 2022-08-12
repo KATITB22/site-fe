@@ -2,54 +2,53 @@ import React from 'react';
 import CardRole from '../components/CardRole';
 import RoleText from '../components/RoleText';
 import PohonAtas from '../resources/pohon-ranting1v2.png';
-import PohonBawahKanan from '../resources/Pohon 1.png';
-import KetuaBidang from '../resources/DivisiIT/Kepala Bidang_Viel.png';
-import WakilKetuaBidang from '../resources/DivisiIT/KAT_1 - Fabian Savero Diaz Pranoto.png';
-import KetuaDivisiSocial from '../resources/DivisiIT/Kepala Divisi_Rafi Raihansyah.png';
-import WakilKepalaDivisi from '../resources/DivisiIT/Wakil Kepala Divisi_Haikal Lazuardi Fadil.png';
-import Social1 from '../resources/DivisiIT/FeliciaSutandijo - 13520050 Felicia Sutandijo.png';
-import Social2 from '../resources/DivisiIT/foto_anca - 13520044 Adiyansa Prasetya Wicaksana.png';
-import Social3 from '../resources/DivisiIT/13521093 - 16521147 Akbar Maulana Ridho.png';
-import Social4 from '../resources/DivisiIT/1659602579247 - Arsa Izdihar Islam.png';
-import Social5 from '../resources/DivisiIT/20210707_003849-removebg-preview-removebg-preview - Christopher Justine.png';
-import Social6 from '../resources/DivisiIT/P1010153-removebg - 257_Muhammad Afief Abdurrahman.png';
-import Social7 from '../resources/DivisiIT/profil - 13520117 Hafidz Nur Rahman Ghozali.png';
-import Social8 from '../resources/DivisiIT/Claudia_Jahim - 13520076 Claudia.png';
-import Social9 from '../resources/DivisiIT/malik.png';
-import Social10 from '../resources/DivisiIT/IMG_4310-removebg-preview.png';
-import Social11 from '../resources/DivisiIT/Christopher Justine William.png';
-import Social12 from '../resources/DivisiIT/Organogram_Sekjen-removebg-preview.png';
-import Social13 from '../resources/DivisiIT/E5C9B707-16BF-4823-96E3-70A5A6AE7706.jpg';
-import Social14 from '../resources/DivisiIT/20220704_164448-removebg-preview.png';
+import KetuaBidang from '../resources/DivisiIT/IT_Kabid_Viel.png';
+import WakilKetuaBidang from '../resources/DivisiIT/IT_Wakabid_Fabian Savero Diaz Pranoto.png';
+import KetuaDivisiSocial from '../resources/DivisiIT/SS_Kadiv_Rafi Raihansyah.png';
+import WakilKepalaDivisi from '../resources/DivisiIT/SS_Wakadiv_Haikal Lazuardi Fadil.png';
+import Social1 from '../resources/DivisiIT/Felicia Sutandijo.png';
+import Social2 from '../resources/DivisiIT/Adiyansa Prasetya.png';
+import Social3 from '../resources/DivisiIT/Akbar Maulana Ridho.png';
+import Social4 from '../resources/DivisiIT/Arsa Izdihar Islam.png';
+import Social5 from '../resources/DivisiIT/Muhammad Afief Abdurrahman.png';
+import Social6 from '../resources/DivisiIT/Hafidz Nur Rahman Ghozali.png';
+import Social7 from '../resources/DivisiIT/Claudia.png';
+import Social8 from '../resources/DivisiIT/Malik Akbar.png';
+import Social9 from '../resources/DivisiIT/Fikri Khoiron Fadhila.png';
+import Social10 from '../resources/DivisiIT/Christopher Justine William.png';
+import Social11 from '../resources/DivisiIT/Rania Dwi Fadhilah.png';
+import Social12 from '../resources/DivisiIT/Sarah Azka Arief.jpg';
 
-import Content1 from '../resources/DivisiIT/gare - 13520029 Muhammad Garebaldhie Er Rahman.png';
-import Content2 from '../resources/DivisiIT/Muhammad_Firdaus-removebg-preview - Cawis_033_Firdaus.png';
-import Content3 from '../resources/DivisiIT/photo_2022-07-06_20-00-40-removebg - Fatih Nararya R. I..png';
-import Content4 from '../resources/DivisiIT/20220804_182456-removebg 1 - 13519007 Muhammad Tito Prakasa.png';
-import Content5 from '../resources/DivisiIT/image__7_-removebg-preview - 161_Habiburrohman.png';
-import Content6 from '../resources/DivisiIT/P_20220804_214733-removebg-preview - 253_Carlios Eryan.png';
-import Content7 from '../resources/DivisiIT/Picsart_22-08-05_15-25-12-502-removebg-preview - Widya Anugrah Putra.png';
-import Content8 from '../resources/DivisiIT/S__205037916-removebg-preview - 13519040 Shafira Naya Aprisadianti.png';
-import Content9 from '../resources/DivisiIT/AuliaAdila - 13519100 Aulia Adila.png';
-import Content10 from '../resources/DivisiIT/2-removebg-preview - 13520132 Januar Budi Ghifari.png';
-import Content11 from '../resources/DivisiIT/914CAADC-8F1A-48DE-9B7F-492B6B2F6E47 - Nadirah Rianty Suseno.png';
-import Content12 from '../resources/DivisiIT/kat_profile-bg - 13520002 Muhammad Fikri Ranjabi.png';
-import Content13 from '../resources/DivisiIT/bebas_-_13520111_Rizky_Akbar_Asmaran-removebg-preview.png';
-import Event1 from '../resources/DivisiIT/jason-bebas - 13520080 Jason Kanggara.png';
-import Event2 from '../resources/DivisiIT/IMG_20220804_223654 - 049_Muhammad Irfan Fathoni (1).png';
-import Event3 from '../resources/DivisiIT/8AF68B91-C31C-47B9-861C-72D6F639FBAC - 16521104 Fajar Maulana Herawan.png';
-import Event4 from '../resources/DivisiIT/IMG_20220805_104411-removebg-preview - 381_Hanny Margaretha Aritonang.png';
-import Event5 from '../resources/DivisiIT/Kell - Ilham Akbar.png';
-import Event6 from '../resources/DivisiIT/foto - 16521042 Rania Sasi Kirana.png';
-import Event7 from '../resources/DivisiIT/IMG_6723-removebg - 334_Aulia Mey Diva Annandya.png';
-import Event8 from '../resources/DivisiIT/S__82788354-removebg-preview - 13520065 Rayhan Kinan Muhannad.png';
-import Event9 from '../resources/DivisiIT/10121046_Zhafir Wisam Septiana_1 - 171_Zhafir Wisam Septiana.png';
+import Content1 from '../resources/DivisiIT/CP_Wakadiv_Muhammad Garebaldhie Er Rahman.png';
+import Content2 from '../resources/DivisiIT/Muhammad Firdaus.png';
+import Content3 from '../resources/DivisiIT/Fatih Nararya.png';
+import Content4 from '../resources/DivisiIT/Muhammad Tito Prakasa.png';
+import Content5 from '../resources/DivisiIT/Habiburrohman.png';
+import Content6 from '../resources/DivisiIT/Carlios Eryan.png';
+import Content7 from '../resources/DivisiIT/CP_Kadiv_Widya Anugrah Putra.png';
+import Content8 from '../resources/DivisiIT/Shafira Naya Aprisadianti.png';
+import Content9 from '../resources/DivisiIT/Aulia Adila.png';
+import Content10 from '../resources/DivisiIT/Januar Budi Ghifari.png';
+import Content11 from '../resources/DivisiIT/Nadirah Rianty Suseno.png';
+import Content12 from '../resources/DivisiIT/Muhammad Fikri Ranjabi.png';
+import Content13 from '../resources/DivisiIT/Rizky Akbar Asmaran.png';
+
+import Event1 from '../resources/DivisiIT/EA_Kadiv_Jason Kanggara.png';
+import Event2 from '../resources/DivisiIT/Muhammad Irfan Fathoni.png';
+import Event3 from '../resources/DivisiIT/Fajar Maulana Herawan.png';
+import Event4 from '../resources/DivisiIT/Hanny Margaretha Aritonang.png';
+import Event5 from '../resources/DivisiIT/Ilham Akbar.png';
+import Event6 from '../resources/DivisiIT/Rania Sasi Kirana.png';
+import Event7 from '../resources/DivisiIT/Aulia Mey Diva Annandya.png';
+import Event8 from '../resources/DivisiIT/Rayhan Kinan Muhannad.png';
+import Event9 from '../resources/DivisiIT/Zhafir Wisam Septiana.png';
 import Event10 from '../resources/DivisiIT/Alif.png';
-import Event11 from '../resources/DivisiIT/Poto_pake_jamal-removebg - 16521378 Razzan Daksana Yoni.png';
-import Event12 from '../resources/DivisiIT/OSKM - R 145 Abraham.png';
-import Event13 from '../resources/DivisiIT/ei_1659714454258-removebg-preview - Nafi Mulyo Kusumo.png';
-import Event14 from '../resources/DivisiIT/Untitled150_20220805231503 - Chiquita Ahsanunnisa.png';
-import Event15 from '../resources/DivisiIT/SP - 13520161 M Syahrul Surya Putra.png';
+import Event11 from '../resources/DivisiIT/Razzan Daksana Yoni.png';
+import Event12 from '../resources/DivisiIT/Abraham.png';
+import Event13 from '../resources/DivisiIT/Nafi Mulyo Kusumo.png';
+import Event14 from '../resources/DivisiIT/Chiquita Ahsanunnisa.png';
+import Event15 from '../resources/DivisiIT/EA_Wakadiv_M Syahrul Surya Putra.png';
+import Event16 from '../resources/DivisiIT/Gagas Praharsa Bahar.png';
 
 interface OrganogramDivisiITProps {
   isDarkMode?: boolean;
@@ -206,7 +205,7 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 isDarkMode={isDarkMode}
                 classRole="xs:mb-0 md:mb-0 mt:0"
                 cardClassName="xs: md:pt-0"
-                foto={Social10}
+                foto={Social9}
                 classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
                 classNameAvatar="-translate-y-2 scale-[0.8]"
                 classNameNama="mt-1"
@@ -275,7 +274,7 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 isDarkMode={isDarkMode}
                 classRole="xs:mb-0 md:mb-0 mt:0"
                 cardClassName="xs: md:pt-0"
-                foto={Social11}
+                foto={Social10}
                 classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
                 classNameAvatar="translate-y-2 scale-[1]"
                 classNameNama="mt-1"
@@ -292,7 +291,7 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 isDarkMode={isDarkMode}
                 classRole="xs:mb-0 md:mb-0 mt:0"
                 cardClassName="xs: md:pt-0"
-                foto={Social6}
+                foto={Social5}
                 classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
                 classNameAvatar="-translate-y-6 scale-[0.7]"
                 classNameNama="mt-1"
@@ -309,7 +308,7 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 isDarkMode={isDarkMode}
                 classRole="xs:mb-0 md:mb-0 mt:0"
                 cardClassName="xs: md:pt-0"
-                foto={Social7}
+                foto={Social6}
                 classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
                 classNameAvatar="translate-y-9 scale-[1]"
                 classNameNama="mt-1"
@@ -326,7 +325,7 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 isDarkMode={isDarkMode}
                 classRole="xs:mb-0 md:mb-0 mt:0"
                 cardClassName="xs: md:pt-0"
-                foto={Social8}
+                foto={Social7}
                 classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
                 classNameAvatar="translate-y-1 scale-[1]"
                 classNameNama="mt-1"
@@ -343,7 +342,7 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 isDarkMode={isDarkMode}
                 classRole="xs:mb-0 md:mb-0 mt:0"
                 cardClassName="xs: md:pt-0"
-                foto={Social9}
+                foto={Social8}
                 classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
                 classNameAvatar="-translate-y-0 scale-[1.5]"
                 classNameNama="mt-1"
@@ -360,7 +359,7 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 isDarkMode={isDarkMode}
                 classRole="xs:mb-0 md:mb-0 mt:0"
                 cardClassName="xs: md:pt-0"
-                foto={Social12}
+                foto={Social11}
                 classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
                 classNameAvatar="translate-y-1 scale-[1.1]"
                 classNameNama="mt-1"
@@ -377,7 +376,7 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 isDarkMode={isDarkMode}
                 classRole="xs:mb-0 md:mb-0 mt:0"
                 cardClassName="xs: md:pt-0"
-                foto={Social13}
+                foto={Social12}
                 classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
                 classNameAvatar="-translate-y-6 scale-[1.5]"
                 classNameNama="mt-1"
@@ -936,7 +935,7 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 isDarkMode={isDarkMode}
                 classRole="xs:mb-0 md:mb-0 mt:0"
                 cardClassName="xs: md:pt-0"
-                foto={Social14}
+                foto={Event16}
                 classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
                 classNameAvatar="translate-y-5 scale-[1.3]"
                 classNameNama="mt-1"

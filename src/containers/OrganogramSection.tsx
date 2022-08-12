@@ -2,7 +2,6 @@ import React from 'react';
 import CardRole from '../components/CardRole';
 import RoleText from '../components/RoleText';
 import PohonAtas from '../resources/pohon-ranting1v2.png';
-import PohonBawahKanan from '../resources/Pohon 1.png';
 import KetuaKAT from '../resources/kat/IMG_5974-removebg-preview.png';
 
 import SekretarisJenderal from '../resources/kat/sekjen.png';
@@ -16,14 +15,14 @@ import Perizinan from '../resources/kat/Perizinan_Fidela Marwa Huwaida.png';
 import KepalaHR from '../resources/kat/Kepala Bidang_Riri Raissa Syifa Nabilah.png';
 import WakilHR from '../resources/kat/M. Farhanulhakim_Formal.png';
 
-import KetuaBidang from '../resources/DivisiIT/Kepala Bidang_Viel.png';
-import WakilKetuaBidang from '../resources/DivisiIT/KAT_1 - Fabian Savero Diaz Pranoto.png';
-import KetuaDivisiSocial from '../resources/DivisiIT/Kepala Divisi_Rafi Raihansyah.png';
-import WakilKepalaDivisi from '../resources/DivisiIT/Wakil Kepala Divisi_Haikal Lazuardi Fadil.png';
-import Content1 from '../resources/DivisiIT/gare - 13520029 Muhammad Garebaldhie Er Rahman.png';
-import Content7 from '../resources/DivisiIT/Picsart_22-08-05_15-25-12-502-removebg-preview - Widya Anugrah Putra.png';
-import Event1 from '../resources/DivisiIT/jason-bebas - 13520080 Jason Kanggara.png';
-import Event15 from '../resources/DivisiIT/SP - 13520161 M Syahrul Surya Putra.png';
+import KetuaBidang from '../resources/DivisiIT/IT_Kabid_Viel.png';
+import WakilKetuaBidang from '../resources/DivisiIT/IT_Wakabid_Fabian Savero Diaz Pranoto.png';
+import KetuaDivisiSocial from '../resources/DivisiIT/SS_Kadiv_Rafi Raihansyah.png';
+import WakilKepalaDivisi from '../resources/DivisiIT/SS_Wakadiv_Haikal Lazuardi Fadil.png';
+import Content1 from '../resources/DivisiIT/CP_Wakadiv_Muhammad Garebaldhie Er Rahman.png';
+import Content7 from '../resources/DivisiIT/CP_Kadiv_Widya Anugrah Putra.png';
+import Event1 from '../resources/DivisiIT/EA_Kadiv_Jason Kanggara.png';
+import Event15 from '../resources/DivisiIT/EA_Wakadiv_M Syahrul Surya Putra.png';
 
 import KabidMamet from '../resources/kat/IMG20220705151741-removebg-preview.png';
 import WakabidMamet from '../resources/kat/IMG_3391-removebg-preview.png';
