@@ -12,17 +12,32 @@ interface VStockProps {
   id?: string;
 }
 
-const VStock: React.FC<VStockProps> = ({ className, src, animation, animationType }) => {
+const VStock: React.FC<VStockProps> = ({
+  className,
+  src,
+  animation,
+  id,
+  animationType,
+}) => {
   if (animation) {
     return (
       <div>
-        <motion.img className={`${className} overflow-hidden pointer-events-none`} src={src ? src : rectangle} {...getTransition(animation, { type: animationType ? animationType : null })} />
+        <motion.img
+          className={`${className} pointer-events-none`}
+          src={src ? src : rectangle}
+          {...getTransition(animation, {
+            type: animationType ? animationType : '',
+          })}
+        />
       </div>
     );
   }
   return (
     <div>
-      <img className={`${className} pointer-events-none`} src={src ? src : rectangle} />
+      <img
+        className={`${className} pointer-events-none`}
+        src={src ? src : rectangle}
+      />
     </div>
   );
 };

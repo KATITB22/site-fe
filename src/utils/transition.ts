@@ -10,7 +10,7 @@ interface TransitionOptions {
 export function getTransition(
   from: 'left' | 'right' | 'bottom',
   options?: TransitionOptions
-): HTMLMotionProps<keyof ReactHTML> {
+) {
   const initial: Variant = { opacity: 0 };
   if (from === 'bottom') {
     initial.y = '100%';

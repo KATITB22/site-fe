@@ -1,3 +1,5 @@
+import { Moment } from 'moment';
+
 export interface Color {
   yellow: string;
   lightyellow: string;
@@ -9,4 +11,11 @@ export interface Color {
   black: string;
   green: string;
   lightgreen: string;
+}
+
+export interface AplikasiLainnyaData {
+  name: string;
+  src: string;
+  date: Date | Moment;
+  url: string;
 }

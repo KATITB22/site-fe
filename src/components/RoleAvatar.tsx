@@ -1,26 +1,30 @@
 import React from 'react';
-import logo from '../resources/foto.png';
 
 interface RoleAvatarProps {
-  className?: string;
+  classNameAvatar?: string;
   link?: string;
   avatarSize?: number;
+  foto?: string;
+  classNameAvatarContainer?: string;
 }
 
 const RoleAvatar: React.FC<RoleAvatarProps> = ({
-  className,
+  classNameAvatar,
+  classNameAvatarContainer,
   link,
   avatarSize,
+  foto,
 }) => {
   return (
     <div
+      className={`${classNameAvatarContainer} `}
       style={{
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
       }}
     >
-      <img width={avatarSize} className={`${className}`} src={logo} />
+      <img width={avatarSize} className={` ${classNameAvatar}`} src={foto} />
     </div>
   );
 };
