@@ -109,7 +109,6 @@ import WakadivEkskam from '../resources/kat/Ekskam_Wakadiv_Syahidah.png';
 import KadivInkam from '../resources/kat/Inkam_Kadiv_I Dewa Ayu.png';
 import WakadivInkam from '../resources/kat/Inkam_Wakadiv_Anindya.png';
 
-import Social1 from '../resources/DivisiIT/FeliciaSutandijo - 13520050 Felicia Sutandijo.png';
 interface OrganogramDivisiITProps {
   isDarkMode?: boolean;
 }
