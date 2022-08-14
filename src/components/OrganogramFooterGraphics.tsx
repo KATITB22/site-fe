@@ -9,11 +9,10 @@ import pohon3 from '../assets/img/vistock/organogram_it/pohon3.png';
 
 const OrganogramFooterGraphics: React.FC = () => {
     return (
-        <div className={`relative xs:hidden lg:flex`}>
-            <VStock className="absolute -top-[300px] -left-36 right-0 w-[360px]" src={pohon} animation='right' />
-            <VStock className="absolute -top-[1500px] -right-8 w-[420px]" src={pohon2} animation='bottom' />
-            <VStock className="absolute -top-[280px] -right-[300px] w-[490px]" src={pohon3} animation='left' />
-        </div>
+        <>
+            <VStock className="absolute xs:invisible lg:visible -top-[300px] -left-36 right-0 w-[360px]" src={pohon} animation='bottom' />
+            <VStock className="absolute xs:invisible lg:visible -top-[280px] -right-[300px] w-[490px]" src={pohon3} animation='bottom' />
+        </>
     );
 };
 

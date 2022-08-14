@@ -1,7 +1,6 @@
 import React from 'react';
 import CardRole from '../components/CardRole';
 import RoleText from '../components/RoleText';
-import PohonAtas from '../resources/pohon-ranting1v2.png';
 import KetuaBidang from '../resources/DivisiIT/IT_Kabid_Viel.png';
 import WakilKetuaBidang from '../resources/DivisiIT/IT_Wakabid_Fabian Savero Diaz Pranoto.png';
 import KetuaDivisiSocial from '../resources/DivisiIT/SS_Kadiv_Rafi Raihansyah.png';
@@ -59,9 +58,8 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
 }) => {
   return (
     <div
-      className={`${
-        isDarkMode ? 'bg-[#2F4250]' : 'bg-[#FFFCF2]'
-      } w-[100vw] xs:py-24 xs:px-20 sm:px-36 py-80`}
+      className={`${isDarkMode ? 'bg-[#2F4250]' : 'bg-[#FFFCF2]'
+        } w-[100vw] xs:py-24 xs:px-20 sm:px-36 py-80`}
     >
       <div className="flex flex-col gap-y-20">
         <div className="flex xs:flex-col md:flex-row justify-center gap-x-10 gap-y-10">
@@ -108,9 +106,9 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
           />
         </div>
 
-        <div className="absolute top-10 xs:invisible lg:visible lg:-right-52">
+        {/* <div className="absolute top-10 xs:invisible lg:visible lg:-right-52">
           <img width={780} src={PohonAtas} alt="Pohon Atas" />
-        </div>
+        </div> */}
 
         <div className="flex flex-col gap-y-20">
           <div className="Social & Site">

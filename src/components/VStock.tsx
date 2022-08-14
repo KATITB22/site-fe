@@ -21,24 +21,24 @@ const VStock: React.FC<VStockProps> = ({
 }) => {
   if (animation) {
     return (
-      <div>
+      <>
         <motion.img
-          className={`${className} pointer-events-none`}
+          className={`${className} pointer-events-none bg-position-none`}
           src={src ? src : rectangle}
           {...getTransition(animation, {
             type: animationType ? animationType : '',
           })}
         />
-      </div>
+      </>
     );
   }
   return (
-    <div>
+    <>
       <img
         className={`${className} pointer-events-none`}
         src={src ? src : rectangle}
       />
-    </div>
+    </>
   );
 };
 
