@@ -54,7 +54,7 @@ import AISEC from '../assets/img/sponsor_medpar/Batch-1/M/AIESEC-Bandung/AIESEC.
 import BCM from '../assets/img/sponsor_medpar/Batch-1/M/Bandung-Creative-Media/BCM.png';
 import MaraFM from '../assets/img/sponsor_medpar/Batch-1/M/MaraFM/MaraFM.png';
 import MMTCRadio from '../assets/img/sponsor_medpar/Batch-1/M/MMTC-Radio.png';
-import TRadio from '../assets/img/sponsor_medpar/Batch-1/M/TRadio/Tradio.png';
+import TRadio from '../assets/img/sponsor_medpar/Batch-1/M/TRadio/TRadio.png';
 
 import LapanEH from '../assets/img/sponsor_medpar/Batch-1/L/8EH-Radio-ITB/8EH-Red.png';
 import BahanaFM from '../assets/img/sponsor_medpar/Batch-1/L/Bahana-FM.png';
