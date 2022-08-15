@@ -24,6 +24,25 @@ const App: React.FC<AppProps> = () => {
     'Halaman Utama Landing Page OSKM 2022'
   );
 
+  const inputRef = React.useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    setTimeout(() => {
+      if (inputRef.current !== null) {
+        inputRef.current.click();
+      }
+    }, 1000);
+  }, [inputRef]);
+
+  const musicTrigger = () => {
+    const music = document.getElementById(
+      'backgroundMusic'
+    ) as HTMLAudioElement;
+    if (music != null) {
+      music.play();
+    }
+  };
+
   useEffect(() => {
     if (location.pathname === '/home') {
       setTitle('Home');
@@ -42,7 +61,7 @@ const App: React.FC<AppProps> = () => {
   }, [location.pathname]);
 
   return (
-    <>
+    <div ref={inputRef} onClick={musicTrigger}>
       <HelmetMeta title={title} description={description} />
       <MotionConfig reducedMotion="user">
         {showNavbar && (
@@ -75,8 +94,13 @@ const App: React.FC<AppProps> = () => {
           <Route path="/organogram-it" element={<DivisiIT />} />
         </Routes>
       </MotionConfig>
-      <ReactAudioPlayer src={BackgroundMusic} autoPlay={true} controls />
-    </>
+      <ReactAudioPlayer
+        id="backgroundMusic"
+        src={BackgroundMusic}
+        autoPlay={true}
+        loop
+      />
+    </div>
   );
 };
 
