@@ -120,7 +120,6 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
       className={`${isDarkMode ? 'bg-[#2F4250]' : 'bg-[#FFFCF2]'
         } w-[100vw] xs:py-24 xs:px-20 sm:px-36 py-80`}
     >
-
       <div className="flex flex-col gap-y-20">
         <div className="flex xs:flex-col md:flex-row justify-center gap-x-10 gap-y-10">
           {' '}

@@ -16,14 +16,13 @@ const VStock: React.FC<VStockProps> = ({
   className,
   src,
   animation,
-  id,
   animationType,
 }) => {
   if (animation) {
     return (
       <>
         <motion.img
-          className={`${className} pointer-events-none bg-position-none`}
+          className={`${className} pointer-events-none`}
           src={src ? src : rectangle}
           {...getTransition(animation, {
             type: animationType ? animationType : '',
