@@ -7,6 +7,7 @@ import DivisiIT from './pages/DivisiIT';
 import { Home } from './pages/Home';
 import OrganogramKAT from './pages/OrganogramKAT';
 import PageNotFound from './pages/PageNotFound';
+import HelmetMeta from './components/HelmetMeta';
 
 interface AppProps {
   video?: string;
@@ -14,34 +15,52 @@ interface AppProps {
 
 const App: React.FC<AppProps> = () => {
   const location = useLocation();
-  const [darkMode, setDarkMode] = useState(false);
   const [showNavbar, setShowNavbar] = useState(true);
 
+  const [title, setTitle] = useState('Home');
+  const [description, setDescription] = useState(
+    'Halaman Utama Landing Page OSKM 2022'
+  );
+
   useEffect(() => {
-    location.pathname === '/organogram-kat'
-      ? setDarkMode(true)
-      : setDarkMode(false);
+    if (location.pathname === '/home') {
+      setTitle('Home');
+      setDescription('Halaman Utama Landing Page OSKM 2022');
+    }
+
+    if (location.pathname === '/organogram-kat') {
+      setTitle('Organogram KAT');
+      setDescription('Halaman Organogram KAT');
+    }
+
+    if (location.pathname === '/organogram-it') {
+      setTitle('Bidang IT');
+      setDescription('Halaman Organogram Bidang IT');
+    }
   }, [location.pathname]);
 
   return (
-    <MotionConfig reducedMotion="user">
-      {showNavbar && (
-        <Navbar>
-          <NavItem name="Home" to="/" />
-          <NavItem name="Organogram KAT ITB" to="/organogram-kat" />
-          <NavItem name="Organogram IT" to="/divisi-it" />
-        </Navbar>
-      )}
-      <Routes>
-        <Route path="/" element={<Home embedded="not-available" />} />
-        <Route
-          path="*"
-          element={<PageNotFound setShowNavbar={setShowNavbar} />}
-        />
-        <Route path="/organogram-kat" element={<OrganogramKAT />} />
-        <Route path="/divisi-it" element={<DivisiIT />} />
-      </Routes>
-    </MotionConfig>
+    <>
+      <HelmetMeta title={title} description={description} />
+      <MotionConfig reducedMotion="user">
+        {showNavbar && (
+          <Navbar>
+            <NavItem name="Home" to="/" />
+            <NavItem name="Organogram KAT ITB" to="/organogram-kat" />
+            <NavItem name="Organogram IT" to="/organogram-it" />
+          </Navbar>
+        )}
+        <Routes>
+          <Route path="/" element={<Home embedded="not-available" />} />
+          <Route
+            path="*"
+            element={<PageNotFound setShowNavbar={setShowNavbar} />}
+          />
+          <Route path="/organogram-kat" element={<OrganogramKAT />} />
+          <Route path="/organogram-it" element={<DivisiIT />} />
+        </Routes>
+      </MotionConfig>
+    </>
   );
 };
 
