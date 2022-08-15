@@ -8,6 +8,8 @@ import { Home } from './pages/Home';
 import OrganogramKAT from './pages/OrganogramKAT';
 import PageNotFound from './pages/PageNotFound';
 import HelmetMeta from './components/HelmetMeta';
+import ReactAudioPlayer from 'react-audio-player';
+import BackgroundMusic from './assets/audio/background-music.mp3';
 
 interface AppProps {
   video?: string;
@@ -21,6 +23,25 @@ const App: React.FC<AppProps> = () => {
   const [description, setDescription] = useState(
     'Halaman Utama Landing Page OSKM 2022'
   );
+
+  const inputRef = React.useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    setTimeout(() => {
+      if (inputRef.current !== null) {
+        inputRef.current.click();
+      }
+    }, 1000);
+  }, [inputRef]);
+
+  const musicTrigger = () => {
+    const music = document.getElementById(
+      'backgroundMusic'
+    ) as HTMLAudioElement;
+    if (music != null) {
+      music.play();
+    }
+  };
 
   useEffect(() => {
     if (location.pathname === '/home') {
@@ -40,7 +61,7 @@ const App: React.FC<AppProps> = () => {
   }, [location.pathname]);
 
   return (
-    <>
+    <div ref={inputRef} onClick={musicTrigger}>
       <HelmetMeta title={title} description={description} />
       <MotionConfig reducedMotion="user">
         {showNavbar && (
@@ -73,7 +94,13 @@ const App: React.FC<AppProps> = () => {
           <Route path="/organogram-it" element={<DivisiIT />} />
         </Routes>
       </MotionConfig>
-    </>
+      <ReactAudioPlayer
+        id="backgroundMusic"
+        src={BackgroundMusic}
+        autoPlay={true}
+        loop
+      />
+    </div>
   );
 };
 
