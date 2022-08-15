@@ -15,6 +15,11 @@ interface AppProps {
   video?: string;
 }
 
+function fixComponent<T>(component: T): T {
+  return (component as any).default ?? component;
+}
+const ReactAudioPlayerComponent = fixComponent(ReactAudioPlayer);
+
 const App: React.FC<AppProps> = () => {
   const location = useLocation();
   const [showNavbar, setShowNavbar] = useState(true);
@@ -94,7 +99,7 @@ const App: React.FC<AppProps> = () => {
           <Route path="/organogram-it" element={<DivisiIT />} />
         </Routes>
       </MotionConfig>
-      <ReactAudioPlayer
+      <ReactAudioPlayerComponent
         id="backgroundMusic"
         src={BackgroundMusic}
         autoPlay={true}
