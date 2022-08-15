@@ -15,8 +15,8 @@ const Navbar: React.FC<NavbarProps> = ({ children }) => {
       <div className="mr-auto">
         <NavIcon />
       </div>
-      <ul className="gap-16 hidden md:flex">{children}</ul>
-      <div className="block md:hidden">
+      <ul className="gap-16 hidden lg:flex">{children}</ul>
+      <div className="block lg:hidden">
         <NavDropdown>{children}</NavDropdown>
       </div>
     </nav>

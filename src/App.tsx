@@ -45,9 +45,22 @@ const App: React.FC<AppProps> = () => {
       <MotionConfig reducedMotion="user">
         {showNavbar && (
           <Navbar>
-            <NavItem name="Home" to="/" />
-            <NavItem name="Organogram KAT ITB" to="/organogram-kat" />
-            <NavItem name="Organogram IT" to="/organogram-it" />
+            <NavItem name="Home" to="/" external={false} />
+            <NavItem
+              name="Organogram KAT ITB"
+              to="/organogram-kat"
+              external={false}
+            />
+            <NavItem
+              name="Organogram IT"
+              to="/organogram-it"
+              external={false}
+            />
+            <NavItem
+              name="Kelengkapan OSKM"
+              to="https://linktr.ee/KelengkapanOSKM2022"
+              external={true}
+            />
           </Navbar>
         )}
         <Routes>
