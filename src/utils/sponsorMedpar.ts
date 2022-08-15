@@ -44,7 +44,7 @@ import MadingEvent from '../assets/img/sponsor_medpar/Batch-1/S/Mading-Event/Mad
 import MediaEvent from '../assets/img/sponsor_medpar/Batch-1/S/Media-Event.png';
 import OlimpiadeUpdate from '../assets/img/sponsor_medpar/Batch-1/S/Olimpiade-Update.png';
 import RadioKampusITB from '../assets/img/sponsor_medpar/Batch-1/S/Radio-Kampus-ITB.jpg';
-import RadioUntar from '../assets/img/sponsor_medpar/Batch-1/S/Radio-Untar.png';
+import RadioUntar from '../assets/img/sponsor_medpar/Batch-1/S/RadioUntar.png';
 import RapmaFM from '../assets/img/sponsor_medpar/Batch-1/S/RapmaFM.png';
 import SeputarEvent from '../assets/img/sponsor_medpar/Batch-1/S/Seputar-Event.png';
 import SeputarInfo from '../assets/img/sponsor_medpar/Batch-1/S/Seputar-Info-id.jpg';
