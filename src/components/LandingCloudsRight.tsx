@@ -14,17 +14,17 @@ const LandingCloudsRight: React.FC<LandingCloudsRightProps> = ({ embedded }) => 
     if (embedded) {
         return (
             <div className='relative xs:hidden lg:flex'>
-                <VStock className={`absolute w-[500px] -right-[120px]`} src={awan3} animation="bottom" />
-                <VStock className={`absolute w-[500px] -right-[100px] rotate-0`} src={awan5} animation="bottom" />
-                <VStock className={`absolute w-[300px] top-[90px] right-[500px] rotate-0`} src={awan5} animation="bottom" />
+                <VStock className={`absolute w-[500px] -right-[120px]`} src={awan3} animation="left" />
+                <VStock className={`absolute w-[500px] -right-[100px] rotate-0`} src={awan5} animation="left" />
+                <VStock className={`absolute w-[300px] top-[90px] right-[500px] rotate-0`} src={awan5} animation="left" />
             </div>
         );
     }
     return (
         <div className='relative xs:hidden lg:flex'>
-            <VStock className={`absolute w-[500px] -right-[120px] -top-[270px]`} src={awan3} animation="bottom" />
-            <VStock className={`absolute w-[500px] -right-[20px] -top-[150px] rotate-0`} src={awan5} animation="bottom" />
-            <VStock className={`absolute w-[200px] right-[500px] -top-[150px] rotate-0`} src={awan5} animation="bottom" />
+            <VStock className={`absolute w-[500px] -right-[120px] -top-[270px]`} src={awan3} animation="left" />
+            <VStock className={`absolute w-[500px] -right-[20px] -top-[150px] rotate-12`} src={awan5} animation="left" />
+            <VStock className={`absolute w-[200px] right-[500px] -top-[150px] rotate-0`} src={awan5} animation="left" />
         </div>
     );
 };

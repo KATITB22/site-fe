@@ -14,7 +14,7 @@ interface HomeProps {
 
 export const Home: React.FC<HomeProps> = ({ embedded }) => {
   return (
-    <div>
+    <div className='overflow-hidden'>
       <ToastContainer position="top-center" />
       <Hero />
       <Timeline />

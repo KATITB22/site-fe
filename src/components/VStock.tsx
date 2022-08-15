@@ -16,12 +16,11 @@ const VStock: React.FC<VStockProps> = ({
   className,
   src,
   animation,
-  id,
   animationType,
 }) => {
   if (animation) {
     return (
-      <div>
+      <>
         <motion.img
           className={`${className} pointer-events-none`}
           src={src ? src : rectangle}
@@ -29,16 +28,16 @@ const VStock: React.FC<VStockProps> = ({
             type: animationType ? animationType : '',
           })}
         />
-      </div>
+      </>
     );
   }
   return (
-    <div>
+    <>
       <img
         className={`${className} pointer-events-none`}
         src={src ? src : rectangle}
       />
-    </div>
+    </>
   );
 };
 
