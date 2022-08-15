@@ -14,20 +14,20 @@ interface TimelineBarProps {
 const timelineData = [
   {
     text: 'Opening Ceremony dan Talk Show',
-    date: moment().add(2, 'days'),
+    date: new Date('August 17, 2022')
   },
   {
     text: 'Treasure Hunt',
-    date: moment().add(3, 'days'),
+    date: new Date('August 18, 2022'),
   },
   {
     text: 'Mentoring dan Forum Lapangan',
-    date: moment().add(4, 'days'),
+    date: new Date('August 19, 2022'),
   },
   {
     text: 'Talkshow, Webinar, dan Closing Ceremony',
-    date: moment().add(5, 'days'),
-  },
+    date: new Date('August 20, 2022'),
+  }
 ];
 
 const TimelineBar: React.FC<TimelineBarProps> = () => {
