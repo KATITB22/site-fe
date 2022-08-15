@@ -8,6 +8,8 @@ import { Home } from './pages/Home';
 import OrganogramKAT from './pages/OrganogramKAT';
 import PageNotFound from './pages/PageNotFound';
 import HelmetMeta from './components/HelmetMeta';
+import ReactAudioPlayer from 'react-audio-player';
+import BackgroundMusic from './assets/audio/background-music.mp3';
 
 interface AppProps {
   video?: string;
@@ -73,6 +75,7 @@ const App: React.FC<AppProps> = () => {
           <Route path="/organogram-it" element={<DivisiIT />} />
         </Routes>
       </MotionConfig>
+      <ReactAudioPlayer src={BackgroundMusic} autoPlay={true} controls />
     </>
   );
 };
