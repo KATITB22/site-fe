@@ -6,6 +6,7 @@ import LandingFooterGraphics from '../components/LandingFooterGraphics';
 import OrganogramFooterGraphics from '../components/OrganogramFooterGraphics';
 import Sponsor from '../components/Sponsor';
 import Copyright from '../components/Copyright';
+import MediaPartner from '../components/MediaPartner';
 
 interface FooterProps {
   isDarkMode?: boolean;
@@ -57,9 +58,17 @@ const Footer: React.FC<FooterProps> = ({
         isDarkMode={isDarkMode}
         {...getTransition('bottom')}
       >
-        Sponsor
+        Sponsors
       </MotionTitle>
       <Sponsor />
+      <MotionTitle
+        className="text-center pt-20"
+        isDarkMode={isDarkMode}
+        {...getTransition('bottom')}
+      >
+        Media Partners
+      </MotionTitle>
+      <MediaPartner />
       <Copyright />
     </div>
   );

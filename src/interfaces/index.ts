@@ -19,3 +19,9 @@ export interface AplikasiLainnyaData {
   date: Date | Moment;
   url: string;
 }
+
+export interface SponsorMedparData {
+  name: string;
+  src: string;
+  size: string;
+}
