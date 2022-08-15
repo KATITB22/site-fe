@@ -7,6 +7,7 @@ import OrganogramFooterGraphics from '../components/OrganogramFooterGraphics';
 import Sponsor from '../components/Sponsor';
 import Copyright from '../components/Copyright';
 import MediaPartner from '../components/MediaPartner';
+import { motion } from 'framer-motion';
 
 interface FooterProps {
   isDarkMode?: boolean;
@@ -47,7 +48,6 @@ const Footer: React.FC<FooterProps> = ({
       ) : organogram ? (
         <OrganogramFooterGraphics />
       ) : null}
-      {/* dark mode in footerWaveTop using isDarkMode */}
       <FooterWaveTop
         width={screenSize.dynamicWidth}
         isDarkMode={isDarkMode}
@@ -60,7 +60,10 @@ const Footer: React.FC<FooterProps> = ({
       >
         Sponsors
       </MotionTitle>
-      <Sponsor />
+      <motion.div {...getTransition('left')}>
+        <Sponsor />
+      </motion.div>
+
       <MotionTitle
         className="text-center pt-20"
         isDarkMode={isDarkMode}
@@ -68,7 +71,10 @@ const Footer: React.FC<FooterProps> = ({
       >
         Media Partners
       </MotionTitle>
-      <MediaPartner />
+      <motion.div {...getTransition('right')}>
+        <MediaPartner />
+      </motion.div>
+
       <Copyright />
     </div>
   );
