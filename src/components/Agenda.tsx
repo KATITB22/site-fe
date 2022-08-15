@@ -22,7 +22,7 @@ const Agenda: React.FC<AgendaProps> = ({ text, startDate, endDate }) => {
   }, [isCurrentDate]);
 
   return (
-    <div className="flex items-center w-[300px]">
+    <div className="flex items-center w-[350px]">
       <svg height="85" width="80">
         <circle
           cx="50"
@@ -34,7 +34,7 @@ const Agenda: React.FC<AgendaProps> = ({ text, startDate, endDate }) => {
         />
       </svg>
       <div className="float-left">
-        <Title className="text-[35px] p-0 m-0 leading-none">{text}</Title>
+        <Title className="text-[30px] max-w-[180px] p-0 m-0 leading-none">{text}</Title>
         <Body className="text-[17px] p-0 m-0 leading-tight">
           {moment(startDate).format('LL')}
         </Body>

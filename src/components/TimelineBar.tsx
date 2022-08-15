@@ -13,28 +13,20 @@ interface TimelineBarProps {
 
 const timelineData = [
   {
-    text: 'OSKM',
-    date: moment().add(1, 'days'),
-  },
-  {
-    text: 'Dikpus',
+    text: 'Opening Ceremony dan Talk Show',
     date: moment().add(2, 'days'),
   },
   {
-    text: 'OHU',
+    text: 'Treasure Hunt',
     date: moment().add(3, 'days'),
   },
   {
-    text: 'OSKM2',
+    text: 'Mentoring dan Forum Lapangan',
     date: moment().add(4, 'days'),
   },
   {
-    text: 'Dikpus2',
+    text: 'Talkshow, Webinar, dan Closing Ceremony',
     date: moment().add(5, 'days'),
-  },
-  {
-    text: 'OHU2',
-    date: moment().add(6, 'days'),
   },
 ];
 
