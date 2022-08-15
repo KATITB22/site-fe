@@ -1,4 +1,5 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 interface RoleAvatarProps {
   classNameAvatar?: string;
@@ -24,7 +25,11 @@ const RoleAvatar: React.FC<RoleAvatarProps> = ({
         justifyContent: 'center',
       }}
     >
-      <img width={avatarSize} className={` ${classNameAvatar}`} src={foto} />
+      <LazyLoadImage
+        width={avatarSize}
+        className={` ${classNameAvatar}`}
+        src={foto}
+      />
     </div>
   );
 };
