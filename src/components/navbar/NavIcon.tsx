@@ -12,7 +12,9 @@ const NavIcon: React.FC = () => {
       <div className="w-10 h-10 rounded-full absolute -top-2 flex items-center justify-center">
         <img src={OSKM} className="w-8" alt="Logo Only" />
       </div>
-      <div className="ml-12 font-magilio text-primaryBlack">KAT ITB 2022</div>
+      <div className="ml-12 font-magilio text-primaryBlack">
+        OSKM - KAT ITB 2022
+      </div>
     </div>
   );
 };
