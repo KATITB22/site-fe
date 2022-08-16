@@ -11,6 +11,7 @@ import HelmetMeta from './components/HelmetMeta';
 import ReactAudioPlayer from 'react-audio-player';
 import BackgroundMusic from './assets/audio/background-music.mp3';
 import AboutUs from './pages/AboutUs';
+import Dropdown from './components/Dropdown';
 
 interface AppProps {
   video?: string;
@@ -24,6 +25,7 @@ const ReactAudioPlayerComponent = fixComponent(ReactAudioPlayer);
 const App: React.FC<AppProps> = () => {
   const location = useLocation();
   const [showNavbar, setShowNavbar] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const [title, setTitle] = useState('Home');
   const [description, setDescription] = useState(
@@ -76,28 +78,62 @@ const App: React.FC<AppProps> = () => {
       <HelmetMeta title={title} description={description} />
       <MotionConfig reducedMotion="user">
         {showNavbar && (
-          <Navbar>
+          <Navbar isOpen={isOpen} setIsOpen={setIsOpen}>
             <NavItem name="Home" to="/" external={false} />
-            <NavItem
-              name="Organogram KAT ITB"
-              to="/organogram-kat"
-              external={false}
-            />
-            <NavItem
-              name="Organogram IT"
-              to="/organogram-it"
-              external={false}
+            <Dropdown
+              title="Organogram"
+              items={[
+                <NavItem
+                  key={1}
+                  name="Organogram KAT ITB"
+                  to="/organogram-kat"
+                  external={false}
+                />,
+                <NavItem
+                  key={2}
+                  name="Organogram IT"
+                  to="/organogram-it"
+                  external={false}
+                />,
+              ]}
+              position={isOpen ? 'left' : 'right'}
             />
             <NavItem name="Tentang Kami" to="/tentang-kami" external={false} />
-            <NavItem
-              name="Kelengkapan OSKM"
-              to="https://linktr.ee/KelengkapanOSKM2022"
-              external={true}
-            />
-            <NavItem
-              name="Dashboard"
-              to="https://dashboard.katitb22.com"
-              external={true}
+            <Dropdown
+              title="Link Penting"
+              items={[
+                <NavItem
+                  key={4}
+                  name="Youtube"
+                  to="https://youtu.be/DTOovHzoGCU"
+                  external={true}
+                />,
+                <NavItem
+                  key={3}
+                  name="Zoom OSKM"
+                  to="https://us06web.zoom.us/j/89447225921?pwd=RmZTTnVlRGszZzBsa0hCWU9jd0Zudz09"
+                  external={true}
+                />,
+                <NavItem
+                  key={5}
+                  name="Dashboard"
+                  to="https://dashboard.katitb22.com"
+                  external={true}
+                />,
+                <NavItem
+                  key={6}
+                  name="Blog"
+                  to="https://blog.katitb22.com"
+                  external={true}
+                />,
+                <NavItem
+                  key={1}
+                  name="Kelengkapan OSKM"
+                  to="https://linktr.ee/KelengkapanOSKM2022"
+                  external={true}
+                />,
+              ]}
+              position={isOpen ? 'left' : 'right'}
             />
           </Navbar>
         )}
