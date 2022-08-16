@@ -9,7 +9,8 @@ interface TransitionOptions {
 
 export function getTransition(
   from: 'left' | 'right' | 'bottom',
-  options?: TransitionOptions
+  options?: TransitionOptions,
+  mirror?: boolean
 ) {
   const initial: Variant = { opacity: 0 };
   if (from === 'bottom') {
@@ -24,6 +25,7 @@ export function getTransition(
         opacity: 1,
         x: 0,
         y: 0,
+        scaleX: mirror ? '-1' : '',
         transition: {
           delay: options?.delay ?? 0.2,
           type: options?.type ?? 'spring',

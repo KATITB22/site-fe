@@ -6,6 +6,7 @@ import { getTransition } from '../utils/transition';
 
 interface VStockProps {
   className?: string;
+  mirror?: boolean;
   src?: string;
   animation?: 'left' | 'right' | 'bottom';
   animationType?: string;
@@ -14,6 +15,7 @@ interface VStockProps {
 
 const VStock: React.FC<VStockProps> = ({
   className,
+  mirror,
   src,
   animation,
   animationType,
@@ -24,9 +26,13 @@ const VStock: React.FC<VStockProps> = ({
         <motion.img
           className={`${className} pointer-events-none`}
           src={src ? src : rectangle}
-          {...getTransition(animation, {
-            type: animationType ? animationType : '',
-          })}
+          {...getTransition(
+            animation,
+            {
+              type: animationType ? animationType : '',
+            },
+            mirror
+          )}
         />
       </>
     );
