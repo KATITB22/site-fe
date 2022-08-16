@@ -21,7 +21,7 @@ const Sejarah: React.FC = () => {
         className="absolute top-24 xs:px-20 md:px-32 lg:px-32 xl:px-40 xxl:px-80 3xl:px-96"
         {...getTransition('left')}
       >
-        ejarah <br /> &emsp; OSKM ITB
+        ejara <br /> &emsp; OSK ITB
       </MotionTitle>
       <div className="flex flex-col bg-primaryYellow items-center justify-start xs:px-20 sm:px-36 pt-20 sm:pt-14">
         <motion.div {...getTransition('right')}>
