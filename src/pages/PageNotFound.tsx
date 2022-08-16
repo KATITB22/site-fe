@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Vistock from '../assets/img/vistock/page_not_found/page-not-found.png';
 
 const PageNotFound: React.FC<{
   setShowNavbar: React.Dispatch<React.SetStateAction<boolean>>;
@@ -17,8 +18,14 @@ const PageNotFound: React.FC<{
   return (
     <div className="h-screen bg-primaryCream flex items-center justify-center">
       <div className="flex flex-col items-center gap-14">
-        <div className="h-[309px] w-[348px] bg-grey" />
-        <h1 className="text-heading font-magilio">Halaman Tidak Ditemukan</h1>
+        <img
+          src={Vistock}
+          alt="Page Not Found"
+          className="w-[200px] sm:w-[250px]"
+        />
+        <h1 className="text-heading font-magilio text-center">
+          Halaman Tidak Ditemukan
+        </h1>
         <button
           onClick={handleRedirect}
           className="text-body font-alegreya py-2 px-4 bg-primaryOrange rounded-full"

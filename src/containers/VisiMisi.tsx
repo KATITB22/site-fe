@@ -38,7 +38,7 @@ const VisiMisi: React.FC<VisiMisiProps> = ({ embedded }) => {
       <div className="w-[100vw] bg-primaryYellow">
         <OrganogramWaveTop width={screenSize.dynamicWidth} />
         <section
-          className="flex items-center justify-center lg:flex-row-reverse w-full h-[600px] xs:px-20
+          className="flex items-center justify-center lg:flex-row-reverse w-full h-[600px] xs:px-10 sm:px-20
       lg:px-32 xl:px-40 xxl:px-80 3xl:px-96"
         >
           <motion.section
@@ -48,19 +48,21 @@ const VisiMisi: React.FC<VisiMisiProps> = ({ embedded }) => {
             <section>
               <Title>isi</Title>
               <Texts>
-                Sarana inisiasi perubahan progresif sebagai langkah awal membangun bangsa.
+                Sarana inisiasi perubahan progresif sebagai langkah awal
+                membangun bangsa.
               </Texts>
               <Title className="pt-10">isi</Title>
               <ol className="pb-10">
                 <li>
                   <Texts>
-                    1. Menjadi wadah pendidikan dan kepanitiaan yang selalu mau berefleksi
-                    dan menyesuaikan dengan kondisi yang ada.
+                    1. Menjadi wadah pendidikan dan kepanitiaan yang selalu mau
+                    berefleksi dan menyesuaikan dengan kondisi yang ada.
                   </Texts>
                 </li>
                 <li>
                   <Texts>
-                    2. Menjalankan sistem pendidikan yang sesuai dengan kondisi peserta KAT ITB.
+                    2. Menjalankan sistem pendidikan yang sesuai dengan kondisi
+                    peserta KAT ITB.
                   </Texts>
                 </li>
                 <li>
@@ -71,7 +73,8 @@ const VisiMisi: React.FC<VisiMisiProps> = ({ embedded }) => {
                 </li>
                 <li>
                   <Texts>
-                    4. Menginisiasi semangat memperbaiki diri untuk berkontribusi untuk Indonesia.
+                    4. Menginisiasi semangat memperbaiki diri untuk
+                    berkontribusi untuk Indonesia.
                   </Texts>
                 </li>
               </ol>
@@ -85,7 +88,10 @@ const VisiMisi: React.FC<VisiMisiProps> = ({ embedded }) => {
               <TopTitle className="absolute top-52 right-20">
                 isi &amp; <br /> &ensp; isi
               </TopTitle>
-              <VStock className="absolute w-[300px] -top-[0px] right-28" src={buku}></VStock>
+              <VStock
+                className="absolute w-[300px] -top-[0px] right-28"
+                src={buku}
+              ></VStock>
             </section>
           </motion.section>
         </section>
@@ -96,7 +102,7 @@ const VisiMisi: React.FC<VisiMisiProps> = ({ embedded }) => {
 
   return (
     <div
-      className="flex md:flex-row-reverse flex-wrap bg-primaryCream w-full h-auto space-x-0 xs:px-20 md:px-32 
+      className="flex md:flex-row-reverse flex-wrap bg-primaryCream w-full h-auto space-x-0  xs:px-10 sm:px-20 md:px-32 
     lg:px-20 xl:px-40 xxl:px-80"
     >
       <motion.section
@@ -106,30 +112,33 @@ const VisiMisi: React.FC<VisiMisiProps> = ({ embedded }) => {
         <section>
           <Title>isi</Title>
           <Texts>
-                Sarana inisiasi perubahan progresif sebagai langkah awal membangun bangsa.
+            Sarana inisiasi perubahan progresif sebagai langkah awal membangun
+            bangsa.
           </Texts>
           <Title className="pt-10">isi</Title>
           <ol className="pb-10">
             <li>
               <Texts>
-                    1. Menjadi wadah pendidikan dan kepanitiaan yang selalu mau berefleksi
-                    dan menyesuaikan dengan kondisi yang ada.
+                1. Menjadi wadah pendidikan dan kepanitiaan yang selalu mau
+                berefleksi dan menyesuaikan dengan kondisi yang ada.
               </Texts>
             </li>
             <li>
               <Texts>
-                    2. Menjalankan sistem pendidikan yang sesuai dengan kondisi peserta KAT ITB.
+                2. Menjalankan sistem pendidikan yang sesuai dengan kondisi
+                peserta KAT ITB.
               </Texts>
             </li>
             <li>
               <Texts>
-                    3. Mengenalkan dan merefleksikan kembali arti Mahasiswa,
-                    Kemahasiswaan dan KM ITB kepada peserta KAT ITB.
+                3. Mengenalkan dan merefleksikan kembali arti Mahasiswa,
+                Kemahasiswaan dan KM ITB kepada peserta KAT ITB.
               </Texts>
             </li>
             <li>
               <Texts>
-                    4. Menginisiasi semangat memperbaiki diri untuk berkontribusi untuk Indonesia.
+                4. Menginisiasi semangat memperbaiki diri untuk berkontribusi
+                untuk Indonesia.
               </Texts>
             </li>
           </ol>

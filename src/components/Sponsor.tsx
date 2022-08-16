@@ -18,7 +18,7 @@ const Sponsor: React.FC = () => {
   };
 
   return (
-    <div className="xs:px-20 lg:px-32 xl:px-40 xxl:px-76 flex flex-wrap justify-center items-center -mt-2">
+    <div className="xs:px-0 sm:px-20 lg:px-32 xl:px-40 xxl:px-76 flex flex-wrap justify-center items-center -mt-2">
       {sponsor.map((elmt, idx) => (
         <img
           src={elmt.src}

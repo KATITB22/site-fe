@@ -40,7 +40,7 @@ const TimelineBar: React.FC<TimelineBarProps> = () => {
   };
 
   return (
-    <div className="flex flex-col bg-primaryYellow items-center justify-start xs:px-20 sm:px-36 pt-20 sm:pt-14">
+    <div className="flex flex-col bg-primaryYellow items-center justify-start xs:px-20 sm:px-36 pt-32 sm:pt-14">
       <motion.div>
         {timelineData.slice(0, dataCount).map((data, idx) => (
           <motion.div key={idx} {...getTransition('right')}>
