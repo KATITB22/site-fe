@@ -100,18 +100,12 @@ const App: React.FC<AppProps> = () => {
             />
             <NavItem name="Tentang Kami" to="/tentang-kami" external={false} />
             <Dropdown
-              title="Link Lainnya"
+              title="Link Penting"
               items={[
                 <NavItem
-                  key={1}
-                  name="Kelengkapan OSKM"
-                  to="https://linktr.ee/KelengkapanOSKM2022"
-                  external={true}
-                />,
-                <NavItem
-                  key={2}
-                  name="Dashboard"
-                  to="https://dashboard.katitb22.com"
+                  key={4}
+                  name="Youtube"
+                  to="https://youtu.be/DTOovHzoGCU"
                   external={true}
                 />,
                 <NavItem
@@ -121,9 +115,21 @@ const App: React.FC<AppProps> = () => {
                   external={true}
                 />,
                 <NavItem
-                  key={4}
-                  name="Youtube"
-                  to="https://youtu.be/DTOovHzoGCU"
+                  key={5}
+                  name="Dashboard"
+                  to="https://dashboard.katitb22.com"
+                  external={true}
+                />,
+                <NavItem
+                  key={6}
+                  name="Blog"
+                  to="https://blog.katitb22.com"
+                  external={true}
+                />,
+                <NavItem
+                  key={1}
+                  name="Kelengkapan OSKM"
+                  to="https://linktr.ee/KelengkapanOSKM2022"
                   external={true}
                 />,
               ]}
