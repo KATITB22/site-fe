@@ -14,7 +14,7 @@ interface TimelineBarProps {
 const timelineData = [
   {
     text: 'Opening Ceremony dan Talk Show',
-    date: new Date('August 17, 2022')
+    date: new Date('August 17, 2022'),
   },
   {
     text: 'Treasure Hunt',
@@ -27,7 +27,7 @@ const timelineData = [
   {
     text: 'Talk Show dan Closing Ceremony',
     date: new Date('August 20, 2022'),
-  }
+  },
 ];
 
 const TimelineBar: React.FC<TimelineBarProps> = () => {
@@ -40,7 +40,7 @@ const TimelineBar: React.FC<TimelineBarProps> = () => {
   };
 
   return (
-    <div className="flex flex-col bg-primaryYellow items-center justify-start xs:px-20 sm:px-36 pt-14">
+    <div className="flex flex-col bg-primaryYellow items-center justify-start xs:px-20 sm:px-36 pt-20 sm:pt-14">
       <motion.div>
         {timelineData.slice(0, dataCount).map((data, idx) => (
           <motion.div key={idx} {...getTransition('right')}>

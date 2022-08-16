@@ -10,6 +10,7 @@ import PageNotFound from './pages/PageNotFound';
 import HelmetMeta from './components/HelmetMeta';
 import ReactAudioPlayer from 'react-audio-player';
 import BackgroundMusic from './assets/audio/background-music.mp3';
+import AboutUs from './pages/AboutUs';
 
 interface AppProps {
   video?: string;
@@ -92,6 +93,7 @@ const App: React.FC<AppProps> = () => {
               to="https://dashboard.katitb22.com"
               external={true}
             />
+            <NavItem name="Tentang Kami" to="/about-us" external={false} />
           </Navbar>
         )}
         <Routes>
@@ -102,6 +104,7 @@ const App: React.FC<AppProps> = () => {
           />
           <Route path="/organogram-kat" element={<OrganogramKAT />} />
           <Route path="/organogram-it" element={<DivisiIT />} />
+          <Route path="/tentang-kami" element={<AboutUs />} />
         </Routes>
       </MotionConfig>
       <ReactAudioPlayerComponent
