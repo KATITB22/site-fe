@@ -87,6 +87,11 @@ const App: React.FC<AppProps> = () => {
               to="https://linktr.ee/KelengkapanOSKM2022"
               external={true}
             />
+            <NavItem
+              name="Dashboard"
+              to="https://dashboard.katitb22.com"
+              external={true}
+            />
           </Navbar>
         )}
         <Routes>

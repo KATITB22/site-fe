@@ -12,13 +12,13 @@ export const aplikasiLainnya: AplikasiLainnyaData[] = [
   {
     name: 'Samitra',
     src: Samitra,
-    date: moment('20220817', 'YYYYMMDD'),
+    date: moment('20220818', 'YYYYMMDD'),
     url: 'https://samitra.katitb22.com',
   },
   {
     name: 'Dashboard',
     src: Dashboard,
-    date: moment('20220817', 'YYYYMMDD'),
+    date: moment('20220815', 'YYYYMMDD'),
     url: 'https://dashboard.katitb22.com',
   },
   {

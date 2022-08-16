@@ -17,7 +17,7 @@ const Card: React.FC<CardProps> = ({ name, src, date, url }) => {
   const handleClick = () => {
     if (today.isBefore(date)) {
       toast.warning(
-        `Maaf, web ${name} dibuka tanggal ${moment(date).format('LL')}`,
+        `${name} akan dibuka pada ${moment(date).format('LL')}.`,
         {
           autoClose: 2000,
         }

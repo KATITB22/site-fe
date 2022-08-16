@@ -48,40 +48,30 @@ const VisiMisi: React.FC<VisiMisiProps> = ({ embedded }) => {
             <section>
               <Title>isi</Title>
               <Texts>
-                KAT ITB Sebagai Ruang Inspirasi Bernavigasi Budaya dalam
-                mewujudkan kesadaran berkontribusi untuk Indonesia
+                Sarana inisiasi perubahan progresif sebagai langkah awal membangun bangsa.
               </Texts>
               <Title className="pt-10">isi</Title>
               <ol className="pb-10">
                 <li>
                   <Texts>
-                    1. Menjalankan sistem pendidikan yang sesuai dengan kondisi
-                    peserta KAT ITB.
+                    1. Menjadi wadah pendidikan dan kepanitiaan yang selalu mau berefleksi
+                    dan menyesuaikan dengan kondisi yang ada.
                   </Texts>
                 </li>
                 <li>
                   <Texts>
-                    2. Mengenalkan dan merefleksikan kembali Mahasiswa,
-                    Kemahasiswaan, dan KM ITB kepada peserta KAT ITB.
+                    2. Menjalankan sistem pendidikan yang sesuai dengan kondisi peserta KAT ITB.
                   </Texts>
                 </li>
                 <li>
                   <Texts>
-                    3. Ruang Inspirasi elemen KM ITB untuk mempunyai kesadaran
-                    berkontribusi untuk Indonesia.
+                    3. Mengenalkan dan merefleksikan kembali arti Mahasiswa,
+                    Kemahasiswaan dan KM ITB kepada peserta KAT ITB.
                   </Texts>
                 </li>
                 <li>
                   <Texts>
-                    4. Melaksanakan suatu sistem pendidikan yang berbudaya dan
-                    membudayakan proses belajar kepada peserta KAT ITB dengan
-                    konteks Indonesia.
-                  </Texts>
-                </li>
-                <li>
-                  <Texts>
-                    5. Menjadi wadah pendidikan dan Kepanitiaan yang selalu mau
-                    untuk berefleksi dan menyesuaikan dengan kondisi yang ada.
+                    4. Menginisiasi semangat memperbaiki diri untuk berkontribusi untuk Indonesia.
                   </Texts>
                 </li>
               </ol>
@@ -116,40 +106,30 @@ const VisiMisi: React.FC<VisiMisiProps> = ({ embedded }) => {
         <section>
           <Title>isi</Title>
           <Texts>
-            KAT ITB Sebagai Ruang Inspirasi Bernavigasi Budaya dalam mewujudkan
-            kesadaran berkontribusi untuk Indonesia
+                Sarana inisiasi perubahan progresif sebagai langkah awal membangun bangsa.
           </Texts>
           <Title className="pt-10">isi</Title>
           <ol className="pb-10">
             <li>
               <Texts>
-                1. Menjalankan sistem pendidikan yang sesuai dengan kondisi
-                peserta KAT ITB.
+                    1. Menjadi wadah pendidikan dan kepanitiaan yang selalu mau berefleksi
+                    dan menyesuaikan dengan kondisi yang ada.
               </Texts>
             </li>
             <li>
               <Texts>
-                2. Mengenalkan dan merefleksikan kembali Mahasiswa,
-                Kemahasiswaan, dan KM ITB kepada peserta KAT ITB.
+                    2. Menjalankan sistem pendidikan yang sesuai dengan kondisi peserta KAT ITB.
               </Texts>
             </li>
             <li>
               <Texts>
-                3. Ruang Inspirasi elemen KM ITB untuk mempunyai kesadaran
-                berkontribusi untuk Indonesia.
+                    3. Mengenalkan dan merefleksikan kembali arti Mahasiswa,
+                    Kemahasiswaan dan KM ITB kepada peserta KAT ITB.
               </Texts>
             </li>
             <li>
               <Texts>
-                4. Melaksanakan suatu sistem pendidikan yang berbudaya dan
-                membudayakan proses belajar kepada peserta KAT ITB dengan
-                konteks Indonesia.
-              </Texts>
-            </li>
-            <li>
-              <Texts>
-                5. Menjadi wadah pendidikan dan Kepanitiaan yang selalu mau
-                untuk berefleksi dan menyesuaikan dengan kondisi yang ada.
+                    4. Menginisiasi semangat memperbaiki diri untuk berkontribusi untuk Indonesia.
               </Texts>
             </li>
           </ol>
