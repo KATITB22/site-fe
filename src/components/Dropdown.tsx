@@ -15,7 +15,7 @@ interface DropdownProps {
 const Dropdown: React.FC<DropdownProps> = ({
   title,
   items,
-  position = 'center',
+  position = 'right',
 }) => {
   return (
     <div className="relative">
@@ -34,28 +34,30 @@ const Dropdown: React.FC<DropdownProps> = ({
           leaveFrom="transform opacity-100 scale-100"
           leaveTo="transform opacity-0 scale-95"
         >
-          <Menu.Items className="absolute left-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+          <Menu.Items
+            className={`absolute ${position}-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none`}
+          >
             {items.map((item, idx) => (
+              <Menu.Item key={idx}>
+                {({ active }) => (
+                  <div
+                    className={`px-1 py-1 flex items-center justify-center ${
+                      active ? 'bg-tertiaryYellow' : ''
+                    }`}
+                  >
+                    {item}
+                  </div>
+                )}
+              </Menu.Item>
+            ))}
+            {/* {items.map((item, idx) => (
               <div
                 key={idx}
                 className="px-1 py-1 flex items-center justify-center "
               >
                 <Menu.Item>{({ active }) => item}</Menu.Item>
               </div>
-            ))}
-            {/* <div className="px-1 py-1">
-              <Menu.Item>
-                {({ active }) => (
-                  <button
-                    className={`${
-                      active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                    } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
-                  >
-                    Delete
-                  </button>
-                )}
-              </Menu.Item>
-            </div> */}
+            ))} */}
           </Menu.Items>
         </Transition>
       </Menu>

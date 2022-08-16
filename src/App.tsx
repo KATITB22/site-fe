@@ -11,7 +11,6 @@ import HelmetMeta from './components/HelmetMeta';
 import ReactAudioPlayer from 'react-audio-player';
 import BackgroundMusic from './assets/audio/background-music.mp3';
 import AboutUs from './pages/AboutUs';
-import { Menu, Transition } from '@headlessui/react';
 import Dropdown from './components/Dropdown';
 
 interface AppProps {
@@ -26,6 +25,7 @@ const ReactAudioPlayerComponent = fixComponent(ReactAudioPlayer);
 const App: React.FC<AppProps> = () => {
   const location = useLocation();
   const [showNavbar, setShowNavbar] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const [title, setTitle] = useState('Home');
   const [description, setDescription] = useState(
@@ -78,7 +78,7 @@ const App: React.FC<AppProps> = () => {
       <HelmetMeta title={title} description={description} />
       <MotionConfig reducedMotion="user">
         {showNavbar && (
-          <Navbar>
+          <Navbar isOpen={isOpen} setIsOpen={setIsOpen}>
             <NavItem name="Home" to="/" external={false} />
             <Dropdown
               title="Organogram"
@@ -96,7 +96,7 @@ const App: React.FC<AppProps> = () => {
                   external={false}
                 />,
               ]}
-              position={''}
+              position={isOpen ? 'left' : 'right'}
             />
             <NavItem name="Tentang Kami" to="/tentang-kami" external={false} />
             <Dropdown
@@ -127,7 +127,7 @@ const App: React.FC<AppProps> = () => {
                   external={true}
                 />,
               ]}
-              position={''}
+              position={isOpen ? 'left' : 'right'}
             />
           </Navbar>
         )}

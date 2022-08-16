@@ -1,17 +1,21 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { NavItemProps } from './NavItem';
 import hamburgerDefault from '../../assets/img/icons/hamburger-default.svg';
 import hamburgerClose from '../../assets/img/icons/hamburger-close.svg';
 
 interface NavDropdownProps {
+  isOpen: boolean;
+  setIsOpen: (isOpen: boolean) => void;
   children:
-  | React.ReactElement<NavItemProps>
-  | React.ReactElement<NavItemProps>[];
+    | React.ReactElement<NavItemProps>
+    | React.ReactElement<NavItemProps>[];
 }
 
-const NavDropdown: React.FC<NavDropdownProps> = ({ children }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
+const NavDropdown: React.FC<NavDropdownProps> = ({
+  children,
+  setIsOpen,
+  isOpen,
+}) => {
   const toggleButton = () => {
     setIsOpen(!isOpen);
   };
