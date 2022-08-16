@@ -34,7 +34,7 @@ const Agenda: React.FC<AgendaProps> = ({ text, startDate, endDate }) => {
         />
       </svg>
       <div className="float-left">
-        <Title className="text-[30px] max-w-[180px] p-0 m-0 leading-none">
+        <Title className="text-subHeading max-w-[200px] p-0 m-0 leading-none">
           {text}
         </Title>
         <Body className="text-[17px] p-0 m-0 leading-tight">
