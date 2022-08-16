@@ -18,10 +18,10 @@ const Credits: React.FC = () => {
         {...getTransition('right')}
       >
         <section>
-          <Title>Credits</Title>
+          <Title>Music Credits</Title>
           <Texts>Rearansemen lagu OSKM oleh:</Texts>
-          <Texts>Jericho Fletcher - IF&apos;21</Texts>
-          <Texts>Khabibullah Mukhammad Addib Baaj - DP&apos;21</Texts>
+          <Texts>Jericho Fletcher - Teknik Informatika &apos;21</Texts>
+          <Texts>Khabibullah Mukhammad Addib Baaj - Desain Produk &apos;21</Texts>
         </section>
       </motion.section>
       <motion.section

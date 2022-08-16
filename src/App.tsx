@@ -83,6 +83,7 @@ const App: React.FC<AppProps> = () => {
               to="/organogram-it"
               external={false}
             />
+            <NavItem name="Tentang Kami" to="/tentang-kami" external={false} />
             <NavItem
               name="Kelengkapan OSKM"
               to="https://linktr.ee/KelengkapanOSKM2022"
@@ -93,7 +94,6 @@ const App: React.FC<AppProps> = () => {
               to="https://dashboard.katitb22.com"
               external={true}
             />
-            <NavItem name="Tentang Kami" to="/about-us" external={false} />
           </Navbar>
         )}
         <Routes>
