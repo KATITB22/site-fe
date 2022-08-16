@@ -16,12 +16,9 @@ const Card: React.FC<CardProps> = ({ name, src, date, url }) => {
   const today = moment();
   const handleClick = () => {
     if (today.isBefore(date)) {
-      toast.warning(
-        `${name} akan dibuka pada ${moment(date).format('LL')}.`,
-        {
-          autoClose: 2000,
-        }
-      );
+      toast.warning(`${name} akan dibuka pada ${moment(date).format('LL')}.`, {
+        autoClose: 2000,
+      });
     } else {
       window.location.href = url;
     }
@@ -30,7 +27,8 @@ const Card: React.FC<CardProps> = ({ name, src, date, url }) => {
   return (
     <div
       onClick={handleClick}
-      className="bg-white h-[300px] w-[200px] text-white rounded-[10px] cursor-pointer hover:scale-[1.02] 
+      className="bg-white w-[130px] sm:h-[300px] sm:w-[200px] text-white rounded-[10px] cursor-pointer 
+      hover:scale-[1.02] 
       transition-transform"
       style={{ boxShadow: '12px 11px 19px -3px rgba(0,0,0,0.75)' }}
     >

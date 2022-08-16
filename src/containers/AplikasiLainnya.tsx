@@ -33,7 +33,7 @@ const AplikasiLainnya: React.FC<AplikasiLainnyaProps> = ({ embedded }) => {
     return (
       <div className="w-[100vw] bg-primaryYellow">
         <AplikasiWaveTop width={screenSize.dynamicWidth} />
-        <section className=" xs:px-20 md:px-32 lg:px-40 xl:px-40 xxl:px-80 3xl:px-96 py-14">
+        <section className=" xs:px-10 md:px-32 lg:px-40 xl:px-40 xxl:px-80 3xl:px-96 py-14">
           <MotionTitle {...getTransition('left')}>
             Kunjuni aplikasi <br /> &nbsp; &nbsp;lainnya!
           </MotionTitle>
@@ -46,7 +46,7 @@ const AplikasiLainnya: React.FC<AplikasiLainnyaProps> = ({ embedded }) => {
   }
 
   return (
-    <div className="bg-primaryCream w-[100vw] xs:px-20 md:px-32 lg:px-40 xl:px-40 xxl:px-80 3xl:px-96 py-14">
+    <div className="bg-primaryCream w-[100vw] xs:px-10 md:px-32 lg:px-40 xl:px-40 xxl:px-80 3xl:px-96 py-14">
       <MotionTitle {...getTransition('left')}>
         Kunjuni aplikasi <br /> &nbsp; &nbsp;lainnya!
       </MotionTitle>

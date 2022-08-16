@@ -61,12 +61,30 @@ const Organogram: React.FC<OrganogramProps> = ({ embedded }) => {
               Organo <br /> gram
             </TopTitle>
             <VStock className="absolute top-5" src={bgMaskotEmbed} />
-            <VStock className="absolute w-[130px] top-[80px] -left-6" src={maskot1} />
-            <VStock className="absolute w-[80px] top-[135px] left-6" src={maskot2} />
-            <VStock className="absolute w-[180px] top-[90px] left-16" src={maskot3} />
-            <VStock className="absolute w-[150px] top-[70px] left-40" src={maskot4} />
-            <VStock className="absolute w-[90px] top-[125px] left-20" src={maskot5} />
-            <VStock className="absolute w-[100px] top-[145px] left-32" src={maskot6} />
+            <VStock
+              className="absolute w-[130px] top-[80px] -left-6"
+              src={maskot1}
+            />
+            <VStock
+              className="absolute w-[80px] top-[135px] left-6"
+              src={maskot2}
+            />
+            <VStock
+              className="absolute w-[180px] top-[90px] left-16"
+              src={maskot3}
+            />
+            <VStock
+              className="absolute w-[150px] top-[70px] left-40"
+              src={maskot4}
+            />
+            <VStock
+              className="absolute w-[90px] top-[125px] left-20"
+              src={maskot5}
+            />
+            <VStock
+              className="absolute w-[100px] top-[145px] left-32"
+              src={maskot6}
+            />
           </motion.section>
           <motion.section
             className="space-y-2 lg:w-3/4 xl:w-2/3 mt-20"
@@ -82,7 +100,7 @@ const Organogram: React.FC<OrganogramProps> = ({ embedded }) => {
                   Organogram KAT ITB 2022
                 </CustomButton>
               </Link>
-              <Link to="/divisi-it">
+              <Link to="/organogram-it">
                 <CustomButton className="relative w-auto md:left-5 xs:py-1">
                   Bidang IT
                 </CustomButton>
@@ -111,12 +129,30 @@ const Organogram: React.FC<OrganogramProps> = ({ embedded }) => {
             Organo <br /> gram
           </TopTitle>
           <VStock className="absolute top-5" src={bgMaskot} />
-          <VStock className="absolute w-[130px] top-[80px] -left-6" src={maskot1} />
-          <VStock className="absolute w-[80px] top-[135px] left-6" src={maskot2} />
-          <VStock className="absolute w-[180px] top-[90px] left-16" src={maskot3} />
-          <VStock className="absolute w-[150px] top-[70px] left-40" src={maskot4} />
-          <VStock className="absolute w-[90px] top-[125px] left-20" src={maskot5} />
-          <VStock className="absolute w-[100px] top-[145px] left-32" src={maskot6} />
+          <VStock
+            className="absolute w-[130px] top-[80px] -left-6"
+            src={maskot1}
+          />
+          <VStock
+            className="absolute w-[80px] top-[135px] left-6"
+            src={maskot2}
+          />
+          <VStock
+            className="absolute w-[180px] top-[90px] left-16"
+            src={maskot3}
+          />
+          <VStock
+            className="absolute w-[150px] top-[70px] left-40"
+            src={maskot4}
+          />
+          <VStock
+            className="absolute w-[90px] top-[125px] left-20"
+            src={maskot5}
+          />
+          <VStock
+            className="absolute w-[100px] top-[145px] left-32"
+            src={maskot6}
+          />
         </motion.section>
         <motion.section
           className="space-y-2 lg:w-3/4 xl:w-2/3 mt-20"
@@ -132,7 +168,7 @@ const Organogram: React.FC<OrganogramProps> = ({ embedded }) => {
                 Organogram KAT ITB 2022
               </CustomButton>
             </Link>
-            <Link to="/divisi-it">
+            <Link to="/organogram-it">
               <CustomButton className="relative w-auto md:left-5 xs:py-1">
                 Bidang IT
               </CustomButton>
