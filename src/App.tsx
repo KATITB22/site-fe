@@ -11,6 +11,8 @@ import HelmetMeta from './components/HelmetMeta';
 import ReactAudioPlayer from 'react-audio-player';
 import BackgroundMusic from './assets/audio/background-music.mp3';
 import AboutUs from './pages/AboutUs';
+import { Menu, Transition } from '@headlessui/react';
+import Dropdown from './components/Dropdown';
 
 interface AppProps {
   video?: string;
@@ -78,26 +80,54 @@ const App: React.FC<AppProps> = () => {
         {showNavbar && (
           <Navbar>
             <NavItem name="Home" to="/" external={false} />
-            <NavItem
-              name="Organogram KAT ITB"
-              to="/organogram-kat"
-              external={false}
-            />
-            <NavItem
-              name="Organogram IT"
-              to="/organogram-it"
-              external={false}
+            <Dropdown
+              title="Organogram"
+              items={[
+                <NavItem
+                  key={1}
+                  name="Organogram KAT ITB"
+                  to="/organogram-kat"
+                  external={false}
+                />,
+                <NavItem
+                  key={2}
+                  name="Organogram IT"
+                  to="/organogram-it"
+                  external={false}
+                />,
+              ]}
+              position={''}
             />
             <NavItem name="Tentang Kami" to="/tentang-kami" external={false} />
-            <NavItem
-              name="Kelengkapan OSKM"
-              to="https://linktr.ee/KelengkapanOSKM2022"
-              external={true}
-            />
-            <NavItem
-              name="Dashboard"
-              to="https://dashboard.katitb22.com"
-              external={true}
+            <Dropdown
+              title="Link Lainnya"
+              items={[
+                <NavItem
+                  key={1}
+                  name="Kelengkapan OSKM"
+                  to="https://linktr.ee/KelengkapanOSKM2022"
+                  external={true}
+                />,
+                <NavItem
+                  key={2}
+                  name="Dashboard"
+                  to="https://dashboard.katitb22.com"
+                  external={true}
+                />,
+                <NavItem
+                  key={3}
+                  name="Zoom OSKM"
+                  to="https://us06web.zoom.us/j/89447225921?pwd=RmZTTnVlRGszZzBsa0hCWU9jd0Zudz09"
+                  external={true}
+                />,
+                <NavItem
+                  key={4}
+                  name="Youtube"
+                  to="https://youtu.be/DTOovHzoGCU"
+                  external={true}
+                />,
+              ]}
+              position={''}
             />
           </Navbar>
         )}
