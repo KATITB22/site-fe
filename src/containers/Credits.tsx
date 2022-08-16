@@ -19,7 +19,7 @@ const Credits: React.FC = () => {
       >
         <section>
           <Title>Music Credits</Title>
-          <Texts>Rearansemen lagu OSKM oleh:</Texts>
+          <Texts>Background Music Web dibuat oleh:</Texts>
           <Texts>Jericho Fletcher - Teknik Informatika &apos;21</Texts>
           <Texts>Khabibullah Mukhammad Addib Baaj - Desain Produk &apos;21</Texts>
         </section>
