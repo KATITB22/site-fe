@@ -48,6 +48,7 @@ import Event13 from '../resources/DivisiIT/Nafi Mulyo Kusumo.png';
 import Event14 from '../resources/DivisiIT/Chiquita Ahsanunnisa.png';
 import Event15 from '../resources/DivisiIT/EA_Wakadiv_M Syahrul Surya Putra.png';
 import Event16 from '../resources/DivisiIT/Gagas Praharsa Bahar.png';
+import Event17 from '../resources/DivisiIT/Aira Thalca Avila Putra.png';
 
 interface OrganogramDivisiITProps {
   isDarkMode?: boolean;
@@ -935,7 +936,24 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 cardClassName="xs: md:pt-0"
                 foto={Event16}
                 classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
-                classNameAvatar="translate-y-5 scale-[1.3]"
+                classNameAvatar="translate-y-3 scale-[1.3]"
+                classNameNama="mt-1"
+              />
+              <CardRole
+                firstRole="Frontend Developer"
+                name="Aira Thalca Avila Putra"
+                jurusan="Teknik Informatika '20"
+                avatarSize={180}
+                textRoleSize="xs:text-subHeading md:text-heading"
+                textNameSize="xs:text-body md:text-subHeading"
+                textJurusanSize="mt-1 xs:text-caption md:text-body"
+                classNameSecond=" pt-0"
+                isDarkMode={isDarkMode}
+                classRole="xs:mb-0 md:mb-0 mt:0"
+                cardClassName="xs: md:pt-0"
+                foto={Event17}
+                classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
+                classNameAvatar="translate-y-3 scale-[1.0]"
                 classNameNama="mt-1"
               />
             </div>
