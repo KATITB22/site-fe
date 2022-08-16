@@ -55,4 +55,4 @@ jobs:
                       cp -r ~/builder/site/dist/* ~/deus/web/site
                       chmod -R 755 ~/deus/web/site
                       cd deus
-                      docker-compose restart sitefe
+                      docker-compose restart websitefe
