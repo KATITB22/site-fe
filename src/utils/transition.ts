@@ -25,7 +25,7 @@ export function getTransition(
         opacity: 1,
         x: 0,
         y: 0,
-        scaleX: mirror ? '-1' : '',
+        scaleX: mirror ? '-1' : '1',
         transition: {
           delay: options?.delay ?? 0.2,
           type: options?.type ?? 'spring',
