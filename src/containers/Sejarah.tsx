@@ -15,7 +15,7 @@ const Sejarah: React.FC = () => {
   };
 
   return (
-    <div div className="relative z-[3] -mt-56">
+    <div className="relative z-[3] -mt-56">
       <TimelineWaveTop width={1920} />
       <MotionTitle
         className="absolute top-24 xs:px-20 md:px-32 lg:px-32 xl:px-40 xxl:px-80 3xl:px-96"
