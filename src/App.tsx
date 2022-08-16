@@ -50,7 +50,7 @@ const App: React.FC<AppProps> = () => {
   };
 
   useEffect(() => {
-    if (location.pathname === '/home') {
+    if (location.pathname === '/') {
       setTitle('Home');
       setDescription('Halaman Utama Landing Page OSKM 2022');
     }
@@ -63,6 +63,11 @@ const App: React.FC<AppProps> = () => {
     if (location.pathname === '/organogram-it') {
       setTitle('Bidang IT');
       setDescription('Halaman Organogram Bidang IT');
+    }
+
+    if (location.pathname === '/tentang-kami') {
+      setTitle('Tentang Kami');
+      setDescription('Kenali lebih dalam mengenai OSKM ITB');
     }
   }, [location.pathname]);
 
