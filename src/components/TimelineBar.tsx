@@ -25,7 +25,7 @@ const timelineData = [
     date: new Date('August 19, 2022'),
   },
   {
-    text: 'Talkshow, Webinar, dan Closing Ceremony',
+    text: 'Talkshow dan Closing Ceremony',
     date: new Date('August 20, 2022'),
   }
 ];
