@@ -34,9 +34,9 @@ const Agenda: React.FC<AgendaProps> = ({ text, startDate, endDate }) => {
         />
       </svg>
       <div className="float-left">
-        <Title className="text-[24px] max-w-[200px] p-0 m-0 leading-none">
+        <h1 className="font-magilio text-primaryBlack text-subHeading max-w-[200px] p-0 m-0 leading-none">
           {text}
-        </Title>
+        </h1>
         <Body className="text-[17px] p-0 m-0 leading-tight">
           {moment(startDate).format('LL')}
         </Body>
