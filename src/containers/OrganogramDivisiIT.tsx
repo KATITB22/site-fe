@@ -936,7 +936,7 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 cardClassName="xs: md:pt-0"
                 foto={Event16}
                 classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
-                classNameAvatar="translate-y-3 scale-[1.3]"
+                classNameAvatar="-translate-y-5 scale-[1.3]"
                 classNameNama="mt-1"
               />
               <CardRole
@@ -953,7 +953,7 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 cardClassName="xs: md:pt-0"
                 foto={Event17}
                 classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
-                classNameAvatar="translate-y-3 scale-[1.0]"
+                classNameAvatar="-translate-y-0 scale-[1.0]"
                 classNameNama="mt-1"
               />
             </div>
