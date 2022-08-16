@@ -2,17 +2,23 @@ import { SponsorMedparData } from '../interfaces';
 // Sponsor
 import AyamAyaman from '../assets/img/sponsor_medpar/sponsor/S/AyamAyaman.png';
 import BankNeoCommerce from '../assets/img/sponsor_medpar/sponsor/S/Bank-Neo-Commerce.png';
+import BNI from '../assets/img/sponsor_medpar/sponsor/S/BNI.png';
+import BSI from '../assets/img/sponsor_medpar/sponsor/S/BSI.png';
 import BukitAsam from '../assets/img/sponsor_medpar/sponsor/S/Bukit-Asam.png';
 import Byu from '../assets/img/sponsor_medpar/sponsor/S/byu.png';
+import Dorm from '../assets/img/sponsor_medpar/sponsor/S/Dorm.png';
+import Imajirent from '../assets/img/sponsor_medpar/sponsor/S/Imajirent.jpg';
 import FrisianFlag from '../assets/img/sponsor_medpar/sponsor/S/Frisian-Flag.png';
 import KuaciRebo from '../assets/img/sponsor_medpar/sponsor/S/Kuaci-Rebo.png';
-import NTP from '../assets/img/sponsor_medpar/sponsor/S/NTP.jpg';
+import NTP from '../assets/img/sponsor_medpar/sponsor/S/NTP.png';
 import StudyBoardEdu from '../assets/img/sponsor_medpar/sponsor/S/Study-Board.png';
+import ValucceStudio from '../assets/img/sponsor_medpar/sponsor/S/Valucce-Studio.png';
 import Whitelab from '../assets/img/sponsor_medpar/sponsor/S/Whitelab.jpg';
 import Zebra from '../assets/img/sponsor_medpar/sponsor/S/Zebra-Asaba-Industries.png';
 
-import Dorm from '../assets/img/sponsor_medpar/sponsor/M/Dorm.png';
 import IAITB from '../assets/img/sponsor_medpar/sponsor/M/IA-ITB-(BW).png';
+import KumawRamen from '../assets/img/sponsor_medpar/sponsor/M/Kumaw-Ramen.png';
+import Menantea from '../assets/img/sponsor_medpar/sponsor/M/Menantea.png';
 import PTTimah from '../assets/img/sponsor_medpar/sponsor/M/PT-Timah.png';
 import SinggahSini from '../assets/img/sponsor_medpar/sponsor/M/Singgah-Sini.png';
 
@@ -76,16 +82,22 @@ import PolbanNews from '../assets/img/sponsor_medpar/batch-2/M/polban-news.png';
 export const sponsor: SponsorMedparData[] = [
   { name: 'Ayam Ayaman', src: AyamAyaman, size: 'S' },
   { name: 'Bank Neo Commerce', src: BankNeoCommerce, size: 'S' },
+  { name: 'BNI', src: BNI, size: 'S' },
+  { name: 'BSI', src: BSI, size: 'S' },
   { name: 'Bukit Asam', src: BukitAsam, size: 'S' },
   { name: 'byu', src: Byu, size: 'S' },
+  { name: 'Dorm', src: Dorm, size: 'S' },
   { name: 'Frisian Flag', src: FrisianFlag, size: 'S' },
+  { name: 'Imajirent', src: Imajirent, size: 'S' },
   { name: 'Kuaci Rebo', src: KuaciRebo, size: 'S' },
   { name: 'NTP', src: NTP, size: 'S' },
   { name: 'Study Board Edu', src: StudyBoardEdu, size: 'S' },
+  { name: 'Valucce Studio', src: ValucceStudio, size: 'S' },
   { name: 'Whitelab', src: Whitelab, size: 'S' },
   { name: 'Zebra Asaba Industries', src: Zebra, size: 'S' },
-  { name: 'Dorm', src: Dorm, size: 'M' },
   { name: 'IA ITB', src: IAITB, size: 'M' },
+  { name: 'Kumaw Ramen', src: KumawRamen, size: 'M' },
+  { name: 'Menantea', src: Menantea, size: 'M' },
   { name: 'PT Timah', src: PTTimah, size: 'M' },
   { name: 'Singgah Sini', src: SinggahSini, size: 'M' },
   { name: 'Hutama Karya', src: HutamaKarya, size: 'L' },
