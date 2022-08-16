@@ -10,7 +10,7 @@ interface AgendaProps {
 }
 
 const Agenda: React.FC<AgendaProps> = ({ text, startDate, endDate }) => {
-  const target = moment('20220813', 'YYYYMMDD');
+  const target = moment();
   const [isCurrentDate, setIsCurrentDate] = useState<boolean>();
 
   useEffect(() => {
@@ -34,7 +34,9 @@ const Agenda: React.FC<AgendaProps> = ({ text, startDate, endDate }) => {
         />
       </svg>
       <div className="float-left">
-        <Title className="text-[30px] max-w-[180px] p-0 m-0 leading-none">{text}</Title>
+        <Title className="text-[30px] max-w-[180px] p-0 m-0 leading-none">
+          {text}
+        </Title>
         <Body className="text-[17px] p-0 m-0 leading-tight">
           {moment(startDate).format('LL')}
         </Body>
