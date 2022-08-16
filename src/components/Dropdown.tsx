@@ -1,10 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable max-len */
-import { Menu, Transition } from '@headlessui/react';
-import { Fragment, useEffect, useRef, useState } from 'react';
-
 import React from 'react';
-import NavItem from './navbar/NavItem';
+import { Menu, Transition } from '@headlessui/react';
+import { Fragment } from 'react';
 
 interface DropdownProps {
   title: string;
