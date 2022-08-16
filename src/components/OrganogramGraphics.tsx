@@ -3,17 +3,16 @@
 /* eslint-disable indent */
 import React from 'react';
 import VStock from '../components/VStock';
-import pohon from '../assets/img/vistock/organogram_it/pohon.png';
 import pohon2 from '../assets/img/vistock/organogram_it/pohon2.png';
-import pohon3 from '../assets/img/vistock/organogram_it/pohon3.png';
 
 const OrganogramGraphics: React.FC = () => {
   return (
     <>
       <VStock
         className="absolute xs:invisible lg:visible xl:-left-32 lg:-left-44 3xl:-left-18 lg:top-[3500px] xl:top-[2500px] xxl:top-[2400px] 3xl:top-[2150px] xxl:w-[450px] xl:w-[450px] lg:w-[310px] 4xl:top-[2200px] 5xl:top-[1800px]"
-        src={pohon3}
+        src={pohon2}
         animation="bottom"
+        mirror
       />
       <VStock
         className="absolute xs:invisible lg:visible xl:top-40 lg:top-[420px] -right-8 xxl:w-[450px] xl:w-[350px] lg:w-[320px]"
