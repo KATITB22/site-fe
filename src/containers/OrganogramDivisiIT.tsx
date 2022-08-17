@@ -231,7 +231,7 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
               <CardRole
                 firstRole="Backend Developer"
                 name="Akbar Maulana Ridho"
-                jurusan="Teknik Informatika '20"
+                jurusan="Teknik Informatika '21"
                 avatarSize={180}
                 textRoleSize="xs:text-subHeading md:text-heading"
                 textNameSize="xs:text-body md:text-subHeading"
@@ -248,7 +248,7 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
               <CardRole
                 firstRole="Frontend Developer"
                 name="Arsa Izdihar Islam"
-                jurusan="Teknik Informatika '20"
+                jurusan="Teknik Informatika '21"
                 avatarSize={180}
                 textRoleSize="xs:text-subHeading md:text-heading"
                 textNameSize="xs:text-body md:text-subHeading"
