@@ -19,6 +19,7 @@ const Credits: React.FC = () => {
       >
         <section>
           <Title>usic Credit</Title>
+          <Texts>Song - Good Morrow</Texts>
           <Texts>Background Music Web dibuat oleh:</Texts>
           <Texts>Jericho Fletcher - Teknik Informatika &apos;21</Texts>
           <Texts>Khabibullah Mukhammad Addib Baaj - Desain Produk &apos;21</Texts>
