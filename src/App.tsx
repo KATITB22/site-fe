@@ -105,7 +105,7 @@ const App: React.FC<AppProps> = () => {
                 <NavItem
                   key={4}
                   name="Youtube"
-                  to="https://youtu.be/w66BSkLQC6Q"
+                  to="https://youtu.be/7n8pJvhn9eU"
                   external={true}
                 />,
                 <NavItem
