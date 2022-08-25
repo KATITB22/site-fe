@@ -17,6 +17,8 @@ import Social9 from '../resources/DivisiIT/Fikri Khoiron Fadhila.png';
 import Social10 from '../resources/DivisiIT/Christopher Justine William.png';
 import Social11 from '../resources/DivisiIT/Rania Dwi Fadhilah.png';
 import Social12 from '../resources/DivisiIT/Sarah Azka Arief.jpg';
+import Social13 from '../resources/DivisiIT/Hera Shafira.png';
+import Social14 from '../resources/DivisiIT/Fakhri Nail Wibowo.png';
 
 import Content1 from '../resources/DivisiIT/CP_Wakadiv_Muhammad Garebaldhie Er Rahman.png';
 import Content2 from '../resources/DivisiIT/Muhammad Firdaus.png';
@@ -31,6 +33,7 @@ import Content10 from '../resources/DivisiIT/Januar Budi Ghifari.png';
 import Content11 from '../resources/DivisiIT/Nadirah Rianty Suseno.png';
 import Content12 from '../resources/DivisiIT/Muhammad Fikri Ranjabi.png';
 import Content13 from '../resources/DivisiIT/Rizky Akbar Asmaran.png';
+import Content14 from '../resources/DivisiIT/Albert.png';
 
 import Event1 from '../resources/DivisiIT/EA_Kadiv_Jason Kanggara.png';
 import Event2 from '../resources/DivisiIT/Muhammad Irfan Fathoni.png';
@@ -49,6 +52,7 @@ import Event14 from '../resources/DivisiIT/Chiquita Ahsanunnisa.png';
 import Event15 from '../resources/DivisiIT/EA_Wakadiv_M Syahrul Surya Putra.png';
 import Event16 from '../resources/DivisiIT/Gagas Praharsa Bahar.png';
 import Event17 from '../resources/DivisiIT/Aira Thalca Avila Putra.png';
+import Event18 from '../resources/DivisiIT/Haniva Saydina.png';
 
 interface OrganogramDivisiITProps {
   isDarkMode?: boolean;
@@ -59,9 +63,8 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
 }) => {
   return (
     <div
-      className={`${
-        isDarkMode ? 'bg-[#2F4250]' : 'bg-[#FFFCF2]'
-      } w-[100vw] xs:py-24 xs:px-20 sm:px-36 py-80`}
+      className={`${isDarkMode ? 'bg-[#2F4250]' : 'bg-[#FFFCF2]'
+        } w-[100vw] xs:py-24 xs:px-20 sm:px-36 py-80`}
     >
       <div className="flex flex-col gap-y-20">
         <div className="flex xs:flex-col md:flex-row justify-center gap-x-10 gap-y-10">
@@ -282,7 +285,7 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
               <CardRole
                 firstRole="Frontend Developer"
                 name="Muhammad Afief Abdurrahman"
-                jurusan="Teknik Fisika '21"
+                jurusan="Fisika '21"
                 avatarSize={180}
                 textRoleSize="xs:text-subHeading md:text-heading"
                 textNameSize="xs:text-body md:text-subHeading"
@@ -379,6 +382,40 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 foto={Social12}
                 classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
                 classNameAvatar="-translate-y-6 scale-[1.5]"
+                classNameNama="mt-1"
+              />
+              <CardRole
+                firstRole="Backend Developer"
+                name="Hera Shafira"
+                jurusan="Teknik Informatika '19"
+                avatarSize={180}
+                textRoleSize="xs:text-subHeading md:text-heading"
+                textNameSize="xs:text-body md:text-subHeading"
+                textJurusanSize="mt-1 xs:text-caption md:text-body"
+                classNameSecond=" pt-0"
+                isDarkMode={isDarkMode}
+                classRole="xs:mb-0 md:mb-0 mt:0"
+                cardClassName="xs: md:pt-0"
+                foto={Social13}
+                classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
+                classNameAvatar="translate-y-4 scale-[0.8]"
+                classNameNama="mt-1"
+              />
+              <CardRole
+                firstRole="Backend Developer"
+                name="Fakhri Nail Wibowo"
+                jurusan="Teknik Informatika '19"
+                avatarSize={180}
+                textRoleSize="xs:text-subHeading md:text-heading"
+                textNameSize="xs:text-body md:text-subHeading"
+                textJurusanSize="mt-1 xs:text-caption md:text-body"
+                classNameSecond=" pt-0"
+                isDarkMode={isDarkMode}
+                classRole="xs:mb-0 md:mb-0 mt:0"
+                cardClassName="xs: md:pt-0"
+                foto={Social14}
+                classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
+                classNameAvatar="translate-y-8 scale-[0.8]"
                 classNameNama="mt-1"
               />
             </div>
@@ -633,6 +670,23 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 foto={Content13}
                 classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
                 classNameAvatar="-translate-y-8 scale-[1.7]"
+                classNameNama="mt-1"
+              />
+              <CardRole
+                firstRole="Frontend Developer"
+                name="Albert"
+                jurusan="Teknik Telekomunikasi '21"
+                avatarSize={180}
+                textRoleSize="xs:text-subHeading md:text-heading"
+                textNameSize="xs:text-body md:text-subHeading"
+                textJurusanSize="mt-1 xs:text-caption md:text-body"
+                classNameSecond=" pt-0"
+                isDarkMode={isDarkMode}
+                classRole="xs:mb-0 md:mb-0 mt:0"
+                cardClassName="xs: md:pt-0"
+                foto={Content14}
+                classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
+                classNameAvatar="translate-y-1 scale-[1.2]"
                 classNameNama="mt-1"
               />
             </div>
@@ -955,6 +1009,23 @@ const OrganogramDivisiIT: React.FC<OrganogramDivisiITProps> = ({
                 foto={Event17}
                 classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
                 classNameAvatar="-translate-y-0 scale-[1.0]"
+                classNameNama="mt-1"
+              />
+              <CardRole
+                firstRole="Frontend Developer"
+                name="Haniva Saydina"
+                jurusan="Teknik Geofisika '21"
+                avatarSize={180}
+                textRoleSize="xs:text-subHeading md:text-heading"
+                textNameSize="xs:text-body md:text-subHeading"
+                textJurusanSize="mt-1 xs:text-caption md:text-body"
+                classNameSecond=" pt-0"
+                isDarkMode={isDarkMode}
+                classRole="xs:mb-0 md:mb-0 mt:0"
+                cardClassName="xs: md:pt-0"
+                foto={Event18}
+                classNameAvatarContainer="h-44 w-44 overflow-hidden rounded-full mx-auto"
+                classNameAvatar="translate-y-1 scale-[1.2]"
                 classNameNama="mt-1"
               />
             </div>
