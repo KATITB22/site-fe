@@ -9,7 +9,7 @@ import OrganogramKAT from './pages/OrganogramKAT';
 import PageNotFound from './pages/PageNotFound';
 import HelmetMeta from './components/HelmetMeta';
 import ReactAudioPlayer from 'react-audio-player';
-import BackgroundMusic from './assets/audio/background-music.mp3';
+import BackgroundMusic from './assets/audio/background-music.wav';
 import AboutUs from './pages/AboutUs';
 import Dropdown from './components/Dropdown';
 
@@ -104,14 +104,20 @@ const App: React.FC<AppProps> = () => {
               items={[
                 <NavItem
                   key={4}
-                  name="Youtube"
-                  to="https://youtu.be/DTOovHzoGCU"
+                  name="Youtube Opening"
+                  to="https://youtu.be/MQ0_RhTkBhI"
+                  external={true}
+                />,
+                <NavItem
+                  key={4}
+                  name="Youtube Closing"
+                  to="https://youtu.be/aa0UaEzIOfA"
                   external={true}
                 />,
                 <NavItem
                   key={3}
                   name="Zoom OSKM"
-                  to="https://us06web.zoom.us/j/89447225921?pwd=RmZTTnVlRGszZzBsa0hCWU9jd0Zudz09"
+                  to="https://zoom.us/j/98967063193?pwd=eFd1b0RycUoyeHREaGxxOUFNem9CZz09"
                   external={true}
                 />,
                 <NavItem
