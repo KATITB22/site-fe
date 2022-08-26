@@ -104,20 +104,8 @@ const App: React.FC<AppProps> = () => {
               items={[
                 <NavItem
                   key={4}
-                  name="Youtube Opening"
-                  to="https://youtu.be/MQ0_RhTkBhI"
-                  external={true}
-                />,
-                <NavItem
-                  key={4}
-                  name="Youtube Closing"
-                  to="https://youtu.be/aa0UaEzIOfA"
-                  external={true}
-                />,
-                <NavItem
-                  key={3}
-                  name="Zoom OSKM"
-                  to="https://zoom.us/j/98967063193?pwd=eFd1b0RycUoyeHREaGxxOUFNem9CZz09"
+                  name="OHU"
+                  to="https://ohu.katitb22.com"
                   external={true}
                 />,
                 <NavItem
