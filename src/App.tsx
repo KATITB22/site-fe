@@ -103,27 +103,21 @@ const App: React.FC<AppProps> = () => {
               title="Link Penting"
               items={[
                 <NavItem
-                  key={4}
+                  key={3}
                   name="OHU"
                   to="https://ohu.katitb22.com"
                   external={true}
                 />,
                 <NavItem
-                  key={5}
+                  key={4}
                   name="Dashboard"
                   to="https://dashboard.katitb22.com"
                   external={true}
                 />,
                 <NavItem
-                  key={6}
+                  key={5}
                   name="Blog"
                   to="https://blog.katitb22.com"
-                  external={true}
-                />,
-                <NavItem
-                  key={1}
-                  name="Kelengkapan OSKM"
-                  to="https://linktr.ee/KelengkapanOSKM2022"
                   external={true}
                 />,
               ]}
